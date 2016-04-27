@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Condom Challenge</title>
+    <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/main.css">
+    <link rel="stylesheet" href="/bower_components/dragdealer/src/dragdealer.css">
+    <script src="bower_components/dragdealer/src/dragdealer.js"></script>
+    <script src="//cdn.jsdelivr.net/jquery/2.2.3/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="section group">
+        <h1>Dick Building</h1>
+        <h3>Customize a dick</h3>
+    </div>
+    <div class="section group">
+        <div class="col span36" id="main-screen">
+            Some dickish stuff here
+        </div>
+        <div class='col span26'>
+            <h3>Length</h3>
+            <div id="length-slider" class="dragdealer">
+                <div class="handle red-bar value">drag me</div>
+            </div>
+            <h3>Girth</h3>
+            <div id="girth-slider" class="dragdealer">
+                <div class="handle red-bar value">drag me</div>
+            </div>
+            <h3>Circumcised</h3>
+            <input type="checkbox" name="cut" value="cutornot">
+            <h3>Latex allergy</h3>
+            <input type="checkbox" name="allergy" value="latex">
+            <h3>Tightness</h3>
+            <div id="tight-slider" class="dragdealer">
+                <div class="handle red-bar value">drag me</div>
+            </div>
+            <h3>Sensation</h3>
+            <div id="sensation-slider" class="dragdealer">
+                <div class="handle red-bar value">drag me</div>
+            </div>
+        </div>
+    </div>
+    <div id="results"></div>
+
+</body>
+<script>
+    new Dragdealer('length-slider', {
+        animationCallback: function (x, y) {
+            $('#length-slider .value').text(Math.round(x * 100) + '%');
+        },
+        getValue: function () {
+            $('#results').html('wer');
+        }
+    });
+    new Dragdealer('girth-slider', {
+        animationCallback: function (x, y) {
+            $('#girth-slider .value').text(Math.round(x * 100) + '%');
+        }
+    });
+    new Dragdealer('tight-slider', {
+        animationCallback: function (x, y) {
+            $('#tight-slider .value').text(Math.round(x * 100) + '%');
+        }
+    });
+    new Dragdealer('sensation-slider', {
+        animationCallback: function (x, y) {
+            $('#sensation-slider .value').text(Math.round(x * 100) + '%');
+        }
+    });
+</script>
+
+</html>

@@ -1,0 +1,81 @@
+/* Responsive */
+
+
+/*  SECTIONS  */
+
+.section {
+    clear: both;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+/*  COLUMN SETUP  */
+
+.col {
+    display: block;
+    float: left;
+    margin: 1% 0 1% 1.6%;
+}
+
+.col:first-child {
+    margin-left: 0;
+}
+
+
+/*  GROUPING  */
+
+.group:before,
+.group:after {
+    content: "";
+    display: table;
+}
+
+.group:after {
+    clear: both;
+}
+
+.group {
+    zoom: 1;
+    /* For IE 6/7 */
+}
+
+
+/*  GRID OF SIX  */
+
+.span66 {
+    width: 100%;
+}
+
+.span56 {
+    width: 83.06%;
+}
+
+.span46 {
+    width: 66.13%;
+}
+
+.span36 {
+    width: 49.2%;
+}
+
+.span26 {
+    width: 32.26%;
+}
+
+.span16 {
+    width: 15.33%;
+}
+
+/* Typography */
+
+* {
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* Main Styling */
+
+#main-screen {
+    padding: 220px 0px;
+    border: 3px solid black;
+}
