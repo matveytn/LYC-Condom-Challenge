@@ -7,25 +7,38 @@
  */
 
 .dragdealer {
-  position: relative;
-  height: 30px;
-  background: #EEE;
+    position: relative;
+    margin: 0 0 2em 0;
+    height: 2px;
+    background: #EEE;
 }
+
 .dragdealer .handle {
-  position: absolute;
-  top: 0;
-  left: 0;
-  cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
 }
+
 .dragdealer .red-bar {
-  width: 100px;
-  height: 30px;
-  background: #CC0000;
-  color: #FFF;
-  font-size: 14px;
-  line-height: 30px;
-  text-align: center;
+    width: 100px;
+    height: 30px;
+    background: #CC0000;
+    color: #FFF;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
 }
+
 .dragdealer .disabled {
-  background: #898989;
+    background: #898989;
+}
+
+.dragdealer .circle {
+    border-radius: 50%;
+    top: -10px;
+    width: 1.2em;
+    height: 1.2em;
+    border: 2px solid #fff;
+    background: #025483;
 }
