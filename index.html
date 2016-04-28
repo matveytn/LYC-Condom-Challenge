@@ -10,12 +10,8 @@
 
     STILL NEEDS:
     
-    + Return the resized size value and display as inches
-    + Custom handles
-    + Dick head positioned with shaft as parent element //
-    + "Snap to increments" sliders for tightness & sensitivity
-    + Radio button for "Circumcised?" toggles between shaft images
-    + Radio button for "Allergic to latex?"
+    + Return the resized size value and display as inches, anchored to handles
+    + Array of image references for colour and circumcision options
 
     ------->
 
@@ -53,17 +49,18 @@
             height: 32px;
         }
         #sgrip {
-            bottom: -25px;
+            bottom: -45px;
             left: 50%;
             background-image:url(img/girthhandle.png);
         }
         #egrip {
-            right:-45px;
+            right:-65px;
             top:40%;
             background-image:url(img/lengthhandle.png);
         }
     </style>
     <!-- RENDER CSS END -->
+    
 
 </head>
 
@@ -137,11 +134,13 @@
         <input type="checkbox" name="cut" value="cutornot">
         <h3>Latex allergy</h3>
         <input type="checkbox" name="allergy" value="latex">
+<!--
         <h3>Tightness</h3>
         <p id="tight-val"></p>
         <div id="tight-slider" class="dragdealer">
             <div class="handle red-bar value">drag me</div>
         </div>
+-->
         <h3>Sensation</h3>
         <p id="sensation-val"></p>
         <div id="sensation-slider" class="dragdealer">
