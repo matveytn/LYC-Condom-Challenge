@@ -30,6 +30,7 @@
 
     <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
     <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- RENDER CSS -->
     <style>
@@ -55,6 +56,8 @@
 
     <div class="section group">
         <h1>Build Your Penis</h1>
+        <p id="test"></p>
+        <p id="test2"></p>
         <h3>Shape</h3>
     </div>
     <div class="section group">
@@ -65,7 +68,7 @@
 
             <div id="container">
                 <div id="image">
-                    <img src="img/UncircumsisedShaft.png"/>
+                    <img src="img/UncircumsisedShaft.png" />
                 </div>
             </div>
 
@@ -73,8 +76,7 @@
             <script type="text/javascript">
                 $(document).ready(function () {
                     /*$('#draggableHelper').draggable();*/
-                    var startW = 0;
-                    var startH = 0;
+                    var girth_size = 0;
                     $('#image').resizable({
                         containment: "#container",
                         minHeight: 60,
@@ -85,15 +87,11 @@
                         animateEasing: "easeOutElastic",
                         animateDuration: 400,
                         ghost: true,
-//                        start: function (event, ui) {
-//                            startW = $(this).outerWidth();
-//                            startH = $(this).outerHeight();
-//                        },
-//                        stop: function (event, ui) {
-//                            endW = $(this).outerWidth();
-//                            endH = $(this).outerHeight();
-//                            alert("width changed:" + (endW - startW) + " -- Height changed:" + (endH - endW));
-//                        }
+                        resize: function (event, ui) {
+                            console.log(ui.size.height);
+                            girth_size = $('#test').html(Math.round(ui.size.height * 0.4) + "mm");
+                            length = $('#test2').html(Math.round(ui.size.width * 0.3) + "mm");
+                        }
                     });
                 });
             </script>
