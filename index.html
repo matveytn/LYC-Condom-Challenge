@@ -1,9 +1,10 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>LYC Web App Challenge</title>
-    
+
     <!------
 
     STILL NEEDS:
@@ -16,32 +17,38 @@
     + Radio button for "Allergic to latex?"
 
     ------->
-    
-    
+
+
     <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,700' rel='stylesheet' type='text/css'>
-    
+
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="bower_components/dragdealer/src/dragdealer.css">
     <link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css">
-    
+
     <script src="bower_components/dragdealer/src/dragdealer.js"></script>
     <!--<script src="//cdn.jsdelivr.net/jquery/2.2.3/jquery.min.js"></script>-->
-    
+
     <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
     <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-    
+
     <!-- RENDER CSS -->
     <style>
-        #container { 
-            width: 100%; 
+        #container {
+            width: 80%;
             height: 225px;
         }
+
         #image {
             vertical-align: middle;
         }
+
+        #image img {
+            height: 100%;
+            width: 100%
+        }
     </style>
     <!-- RENDER CSS END -->
-    
+
 </head>
 
 <body>
@@ -51,65 +58,76 @@
         <h3>Shape</h3>
     </div>
     <div class="section group">
-        
+
         <div class="col span36" id="main-screen">
-            
+
             <!-- RENDER BODY -->
-            
+
             <div id="container">
-                <img id="image" src="img/UncircumsisedShaft.png" />
+                <div id="image">
+                    <img src="img/UncircumsisedShaft.png"/>
+                </div>
             </div>
 
-            
-            <script type="text/javascript">
 
-            $(document).ready(function() {
-              /*$('#draggableHelper').draggable();*/
-                $('#image').resizable({
-                    containment: "#container",
-                    minHeight: 60,
-                    minWidth: 120,
-                    maxHeight: 200,
-                    maxWidth: 500,
-                    animate: true,
-                    animateEasing: "easeOutElastic",
-                    animateDuration: 1400,
-                    ghost: true
+            <script type="text/javascript">
+                $(document).ready(function () {
+                    /*$('#draggableHelper').draggable();*/
+                    var startW = 0;
+                    var startH = 0;
+                    $('#image').resizable({
+                        containment: "#container",
+                        minHeight: 60,
+                        minWidth: 120,
+                        maxHeight: 200,
+                        maxWidth: 600,
+                        animate: true,
+                        animateEasing: "easeOutElastic",
+                        animateDuration: 400,
+                        ghost: true,
+//                        start: function (event, ui) {
+//                            startW = $(this).outerWidth();
+//                            startH = $(this).outerHeight();
+//                        },
+//                        stop: function (event, ui) {
+//                            endW = $(this).outerWidth();
+//                            endH = $(this).outerHeight();
+//                            alert("width changed:" + (endW - startW) + " -- Height changed:" + (endH - endW));
+//                        }
+                    });
                 });
-            });
             </script>
-            
+
             <!-- RENDER BODY END -->
 
-                
-            </div>
+
         </div>
-        
-        <div class='col span26'>
-            <h3>Length</h3>
-            <p id="length-val"></p>
-            <div id="length-slider" class="dragdealer">
-                <div class="handle red-bar value">drag me</div>
-            </div>
-            <h3>Girth</h3>
-            <p id="girth-val"></p>
-            <div id="girth-slider" class="dragdealer">
-                <div class="handle red-bar value">drag me</div>
-            </div>
-            <h3>Circumcised</h3>
-            <input type="checkbox" name="cut" value="cutornot">
-            <h3>Latex allergy</h3>
-            <input type="checkbox" name="allergy" value="latex">
-            <h3>Tightness</h3>
-            <p id="tight-val"></p>
-            <div id="tight-slider" class="dragdealer">
-                <div class="handle red-bar value">drag me</div>
-            </div>
-            <h3>Sensation</h3>
-            <p id="sensation-val"></p>
-            <div id="sensation-slider" class="dragdealer">
-                <div class="handle red-bar value">drag me</div>
-            </div>
+    </div>
+
+    <div class='col span26'>
+        <h3>Length</h3>
+        <p id="length-val"></p>
+        <div id="length-slider" class="dragdealer">
+            <div class="handle red-bar value">drag me</div>
+        </div>
+        <h3>Girth</h3>
+        <p id="girth-val"></p>
+        <div id="girth-slider" class="dragdealer">
+            <div class="handle red-bar value">drag me</div>
+        </div>
+        <h3>Circumcised</h3>
+        <input type="checkbox" name="cut" value="cutornot">
+        <h3>Latex allergy</h3>
+        <input type="checkbox" name="allergy" value="latex">
+        <h3>Tightness</h3>
+        <p id="tight-val"></p>
+        <div id="tight-slider" class="dragdealer">
+            <div class="handle red-bar value">drag me</div>
+        </div>
+        <h3>Sensation</h3>
+        <p id="sensation-val"></p>
+        <div id="sensation-slider" class="dragdealer">
+            <div class="handle red-bar value">drag me</div>
         </div>
     </div>
 </body>
@@ -142,42 +160,6 @@
             var sensation = $('#sensation-val').html($('#sensation-slider .value').text());
         }
     });
-</script>
-    
-<!-- Renderer scaling -->
-<script>
-    var $el = $("#very-specific-design");
-    var elHeight = $el.outerHeight();
-    var elWidth = $el.outerWidth();
-
-    var $wrapper = $("#scaleable-wrapper");
-
-    $wrapper.resizable({
-      resize: doResize
-    });
-
-    function doResize(event, ui) {
-
-      var scale, origin;
-
-      scale = Math.min(
-        ui.size.width / elWidth,    
-        ui.size.height / elHeight
-      );
-
-      $el.css({
-        transform: "translate(-50%, -50%) " + "scale(" + scale + ")"
-      });
-
-    }
-
-    var starterData = { 
-      size: {
-        width: $wrapper.width(),
-        height: $wrapper.height()
-      }
-    }
-    doResize(null, starterData);
 </script>
 
 </html>
