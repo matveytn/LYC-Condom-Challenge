@@ -15,11 +15,12 @@ $(document).ready(function () {
             's': '#sgrip'
         },
         resize: function (event, ui) {
-            console.log(ui.size.height);
-            $('#test').html(Math.round(ui.size.height * 0.4) + "mm");
-            $('#test2').html(Math.round(ui.size.width * 0.3) + "mm");
-        }
+            $('#test2').html(Math.round(ui.size.height * 0.4) + "mm");
+            $('#test').html(Math.round(ui.size.width * 0.3) + "mm");
+        },
+
     });
+    $('#test').html("160mm");
 });
 
 
@@ -66,14 +67,14 @@ $(function () {
     $("#latex").buttonset();
 });
 
-    $('#radio1').click(function () {
-        if ($('#radio1').is(':checked')) {
-            $("#container #image img").attr("src", images[5].src);
-        }
-    });
+$('#radio1').click(function () {
+    if ($('#radio1').is(':checked')) {
+        $("#container #image img").attr("src", images[5].src);
+    }
+});
 
-    $('#radio2').click(function () {
-        if ($('#radio1').is(':checked')) {
-            $("#container #image img").attr("src", "img/Uncircumsised_2.png");
-        }
-    });
+$('#radio2').click(function () {
+    if ($('#radio1').is(':checked')) {
+        $("#container #image img").attr("src", "img/Uncircumsised_2.png");
+    }
+});
