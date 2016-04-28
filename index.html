@@ -41,25 +41,30 @@
 
         #image {
             vertical-align: middle;
+            width: 90%;
         }
 
         #image img {
             height: 100%;
             width: 100%
         }
-        #sgrip, #egrip {
+
+        #sgrip,
+        #egrip {
             width: 32px;
             height: 32px;
         }
+
         #sgrip {
             bottom: -25px;
             left: 50%;
-            background-image:url(img/girthhandle.png);
+            background-image: url(img/girthhandle.png);
         }
+
         #egrip {
-            right:-45px;
-            top:40%;
-            background-image:url(img/lengthhandle.png);
+            right: -45px;
+            top: 40%;
+            background-image: url(img/lengthhandle.png);
         }
     </style>
     <!-- RENDER CSS END -->
@@ -76,78 +81,76 @@
     </div>
     <div class="section group">
 
-        <div class="col span36" id="main-screen">
+        <!-- RENDER BODY -->
 
-            <!-- RENDER BODY -->
-
-            <div id="container">
-                <div id="image">
-                    <img src="img/Uncircumsised_2.png" />
-                    <div class="ui-resizable-handle ui-resizable-s" id="sgrip"></div>
-                    <div class="ui-resizable-handle ui-resizable-e" id="egrip"></div>
-                </div>
+        <div class="container col span36" id="main-screen">
+            <div id="image">
+                <img src="img/Uncircumsised_2.png" />
+                <div class="ui-resizable-handle ui-resizable-s" id="sgrip"></div>
+                <div class="ui-resizable-handle ui-resizable-e" id="egrip"></div>
             </div>
+        </div>
 
 
-            <script type="text/javascript">
-                $(document).ready(function () {
-                    /*$('#draggableHelper').draggable();*/
-                    var girth_size = 0;
-                    $('#image').resizable({
-                        containment: "#container",
-                        minHeight: 60,
-                        minWidth: 120,
-                        maxHeight: 200,
-                        maxWidth: 600,
-                        animate: true,
-                        animateEasing: "easeOutElastic",
-                        animateDuration: 400,
-                        ghost: true,
-                        handles: {
+        <script type="text/javascript">
+            $(document).ready(function () {
+                /*$('#draggableHelper').draggable();*/
+                var girth_size = 0;
+                $('#image').resizable({
+                    containment: "#container",
+                    minHeight: 60,
+                    minWidth: 120,
+                    maxHeight: 200,
+                    maxWidth: 600,
+                    animate: true,
+                    animateEasing: "easeOutElastic",
+                    animateDuration: 400,
+                    ghost: true,
+                    handles: {
                         'e': '#egrip',
                         's': '#sgrip'
-                        },
-                        resize: function (event, ui) {
-                            console.log(ui.size.height);
-                            girth_size = $('#test').html(Math.round(ui.size.height * 0.4) + "mm");
-                            length = $('#test2').html(Math.round(ui.size.width * 0.3) + "mm");
-                        }
-                    });
+                    },
+                    resize: function (event, ui) {
+                        console.log(ui.size.height);
+                        girth_size = $('#test').html(Math.round(ui.size.height * 0.4) + "mm");
+                        length = $('#test2').html(Math.round(ui.size.width * 0.3) + "mm");
+                    }
                 });
-            </script>
+            });
+        </script>
 
-            <!-- RENDER BODY END -->
+        <!-- RENDER BODY END -->
 
-
+        <div class='col span26'>
+            <h3>Length</h3>
+            <p id="length-val"></p>
+            <div id="length-slider" class="dragdealer">
+                <div class="handle red-bar value">drag me</div>
+            </div>
+            <h3>Girth</h3>
+            <p id="girth-val"></p>
+            <div id="girth-slider" class="dragdealer">
+                <div class="handle red-bar value">drag me</div>
+            </div>
+            <h3>Circumcised</h3>
+            <input type="checkbox" name="cut" value="cutornot">
+            <h3>Latex allergy</h3>
+            <input type="checkbox" name="allergy" value="latex">
+            <h3>Tightness</h3>
+            <p id="tight-val"></p>
+            <div id="tight-slider" class="dragdealer">
+                <div class="handle red-bar value">drag me</div>
+            </div>
+            <h3>Sensation</h3>
+            <p id="sensation-val"></p>
+            <div id="sensation-slider" class="dragdealer">
+                <div class="handle red-bar value">drag me</div>
+            </div>
         </div>
+
     </div>
 
-    <div class='col span26'>
-        <h3>Length</h3>
-        <p id="length-val"></p>
-        <div id="length-slider" class="dragdealer">
-            <div class="handle red-bar value">drag me</div>
-        </div>
-        <h3>Girth</h3>
-        <p id="girth-val"></p>
-        <div id="girth-slider" class="dragdealer">
-            <div class="handle red-bar value">drag me</div>
-        </div>
-        <h3>Circumcised</h3>
-        <input type="checkbox" name="cut" value="cutornot">
-        <h3>Latex allergy</h3>
-        <input type="checkbox" name="allergy" value="latex">
-        <h3>Tightness</h3>
-        <p id="tight-val"></p>
-        <div id="tight-slider" class="dragdealer">
-            <div class="handle red-bar value">drag me</div>
-        </div>
-        <h3>Sensation</h3>
-        <p id="sensation-val"></p>
-        <div id="sensation-slider" class="dragdealer">
-            <div class="handle red-bar value">drag me</div>
-        </div>
-    </div>
+
 </body>
 <!--Drag sliders-->
 <script>
