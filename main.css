@@ -85,14 +85,11 @@
 #main-screen img {
     width: 100%;
     height: 100px;
-<<<<<<< HEAD
-}
-=======
 }
 
 
 #test {
-/*    position: relative;*/
+    position: relative;
 /*    top: -10px;*/
     text-align: center;
     margin: 0px auto;
@@ -103,4 +100,3 @@
     height: 100%;
     margin: auto 0;
 }*/
->>>>>>> 0aa77289b15492591fee649d9ae31d0a94de23f9

@@ -66,18 +66,14 @@ $(function () {
     $("#latex").buttonset();
 });
 
+    $('#radio1').click(function () {
+        if ($('#radio1').is(':checked')) {
+            $("#container #image img").attr("src", images[5].src);
+        }
+    });
 
-//
-//$(function () {
-//    $('#radio1').click(function () {
-//        if ($('#radio1').is(':checked')) {
-//            $("#container #image img").attr("src", images[5].src);
-//        }
-//    });
-//
-//    $('#radio2').click(function () {
-//        if ($('#radio1').is(':checked')) {
-//            $("#container #image img").attr("src", "img/Uncircumsised_2.png");
-//        }
-//    });
-//});
+    $('#radio2').click(function () {
+        if ($('#radio1').is(':checked')) {
+            $("#container #image img").attr("src", "img/Uncircumsised_2.png");
+        }
+    });
