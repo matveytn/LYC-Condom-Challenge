@@ -47,6 +47,20 @@
             height: 100%;
             width: 100%
         }
+        #sgrip, #egrip {
+            width: 32px;
+            height: 32px;
+        }
+        #sgrip {
+            bottom: -25px;
+            left: 50%;
+            background-image:url(img/girthhandle.png);
+        }
+        #egrip {
+            right:-45px;
+            top:40%;
+            background-image:url(img/lengthhandle.png);
+        }
     </style>
     <!-- RENDER CSS END -->
 
@@ -68,7 +82,9 @@
 
             <div id="container">
                 <div id="image">
-                    <img src="img/UncircumsisedShaft.png" />
+                    <img src="img/Uncircumsised_2.png" />
+                    <div class="ui-resizable-handle ui-resizable-s" id="sgrip"></div>
+                    <div class="ui-resizable-handle ui-resizable-e" id="egrip"></div>
                 </div>
             </div>
 
@@ -87,6 +103,10 @@
                         animateEasing: "easeOutElastic",
                         animateDuration: 400,
                         ghost: true,
+                        handles: {
+                        'e': '#egrip',
+                        's': '#sgrip'
+                        },
                         resize: function (event, ui) {
                             console.log(ui.size.height);
                             girth_size = $('#test').html(Math.round(ui.size.height * 0.4) + "mm");
