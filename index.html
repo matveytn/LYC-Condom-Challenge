@@ -1,27 +1,90 @@
 <!doctype html>
-<html>
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Condom Challenge</title>
+    <title>LYC Web App Challenge</title>
+    
+    <!------
+
+    STILL NEEDS:
+    
+    + Return the resized size value and display as inches
+    + Custom handles
+    + Dick head positioned with shaft as parent element //
+    + "Snap to increments" sliders for tightness & sensitivity
+    + Radio button for "Circumcised?" toggles between shaft images
+    + Radio button for "Allergic to latex?"
+
+    ------->
+    
+    
     <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,700' rel='stylesheet' type='text/css'>
+    
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="bower_components/dragdealer/src/dragdealer.css">
+    <link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css">
+    
     <script src="bower_components/dragdealer/src/dragdealer.js"></script>
-    <script src="//cdn.jsdelivr.net/jquery/2.2.3/jquery.min.js"></script>
-
+    <!--<script src="//cdn.jsdelivr.net/jquery/2.2.3/jquery.min.js"></script>-->
+    
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    
+    <!-- RENDER CSS -->
+    <style>
+        #container { 
+            width: 100%; 
+            height: 225px;
+        }
+        #image {
+            vertical-align: middle;
+        }
+    </style>
+    <!-- RENDER CSS END -->
+    
 </head>
 
 <body>
 
     <div class="section group">
-        <h1>Dick Building</h1>
-        <h3>Customize a dick</h3>
+        <h1>Build Your Penis</h1>
+        <h3>Shape</h3>
     </div>
     <div class="section group">
+        
         <div class="col span36" id="main-screen">
-            <img src="img/UncircumsisedShaft.png" alt="">
+            
+            <!-- RENDER BODY -->
+            
+            <div id="container">
+                <img id="image" src="img/UncircumsisedShaft.png" />
+            </div>
+
+            
+            <script type="text/javascript">
+
+            $(document).ready(function() {
+              /*$('#draggableHelper').draggable();*/
+                $('#image').resizable({
+                    containment: "#container",
+                    minHeight: 60,
+                    minWidth: 120,
+                    maxHeight: 200,
+                    maxWidth: 500,
+                    animate: true,
+                    animateEasing: "easeOutElastic",
+                    animateDuration: 1400,
+                    ghost: true
+                });
+            });
+            </script>
+            
+            <!-- RENDER BODY END -->
+
+                
+            </div>
         </div>
+        
         <div class='col span26'>
             <h3>Length</h3>
             <p id="length-val"></p>
@@ -79,6 +142,42 @@
             var sensation = $('#sensation-val').html($('#sensation-slider .value').text());
         }
     });
+</script>
+    
+<!-- Renderer scaling -->
+<script>
+    var $el = $("#very-specific-design");
+    var elHeight = $el.outerHeight();
+    var elWidth = $el.outerWidth();
+
+    var $wrapper = $("#scaleable-wrapper");
+
+    $wrapper.resizable({
+      resize: doResize
+    });
+
+    function doResize(event, ui) {
+
+      var scale, origin;
+
+      scale = Math.min(
+        ui.size.width / elWidth,    
+        ui.size.height / elHeight
+      );
+
+      $el.css({
+        transform: "translate(-50%, -50%) " + "scale(" + scale + ")"
+      });
+
+    }
+
+    var starterData = { 
+      size: {
+        width: $wrapper.width(),
+        height: $wrapper.height()
+      }
+    }
+    doResize(null, starterData);
 </script>
 
 </html>
