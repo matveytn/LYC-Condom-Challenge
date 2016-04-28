@@ -8,7 +8,7 @@ $(document).ready(function () {
         maxWidth: 600,
         animate: true,
         animateEasing: "easeOutElastic",
-        animateDuration: 400,
+        animateDuration: 700,
         ghost: true,
         handles: {
             'e': '#egrip',
@@ -16,11 +16,11 @@ $(document).ready(function () {
         },
         resize: function (event, ui) {
             $('#test2').html(Math.round(ui.size.height * 0.4) + "mm");
-            $('#test').html(Math.round(ui.size.width * 0.3) + "mm");
+            $('#test').html("Length: " + Math.round(ui.size.width * 0.3) + "mm - " + "Girth: " + Math.round(ui.size.height * 0.4) + "mm");
         },
 
     });
-    $('#test').html("160mm");
+    $('#test').html("Length: 177mm - Girth: 80mm");
 });
 
 
