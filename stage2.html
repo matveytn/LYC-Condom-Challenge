@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Condom Challenge</title>
+    <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="bower_components/dragdealer/src/dragdealer.css">
+    <script src="bower_components/dragdealer/src/dragdealer.js"></script>
+    <script src="//cdn.jsdelivr.net/jquery/2.2.3/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="section group">
+        <h1>Dick Building</h1>
+        <h3>Customize a dick</h3>
+    </div>
+    <div class="section group">
+        <div class="col span36" id="main-screen">
+            <img src="img/UncircumsisedShaft.png" alt="">
+        </div>
+        <div class='col span26'>
+            <h3>Length</h3>
+            <p id="length-val"></p>
+            <div id="length-slider" class="dragdealer">
+                <div class="handle circle value">drag me</div>
+            </div>
+            <h3>Girth</h3>
+            <p id="girth-val"></p>
+            <div id="girth-slider" class="dragdealer">
+                <div class="handle circle value">drag me</div>
+            </div>
+            <h3>Circumcised</h3>
+            <input type="checkbox" id="c1" name="circ" />
+            <label for="c1">Circumcised</label>
+            <h3>Latex allergy</h3>
+            <input type="checkbox" id="c2" name="latex" />
+            <label for="c2">Latex allergy</label>
+            <h3>Tightness</h3>
+            <p id="tight-val"></p>
+            <div id="tight-slider" class="dragdealer">
+                <div class="handle circle value">drag me</div>
+            </div>
+            <h3>Sensation</h3>
+            <p id="sensation-val"></p>
+            <div id="sensation-slider" class="dragdealer">
+                <div class="handle circle value">drag me</div>
+            </div>
+            <a href="stage2.html" class="myButton">Done?</a>
+        </div>
+    </div>
+</body>
+<!--Drag sliders-->
+<script>
+    new Dragdealer('length-slider', {
+        animationCallback: function (x, y) {
+//            $('#length-slider .value').text('');
+            $('#length-slider .value').text(Math.round(x * 100) + '%');
+            var length = $('#length-val').html($('#length-slider .value').text());
+        }
+    });
+
+    new Dragdealer('girth-slider', {
+        animationCallback: function (x, y) {
+            $('#girth-slider .value').text('');
+            //            $('#girth-slider .value').text(Math.round(x * 100) + '%');
+            var girth = $('#girth-val').html($('#girth-slider .value').text());
+        }
+    });
+    new Dragdealer('tight-slider', {
+        animationCallback: function (x, y) {
+            $('#tight-slider .value').text('');
+            //            $('#tight-slider .value').text(Math.round(x * 100) + '%');
+            var tightness = $('#tight-val').html($('#tight-slider .value').text());
+        }
+    });
+    new Dragdealer('sensation-slider', {
+        animationCallback: function (x, y) {
+            $('#sensation-slider .value').text('');
+            //            $('#sensation-slider .value').text(Math.round(x * 100) + '%');
+            var sensation = $('#sensation-val').html($('#sensation-slider .value').text());
+        }
+    });
+</script>
+
+</html>
