@@ -67,42 +67,88 @@
     width: 15.33%;
 }
 
+
 /* Typography */
 
 * {
     font-family: 'Work Sans', sans-serif;
-    background: #025483;
     color: #fff;
+    background: #333;
 }
+
 
 /* Main Styling */
 
 #main-screen {
     padding: 220px 0px;
-    border: 3px solid black;
+    border: 3px solid;
+    background-color: #009999;
+    overflow: hidden;
+    background: #1e51a8;
 }
 
 #main-screen img {
     width: 100%;
     height: 100px;
+    background: #1e51a8;
 }
+
+#test {
+    position: relative;
+    /*    top: -10px;*/
+    text-align: center;
+    margin: 0px auto;
+    background: #1e51a8;
+}
+
 
 /*
-input[type="checkbox"] {
-    display:none;
+#test2 {
+    height: 100%;
+    margin: auto 0;
+}*/
+
+#image {
+    padding: 0 0 20px 0;
 }
 
-input[type="checkbox"] + label span {
-    display:inline-block;
-    width:19px;
-    height:19px;
-    margin:-1px 4px 0 0;
-    vertical-align:middle;
-    border: 3px solid #fff;
-    background: black;
-    cursor:pointer;
+
+/*Some JS stuff*/
+
+#container {
+    width: 80%;
+    height: 225px;
+    background: #1e51a8;
 }
-*/
+
+#image {
+    vertical-align: middle;
+    background: #1e51a8;
+}
+
+#image img {
+    height: 100%;
+    width: 100%
+}
+
+#sgrip,
+#egrip {
+    width: 32px;
+    height: 32px;
+    background: #1e51a8;
+}
+
+#sgrip {
+    bottom: -35px;
+    left: 50%;
+    background-image: url(img/girthhandle.png);
+}
+
+#egrip {
+    right: -65px;
+    top: 40%;
+    background-image: url(img/lengthhandle.png);
+}
 
 .myButton {
 	background-color:#44c767;

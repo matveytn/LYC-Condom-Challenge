@@ -1,3 +1,2 @@
-#LYC Condom Web App Challange
-
-Hopefuly we're gonna have something to show for it.
+# LYC-Condom-Challenge
+Live working prototype
