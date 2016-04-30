@@ -80,7 +80,7 @@ $('#radio2').click(function () {
 });
 
 $(function() {
-                   $("#nonmodal1").dialog({
+                   $("#modal1").dialog({
                      minWidth: 400,
                      minHeight: 'auto',
                      autoOpen: false,
@@ -93,10 +93,10 @@ $(function() {
                    });
 
                    $("#dialog1").click(function() {
-                     if ($("#nonmodal1").dialog("isOpen") === true) {
-                       $("#nonmodal1").dialog("close");
+                     if ($("#modal1").dialog("isOpen") === true) {
+                       $("#modal1").dialog("close");
                      } else {
-                       $("#nonmodal1").dialog("open").prev().css('background','#ff3399');
+                       $("#modal1").dialog("open").prev().css('background','#ff3399');
 
                      }
                    });
