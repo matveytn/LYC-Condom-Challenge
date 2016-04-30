@@ -7,6 +7,16 @@ body {
     background: #000;
 }
 
+#logo {
+    float: left;
+    margin: 0px 10px 10px 0px;
+    clear: left;
+    width: 100px;
+    height: 100px;
+    top: 0;
+    left: 0;
+}
+
 .section {
     clear: both;
     padding: 0px;
