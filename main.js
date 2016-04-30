@@ -24,7 +24,7 @@ $(document).ready(function () {
 });
 
 
-var steps = ["I'd like less sensation", "Just right!", "I'd like more sensation"]
+var steps = ["I'd like less", "Just right", "I'd like more"]
 
 $(function () {
     $("#slider").slider({
@@ -69,12 +69,12 @@ $(function () {
 
 $('#radio1').click(function () {
     if ($('#radio1').is(':checked')) {
-        $("#container #image img").attr("src", images[5].src);
+        $("#container #image img").attr("src", images[2].src);
     }
 });
 
 $('#radio2').click(function () {
-    if ($('#radio1').is(':checked')) {
-        $("#container #image img").attr("src", "img/Uncircumsised_2.png");
+    if ($('#radio2').is(':checked')) {
+        $("#container #image img").attr("src", images[3].src);
     }
 });
