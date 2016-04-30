@@ -170,3 +170,17 @@
 	position:relative;
 	top:1px;
 }
+
+@media screen and (max-width: 700px) {
+    .col {
+        margin: 0 10% 4% 10%;
+    }
+    .span16,
+    .span26,
+    .span36,
+    .span46,
+    .span56,
+    .span66 {
+        width: 100%;
+    }
+}
