@@ -179,6 +179,19 @@ body {
 	top:1px;
 }
 
+div.ui-dialog {
+    position:fixed;
+    background-color: #ffffff;
+}
+
+#nonmodal1 {
+    text-align: center;
+}
+
+.condom-recommendation {
+    color: #000000;
+}
+
 
 @media screen and (max-width: 700px) {
     .col {
