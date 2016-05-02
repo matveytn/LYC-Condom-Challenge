@@ -78,3 +78,26 @@ $('#radio2').click(function () {
         $("#container #image img").attr("src", images[3].src);
     }
 });
+
+$(function() {
+                   $("#modal1").dialog({
+                     minWidth: 400,
+                     minHeight: 'auto',
+                     autoOpen: false,
+                     modal: true,
+                     dialogClass: 'condom-recommendation',
+                     position: {
+                       my: 'center',
+                       at: 'center'
+                     }
+                   });
+
+                   $("#dialog1").click(function() {
+                     if ($("#modal1").dialog("isOpen") === true) {
+                       $("#modal1").dialog("close");
+                     } else {
+                       $("#modal1").dialog("open").prev().css('background','#ff3399');
+
+                     }
+                   });
+    });

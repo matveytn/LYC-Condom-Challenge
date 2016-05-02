@@ -179,10 +179,19 @@ body {
 	top:1px;
 }
 
-<<<<<<< HEAD
+div.ui-dialog {
+    position:fixed;
+    background-color: #ffffff;
+}
 
-=======
->>>>>>> origin/gh-pages
+#modal1 {
+    text-align: center;
+}
+
+.condom-recommendation {
+    color: #000000;
+}
+
 @media screen and (max-width: 700px) {
     .col {
         margin: 0 10% 4% 10%;

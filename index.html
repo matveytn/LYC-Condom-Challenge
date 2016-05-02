@@ -13,8 +13,9 @@
     TO DO:
     + Return the resized size values and display as inches, anchored to respective handles
     + More accurate measurement calculation needed for mobile version
+    + Fix modal dialog close button (not working on mobile)
     + Array of image references for colour and circumcision options
-    + DONE button, condom recommendations
+    + Condom recommendations carousel
 
     ------->
 
@@ -70,9 +71,19 @@
                 <label for="radio4">No</label>
             </div>
             <h3>How much sensation do you get when using condoms?</h3>
-            <!-- Snapping Slider-->
+            <!-- Snapping Slider -->
             <input type="text" id="amount" readonly style="background:black; border:0; margin: 0 0 2em 0">
-            <div id="slider" style="width: 30%"></div>
+            <div id="slider" style="width: 30%; margin: 0 0 2em 0"></div>
+            <div id="dialog1" style='background: #ff3399; border-radius: 3px; padding: 1em'><h3>Match me with the right condoms!</h3></div>
+            <!-- Condom Recommendation Dialog -->
+            <div title="We think these are right for you" id="modal1">
+                <img src="img/condomrecommendationmockup.png" />
+                <p></p>
+                <b><span class="condom-recommendation">Durex Confidence</span></b>
+                <br><span class="condom-recommendation">Just because it's an average size condom doesn't mean your sex has to be.</span>
+                <p></p>
+                <div style='background: #ffd633; border-radius: 3px; padding: 0.25em'><h4>Get a free sample of this condom from LYC</h4></div>
+            </div>
         </div>
 
     </div>
