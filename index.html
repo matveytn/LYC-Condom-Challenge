@@ -8,40 +8,22 @@
     <title>LYC Condom Picker</title>
 
     <!--Styling-->
-    <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,700" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="assets/min/css/styles.min.css">
 
+<!--       <link rel="stylesheet" href="assets/src/css/main.css">    -->
     <!--Scripts-->
-    <script src="assets/min/js/scripts.min.js"></script>
     <script src="assets/src/js/angular/angular.js"></script>
+    <script src="assets/src/js/angular-animate/angular-animate.js"></script>
+    <script src="assets/src/js/angular-route/angular-route.js"></script>
     <script src="assets/src/js/jquery/dist/jquery.min.js"></script>
     <script src="assets/src/js/jquery-ui/jquery-ui.min.js"></script>
+    <script src="assets/src/js/app.js"></script>
+    <script src="assets/min/js/main.js"></script>
 </head>
 
-<body>
-
-    <div class="group section intro-title">
-        <div id="slogan" class="col span_9_of_9">
-            <h1>Find your perfect fit</h1></div>
-    </div>
-    <div class="group section intro-controls">
-        <div class="col span_8_of_9">&nbsp;</div>
-        <div class="col span_1_of_9 arrow"><img src="img/icon_rotated.png" alt="An arrow, shaped as a dick, pointing to the next page">
-            <h4>Get started</h4></div>
-    </div>
-
-    <script>
-        $(function () {
-            var x = 0;
-            var y = 0;
-            setInterval(function () {
-                x += 1.16;
-                y -= 1;
-                $('body').css('background-position', x + 'px ' + y + 'px');
-            }, 40);
-        });
-
-    </script>
+<body ng-app="animateApp">
+    <div class="page {{pageClass}}" ng-view></div>
 </body>
 
 </html>

@@ -12,6 +12,8 @@ var jsOut = 'assets/min/js/';
 
 gulp.task('css', function () {
     return gulp.src(cssIn)
+        .pipe(concat('styles.css'))
+        .pipe(gulp.dest(cssOut))
         .pipe(cleancss())
         .pipe(autoprefixer())
         .pipe(rename('styles.min.css'))
@@ -20,9 +22,6 @@ gulp.task('css', function () {
 
 gulp.task('scripts', function () {
     return gulp.src(jsIn)
-        .pipe(concat('scripts.js'))
-        .pipe(gulp.dest(jsOut))
-        .pipe(rename('scripts.min.js'))
         .pipe(uglify())
         .pipe(gulp.dest(jsOut));
 });
