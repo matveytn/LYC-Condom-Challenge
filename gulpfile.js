@@ -1,24 +1,21 @@
 var gulp = require('gulp');
 var autoprefixer = require('gulp-autoprefixer');
-var sassr = require('gulp-ruby-sass');
+var cleancss = require('gulp-clean-css');
 var concat = require('gulp-concat');
 var rename = require('gulp-rename');
 var uglify = require('gulp-uglify');
 
-var cssIn = 'assets/src/css/*.scss';
+var cssIn = 'assets/src/css/*.css';
 var cssOut = 'assets/min/css/';
 var jsIn = 'assets/src/js/*.js';
 var jsOut = 'assets/min/js/';
 
-//gulp.task('css', function() {
-//    return sass(cssIn)
-//        .pipe(autoprefixer())
-//        .pipe(gulp.dest(cssOut));
-//});
-
-gulp.task('css', function(){
-    return sassr(cssIn)
-    .pipe(gulp.dest(cssOut));
+gulp.task('css', function () {
+    return gulp.src(cssIn)
+        .pipe(cleancss())
+        .pipe(autoprefixer())
+        .pipe(rename('styles.min.css'))
+        .pipe(gulp.dest(cssOut));
 });
 
 gulp.task('scripts', function () {
@@ -39,7 +36,7 @@ gulp.task('default', function () {
         gulp.run('css');
     });
 
-    gulp.watch(jsIn, function() {
+    gulp.watch(jsIn, function () {
         gulp.run('scripts');
     });
 });
