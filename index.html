@@ -1,93 +1,41 @@
 <!doctype html>
-<html lang="en">
+<html>
 
 <head>
     <meta charset="UTF-8">
-    <title>LYC Web App Challenge</title>
+    <title>Intro page</title>
 
-    <!------
+    <!--    Scripts-->
+    <script src="src/jquery/dist/jquery.min.js"></script>
 
-    ABOUT:
-    This web app prototype was written & developed using jQuery UI by Matvey Tarchutkin and Patricia Danielle Tan based on wireframes designed by Tobias Heeringa for the 2016 Love Your Condom Web App Challenge.
-
-    TO DO:
-    + Return the resized size values and display as inches, anchored to respective handles
-    + More accurate measurement calculation needed for mobile version
-    + Fix modal dialog close button (not working on mobile)
-    + Array of image references for colour and circumcision options
-    + Condom recommendations carousel
-
-    ------->
-
-
+    <!--    Styling-->
     <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,700' rel='stylesheet' type='text/css'>
-
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" type="text/css" href="jquery-ui-1.11.4.custom/jquery-ui.css">
-    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
-    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-    <script src="jquery.ui.touch-punch.min.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-
+    <link rel="stylesheet" href="css/test.css">
 </head>
 
 <body>
 
-    <div class="section group">
-        <div id="logo"><img src="img/LYC%20Logo%20Blue.png" alt="" /></div>
-        <h1>Find Your Perfect Fit</h1>
+    <div id="intro-title" class="group section">
+        <div id="slogan" class="col span_9_of_9">
+            <h1>Find your perfect fit</h1></div>
     </div>
-    <div class="section group"><h3>Drag the arrows to adjust your penis size</h3></div>
-    <div class="section group">
-
-        <div class="col span36" id="main-screen">
-            <!-- RENDER BODY -->
-
-            <div id="container">
-                <div id="image">
-                   <div id="test"></div>
-                    <img src="img/Uncircumsised_2.png" />
-                    <div class="ui-resizable-handle ui-resizable-s" id="sgrip"></div>
-                    <div class="ui-resizable-handle ui-resizable-e" id="egrip"></div>
-                </div>
-            </div>
-
-            <!-- RENDER BODY END -->
-        </div>
-        <div class='col span26'>
-            <h3>Are you circumcised?</h3>
-            <div id="circum">
-                <input type="radio" id="radio1" name="radio">
-                <label for="radio1">Yes</label>
-                <input type="radio" id="radio2" name="radio" checked="checked">
-                <label for="radio2">No</label>
-            </div>
-            <h3>Do you or your partner experience irritation from using condoms?</h3>
-            <div id="latex">
-                <input type="radio" id="radio3" name="radio2">
-                <label for="radio3">Yes</label>
-                <input type="radio" id="radio4" name="radio2" checked="checked">
-                <label for="radio4">No</label>
-            </div>
-            <h3>How much sensation do you get when using condoms?</h3>
-            <!-- Snapping Slider -->
-            <input type="text" id="amount" readonly style="background:black; border:0; margin: 0 0 2em 0">
-            <div id="slider" style="width: 30%; margin: 0 0 2em 0"></div>
-            <div id="dialog1" style='background: #ff3399; border-radius: 3px; padding: 1em'><h3>Match me with the right condoms!</h3></div>
-            <!-- Condom Recommendation Dialog -->
-            <div title="We think these are right for you" id="modal1">
-                <img src="img/condomrecommendationmockup.png" />
-                <p></p>
-                <b><span class="condom-recommendation">Durex Confidence</span></b>
-                <br><span class="condom-recommendation">Just because it's an average size condom doesn't mean your sex has to be.</span>
-                <p></p>
-                <div style='background: #ffd633; border-radius: 3px; padding: 0.25em'><h4>Get a free sample of this condom from LYC</h4></div>
-            </div>
-        </div>
-
+    <div id="intro-controls" class="group section">
+        <div class="col span_8_of_9">&nbsp;</div>
+        <div class="col span_1_of_9 arrow"><img src="img/icon_rotated.png" alt="dick icon">
+            <h4>Git started</h4></div>
     </div>
+
+    <script>
+        $(function () {
+            var x = 0;
+            var y = 0;
+            setInterval(function () {
+                x += 1.16;
+                y -= 1;
+                $('body').css('background-position', x + 'px ' + y + 'px');
+            }, 40);
+        })
+    </script>
 </body>
-<script src="main.js"></script>
 
 </html>
