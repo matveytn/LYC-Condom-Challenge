@@ -1,4 +1,2 @@
 /node_modules/
-/assets/src/js/angular/
-/assets/src/js/jquery/
-/assets/src/js/jquery-ui/
+/assets/src/js/*/
