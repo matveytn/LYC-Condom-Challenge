@@ -1,2 +1,4 @@
 /node_modules/
-/.git/
+/assets/src/js/angular/
+/assets/src/js/jquery/
+/assets/src/js/jquery-ui/

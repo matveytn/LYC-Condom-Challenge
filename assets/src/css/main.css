@@ -1,0 +1,132 @@
+/*  SECTIONS  */
+/* line 3, C:/cygwin64/home/Matt/LYC-Condom-Challenge/assets/src/css/main.scss */
+.section {
+  clear: both;
+  padding: 0px;
+  margin: 0px; }
+
+/*  COLUMN SETUP  */
+/* line 12, C:/cygwin64/home/Matt/LYC-Condom-Challenge/assets/src/css/main.scss */
+.col {
+  display: block;
+  float: left;
+  margin: 1% 0 1% 1.6%; }
+
+/* line 18, C:/cygwin64/home/Matt/LYC-Condom-Challenge/assets/src/css/main.scss */
+.col:first-child {
+  margin-left: 0; }
+
+/*  GROUPING  */
+/* line 26, C:/cygwin64/home/Matt/LYC-Condom-Challenge/assets/src/css/main.scss */
+.group:before,
+.group:after {
+  content: "";
+  display: table; }
+
+/* line 31, C:/cygwin64/home/Matt/LYC-Condom-Challenge/assets/src/css/main.scss */
+.group:after {
+  clear: both; }
+
+/* line 35, C:/cygwin64/home/Matt/LYC-Condom-Challenge/assets/src/css/main.scss */
+.group {
+  zoom: 1;
+  /* For IE 6/7 */ }
+
+/*  GRID OF NINE  */
+/* line 43, C:/cygwin64/home/Matt/LYC-Condom-Challenge/assets/src/css/main.scss */
+.span_9_of_9 {
+  width: 100%; }
+
+/* line 47, C:/cygwin64/home/Matt/LYC-Condom-Challenge/assets/src/css/main.scss */
+.span_8_of_9 {
+  width: 88.71%; }
+
+/* line 51, C:/cygwin64/home/Matt/LYC-Condom-Challenge/assets/src/css/main.scss */
+.span_7_of_9 {
+  width: 77.42%; }
+
+/* line 55, C:/cygwin64/home/Matt/LYC-Condom-Challenge/assets/src/css/main.scss */
+.span_6_of_9 {
+  width: 66.13%; }
+
+/* line 59, C:/cygwin64/home/Matt/LYC-Condom-Challenge/assets/src/css/main.scss */
+.span_5_of_9 {
+  width: 54.84%; }
+
+/* line 63, C:/cygwin64/home/Matt/LYC-Condom-Challenge/assets/src/css/main.scss */
+.span_4_of_9 {
+  width: 43.55%; }
+
+/* line 67, C:/cygwin64/home/Matt/LYC-Condom-Challenge/assets/src/css/main.scss */
+.span_3_of_9 {
+  width: 32.26%; }
+
+/* line 71, C:/cygwin64/home/Matt/LYC-Condom-Challenge/assets/src/css/main.scss */
+.span_2_of_9 {
+  width: 20.97%; }
+
+/* line 75, C:/cygwin64/home/Matt/LYC-Condom-Challenge/assets/src/css/main.scss */
+.span_1_of_9 {
+  width: 9.688%; }
+
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 480px) {
+  /* line 83, C:/cygwin64/home/Matt/LYC-Condom-Challenge/assets/src/css/main.scss */
+  .col {
+    margin: 1% 0 1% 0%; }
+  /* line 94, C:/cygwin64/home/Matt/LYC-Condom-Challenge/assets/src/css/main.scss */
+  .span_1_of_9,
+  .span_2_of_9,
+  .span_3_of_9,
+  .span_4_of_9,
+  .span_5_of_9,
+  .span_6_of_9,
+  .span_7_of_9,
+  .span_8_of_9,
+  .span_9_of_9 {
+    width: 100%; } }
+
+/* Typography */
+/* line 102, C:/cygwin64/home/Matt/LYC-Condom-Challenge/assets/src/css/main.scss */
+* {
+  font-family: 'Work Sans', sans-serif;
+  color: #000; }
+
+/* line 107, C:/cygwin64/home/Matt/LYC-Condom-Challenge/assets/src/css/main.scss */
+h1 {
+  font-size: 40pt;
+  text-transform: uppercase; }
+
+/* line 112, C:/cygwin64/home/Matt/LYC-Condom-Challenge/assets/src/css/main.scss */
+h4 {
+  font-size: 15pt;
+  text-transform: uppercase; }
+
+/* INTRO SCREEN */
+/* line 120, C:/cygwin64/home/Matt/LYC-Condom-Challenge/assets/src/css/main.scss */
+body {
+  background-image: url(../img/condomStart.png);
+  background-repeat: repeat; }
+
+/* line 125, C:/cygwin64/home/Matt/LYC-Condom-Challenge/assets/src/css/main.scss */
+.slogan {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 10%;
+  left: 0;
+  width: 40%;
+  height: 10%;
+  text-align: center; }
+
+/* line 137, C:/cygwin64/home/Matt/LYC-Condom-Challenge/assets/src/css/main.scss */
+.arrow {
+  position: absolute;
+  margin: auto;
+  top: 65%;
+  right: 0;
+  bottom: 0;
+  left: 70%; }
+
+/*# sourceMappingURL=main.css.map */

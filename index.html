@@ -2,27 +2,28 @@
 <html>
 
 <head>
+    <!--Meta-->
     <meta charset="UTF-8">
-    <title>Intro page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>LYC Condom Picker</title>
 
-    <!--    Scripts-->
-    <script src="src/jquery/dist/jquery.min.js"></script>
-
-    <!--    Styling-->
+    <!--Styling-->
     <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/test.css">
+    <link rel="stylesheet" href="">
+
+    <!--Scripts-->
 </head>
 
 <body>
 
-    <div id="intro-title" class="group section">
+    <div class="group section intro-title">
         <div id="slogan" class="col span_9_of_9">
             <h1>Find your perfect fit</h1></div>
     </div>
-    <div id="intro-controls" class="group section">
+    <div class="group section intro-controls">
         <div class="col span_8_of_9">&nbsp;</div>
-        <div class="col span_1_of_9 arrow"><img src="img/icon_rotated.png" alt="dick icon">
-            <h4>Git started</h4></div>
+        <div class="col span_1_of_9 arrow"><img src="img/icon_rotated.png" alt="An arrow, shaped as a dick, pointing to the next page">
+            <h4>Get started</h4></div>
     </div>
 
     <script>
@@ -34,7 +35,8 @@
                 y -= 1;
                 $('body').css('background-position', x + 'px ' + y + 'px');
             }, 40);
-        })
+        });
+
     </script>
 </body>
 
