@@ -164,7 +164,7 @@ h4 {
 /* INTRO SCREEN */
 /* line 120, C:/cygwin64/home/Matt/LYC-Condom-Challenge/assets/src/css/main.scss */
 body {
-  background-image: url(/media/condomStart.png);
+  background-image: url(../../../media/condomStart.png);
   background-repeat: repeat; }
 
 /* line 125, C:/cygwin64/home/Matt/LYC-Condom-Challenge/assets/src/css/main.scss */
