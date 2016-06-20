@@ -167,6 +167,10 @@ body {
   background-image: url(../../../media/condomStart.png);
   background-repeat: repeat; }
 
+a {
+    text-decoration: none;
+}
+
 /* DICK BUILDING SRCEEN*/
 /* line 126, C:/cygwin64/home/Matt/LYC-Condom-Challenge/assets/src/css/main.scss */
 .build_screen {
@@ -214,4 +218,12 @@ body {
   background: #a55400;
   color: #9e0000; }
 
-/*# sourceMappingURL=main.css.map */
+.intro-controls {
+    transition: all .25s ease-in-out;
+    position: absolute;
+    width: 200px;
+    height: 100px;
+}
+.intro-controls:hover {
+    transform: scale(1.1);
+}
