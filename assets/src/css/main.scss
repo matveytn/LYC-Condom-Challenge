@@ -12,7 +12,7 @@
 .col {
     display: block;
     float: left;
-    margin: 1% 0 1% 1.6%;
+//    margin: 1% 0 1% 1.6%;
 }
 
 .col:first-child {
@@ -120,29 +120,10 @@ h4 {
 body {
     background-image: url(../../../media/condomStart.png);
     background-repeat: repeat;
-}
+//    background-size: cover;
 
-#slogan {
-    position: absolute;
-    margin: auto;
-    top: 0;
-    right: 0;
-    bottom: 10%;
-    left: 0;
-    width: 40%;
-    height: 10%;
-    text-align: center;
+    overflow: hidden;
 }
-
-.arrow {
-    position: absolute;
-    margin: auto;
-    top: 65%;
-    right: 0;
-    bottom: 0;
-    left: 70%;
-}
-
 
 /* make our pages be full width and full height */
 /* positioned absolutely so that the pages can overlap each other as they enter and leave */

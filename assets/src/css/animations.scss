@@ -87,14 +87,72 @@
 }
 
 
+/* move from / to  */
+
+@-webkit-keyframes moveToLeft {
+    from {}
+    to {
+        -webkit-transform: translateX(-100%);
+    }
+}
+
+@keyframes moveToLeft {
+    from {}
+    to {
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+    }
+}
+
+@-webkit-keyframes moveFromLeft {
+    from {
+        -webkit-transform: translateX(-100%);
+    }
+}
+
+@keyframes moveFromLeft {
+    from {
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+    }
+}
+
+@-webkit-keyframes moveToRight {
+    from {}
+    to {
+        -webkit-transform: translateX(100%);
+    }
+}
+
+@keyframes moveToRight {
+    from {}
+    to {
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+    }
+}
+
+@-webkit-keyframes moveFromRight {
+    from {
+        -webkit-transform: translateX(100%);
+    }
+}
+
+@keyframes moveFromRight {
+    from {
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+    }
+}
+
+
 /*Applying animations to pages*/
 
-//.ng-enter {
-//    animation: scaleUp 0.5s both ease-in;
-//    z-index: 8888;
-//}
-
+.ng-enter {
+    animation: moveFromRight .6s ease both;
+    z-index: 8888;
+}
 .ng-leave {
-    animation: slideOutLeft 0.5s both ease-in;
+    animation: moveToLeft .6s ease both;
     z-index: 9999;
 }
