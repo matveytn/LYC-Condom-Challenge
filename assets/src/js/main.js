@@ -7,3 +7,29 @@ $(function () {
         $('body').css('background-position', x + 'px ' + y + 'px');
     }, 40);
 });
+
+//Building screen buttons and toggles
+
+$(function () {
+    $("input[type=submit]")
+        .button()
+        .click(function (event) {
+            event.preventDefault();
+        });
+});
+
+
+$(function () {
+    $("#circum").buttonset();
+});
+
+$(function () {
+    $("#dialog-message").dialog({
+        modal: true,
+        buttons: {
+            Ok: function () {
+                $(this).dialog("close");
+            }
+        }
+    });
+});

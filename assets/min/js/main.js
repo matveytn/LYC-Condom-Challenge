@@ -1,1 +1,1 @@
-$(function(){var n=0,o=0;setInterval(function(){n+=1.16,o-=1,$("body").css("background-position",n+"px "+o+"px")},40)});
+$(function(){var t=0,n=0;setInterval(function(){t+=1.16,n-=1,$("body").css("background-position",t+"px "+n+"px")},40)}),$(function(){$("input[type=submit]").button().click(function(t){t.preventDefault()})}),$(function(){$("#circum").buttonset()}),$(function(){$("#dialog-message").dialog({modal:!0,buttons:{Ok:function(){$(this).dialog("close")}}})});
