@@ -1,79 +1,62 @@
 /*  SECTIONS  */
-/* line 3, C:/cygwin64/home/Matt/LYC-Condom-Challenge/assets/src/css/main.scss */
 .section {
   clear: both;
   padding: 0px;
   margin: 0px; }
 
 /*  COLUMN SETUP  */
-/* line 12, C:/cygwin64/home/Matt/LYC-Condom-Challenge/assets/src/css/main.scss */
 .col {
   display: block;
   float: left; }
 
-/* line 18, C:/cygwin64/home/Matt/LYC-Condom-Challenge/assets/src/css/main.scss */
 .col:first-child {
   margin-left: 0; }
 
 /*  GROUPING  */
-/* line 26, C:/cygwin64/home/Matt/LYC-Condom-Challenge/assets/src/css/main.scss */
 .group:before,
 .group:after {
   content: "";
   display: table; }
 
-/* line 31, C:/cygwin64/home/Matt/LYC-Condom-Challenge/assets/src/css/main.scss */
 .group:after {
   clear: both; }
 
-/* line 35, C:/cygwin64/home/Matt/LYC-Condom-Challenge/assets/src/css/main.scss */
 .group {
   zoom: 1;
   /* For IE 6/7 */ }
 
 /*  GRID OF NINE  */
-/* line 43, C:/cygwin64/home/Matt/LYC-Condom-Challenge/assets/src/css/main.scss */
 .span_9_of_9 {
   width: 100%; }
 
-/* line 47, C:/cygwin64/home/Matt/LYC-Condom-Challenge/assets/src/css/main.scss */
 .span_8_of_9 {
   width: 88.71%; }
 
-/* line 51, C:/cygwin64/home/Matt/LYC-Condom-Challenge/assets/src/css/main.scss */
 .span_7_of_9 {
   width: 77.42%; }
 
-/* line 55, C:/cygwin64/home/Matt/LYC-Condom-Challenge/assets/src/css/main.scss */
 .span_6_of_9 {
   width: 66.13%; }
 
-/* line 59, C:/cygwin64/home/Matt/LYC-Condom-Challenge/assets/src/css/main.scss */
 .span_5_of_9 {
   width: 54.84%; }
 
-/* line 63, C:/cygwin64/home/Matt/LYC-Condom-Challenge/assets/src/css/main.scss */
 .span_4_of_9 {
   width: 43.55%; }
 
-/* line 67, C:/cygwin64/home/Matt/LYC-Condom-Challenge/assets/src/css/main.scss */
 .span_3_of_9 {
   width: 32.26%; }
 
-/* line 71, C:/cygwin64/home/Matt/LYC-Condom-Challenge/assets/src/css/main.scss */
 .span_2_of_9 {
   width: 20.97%; }
 
-/* line 75, C:/cygwin64/home/Matt/LYC-Condom-Challenge/assets/src/css/main.scss */
 .span_1_of_9 {
   width: 9.688%; }
 
 /*  GO FULL WIDTH BELOW 480 PIXELS */
 @media only screen and (max-width: 480px) {
-  /* line 83, C:/cygwin64/home/Matt/LYC-Condom-Challenge/assets/src/css/main.scss */
   .col {
     margin: 1% 0 1% 0%; }
-  /* line 94, C:/cygwin64/home/Matt/LYC-Condom-Challenge/assets/src/css/main.scss */
   .span_1_of_9,
   .span_2_of_9,
   .span_3_of_9,
@@ -86,23 +69,19 @@
     width: 100%; } }
 
 /* Typography */
-/* line 102, C:/cygwin64/home/Matt/LYC-Condom-Challenge/assets/src/css/main.scss */
 * {
   font-family: 'Work Sans', sans-serif;
   color: #000; }
 
-/* line 107, C:/cygwin64/home/Matt/LYC-Condom-Challenge/assets/src/css/main.scss */
 h1 {
   font-size: 40pt;
   text-transform: uppercase; }
 
-/* line 112, C:/cygwin64/home/Matt/LYC-Condom-Challenge/assets/src/css/main.scss */
 h4 {
   font-size: 15pt;
   text-transform: uppercase; }
 
 /* INTRO SCREEN */
-/* line 120, C:/cygwin64/home/Matt/LYC-Condom-Challenge/assets/src/css/main.scss */
 body {
   background-image: url(../../../media/condomStart.png);
   background-repeat: repeat;
@@ -110,7 +89,6 @@ body {
 
 /* make our pages be full width and full height */
 /* positioned absolutely so that the pages can overlap each other as they enter and leave */
-/* line 130, C:/cygwin64/home/Matt/LYC-Condom-Challenge/assets/src/css/main.scss */
 .page {
   bottom: 0;
   padding-top: 200px;
@@ -119,34 +97,27 @@ body {
   top: 0;
   width: 100%; }
 
-/* line 139, C:/cygwin64/home/Matt/LYC-Condom-Challenge/assets/src/css/main.scss */
 .page h1 {
   font-size: 60px; }
 
-/* line 140, C:/cygwin64/home/Matt/LYC-Condom-Challenge/assets/src/css/main.scss */
 .page a {
   margin-top: 50px; }
 
 /* PAGES (specific colors for each page)
 ============================================================================= */
-/* line 145, C:/cygwin64/home/Matt/LYC-Condom-Challenge/assets/src/css/main.scss */
 .page-construction {
   background: #E59400;
   color: #a55400; }
 
-/* line 146, C:/cygwin64/home/Matt/LYC-Condom-Challenge/assets/src/css/main.scss */
 .page-q1 {
   background: #ffa6bb;
   color: #9e0000; }
 
-/* line 147, C:/cygwin64/home/Matt/LYC-Condom-Challenge/assets/src/css/main.scss */
 .page-q2 {
   background: #00D0BC;
   color: #E59400; }
 
-/* line 148, C:/cygwin64/home/Matt/LYC-Condom-Challenge/assets/src/css/main.scss */
 .page-finish {
   background: #a55400;
   color: #9e0000; }
 
-/*# sourceMappingURL=main.css.map */

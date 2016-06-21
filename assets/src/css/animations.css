@@ -91,14 +91,10 @@
     transform: translateX(100%); } }
 
 /*Applying animations to pages*/
-/* line 151, C:/cygwin64/home/Matt/LYC-Condom-Challenge/assets/src/css/animations.scss */
 .ng-enter {
   animation: moveFromRight 0.6s ease both;
   z-index: 8888; }
 
-/* line 155, C:/cygwin64/home/Matt/LYC-Condom-Challenge/assets/src/css/animations.scss */
 .ng-leave {
   animation: moveToLeft 0.6s ease both;
   z-index: 9999; }
-
-/*# sourceMappingURL=animations.css.map */

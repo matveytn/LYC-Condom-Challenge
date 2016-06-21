@@ -40,26 +40,26 @@ animateApp.config(function ($routeProvider) {
 
 //Controllers==============================
 //home page controller
-animateApp.controller('homeController', function($scope) {
+animateApp.controller('homeController', function ($scope) {
     $scope.pageClass = "page-home";
 });
 
 //construction page controller
-animateApp.controller('constructionController', function($scope) {
+animateApp.controller('constructionController', function ($scope) {
     $scope.pageClass = "page-construction";
 });
 
 //question 1 controller
-animateApp.controller('q1Controller', function($scope) {
+animateApp.controller('q1Controller', function ($scope) {
     $scope.pageClass = "page-q1";
 });
 
 //question 2 controller
-animateApp.controller('q2Controller', function($scope) {
+animateApp.controller('q2Controller', function ($scope) {
     $scope.pageClass = "page-q2";
 });
 
 //final page controller
-animateApp.controller('finsihController', function($scope) {
+animateApp.controller('finsihController', function ($scope) {
     $scope.pageClass = "page-finish";
 });
