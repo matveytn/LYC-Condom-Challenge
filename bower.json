@@ -6,6 +6,5 @@
         "jquery-ui": "~1.11.3",
         "angular-animate": "~1.5.8-build.4896+sha.d406a15",
         "angular-route": "~1.5.8-build.4896+sha.d406a15"
-    },
-    "devDependencies": {}
+    }
 }

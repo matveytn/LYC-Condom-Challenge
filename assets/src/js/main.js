@@ -23,13 +23,4 @@ $(function () {
     $("#circum").buttonset();
 });
 
-$(function () {
-    $("#dialog-message").dialog({
-        modal: true,
-        buttons: {
-            Ok: function () {
-                $(this).dialog("close");
-            }
-        }
-    });
-});
+$("#demo01").animatedModal();

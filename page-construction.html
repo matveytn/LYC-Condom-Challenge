@@ -11,10 +11,6 @@
  * Next screen button, when pressed a pop up appears:
         “Using the right rubber makes a massive difference, and in New Zealand we’re lucky enough to have a range of sizes funded by Pharmac. This means that once you’ve found the size for you, you can get them at a heavily discounted price from your nurse or doctor.”
 -->
-    <script src="assets/src/js/jquery/dist/jquery.js"></script>
-    <script src="assets/src/js/jquery-ui/jquery-ui.js"></script>
-
-    <script src="assets/src/js/main.js"></script>
 
 <div class="section group">
     <div class="col span_6_of_9 build_screen">
@@ -35,13 +31,19 @@
     </div>
 </div>
 
-<div id="dialog-message" title="Download complete">
-    <p>
-        <span class="ui-icon ui-icon-circle-check" style="float:left; margin:0 7px 50px 0;"></span> IT ISNT WORKINGYour files have downloaded successfully into the My Downloads folder.
-    </p>
-    <p>
-        Currently using <b>36% of your storage space</b>.
-    </p>
+<!--Call your modal-->
+<a animated-modal id="demo01" href="#animatedModal">DEMO01</a>
+
+<!--DEMO01-->
+<div id="animatedModal">
+    <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
+    <div class="close-animatedModal">
+        CLOSE MODAL
+    </div>
+
+    <div class="modal-content">
+        <!--Your modal content goes here-->
+    </div>
 </div>
 
 <a href="#q1">NEXT</a>
