@@ -2,7 +2,10 @@
 
 <!--TODO-->
 <!--
- * Penis bulding div
+ * Penis building:
+        - Make penis vertical
+        - Link penis colour to circumcision toggle
+
  * 2 other skin colour toggles, penis head stays the same
 
  * Cicrcumcision option, windows pop up when toggled:
@@ -13,19 +16,35 @@
 -->
 <script src="assets/src/js/main.js"></script>
 <div class="section group">
-    <div class="col span_6_of_9 build_screen">
+    <div class="col span_6_of_9 build_screen" id="build-stage">
+        <!-- RENDER BODY -->
 
+        <div id="container">
+            <div id="image">
+                <div id="measurements"></div>
+                <img src="media/Dicks/Uncircumsised_2.png" />
+                <div class="ui-resizable-handle ui-resizable-s" id="sgrip"></div>
+                <div class="ui-resizable-handle ui-resizable-e" id="egrip"></div>
+            </div>
+        </div>
+
+            <!-- RENDER BODY END -->
     </div>
     <div class="col span__3_of_9">
-        <input type="submit" value="White colour">
-        <input type="submit" value="Yellow colour">
-        <input type="submit" value="Brown colour">
         <form>
+            <div id="peniscolour">
+                <input type="radio" id="colour1" name="radio">
+                <label for="colour1">Pale</label>
+                <input type="radio" id="colour2" name="radio" checked="checked">
+                <label for="colour2">Medium</label>
+                <input type="radio" id="colour3" name="radio">
+                <label for="colour3">Dark</label>
+            </div>
             <div id="circum">
-                <input type="radio" id="radio1" name="radio">
-                <label for="radio1">YES</label>
-                <input type="radio" id="radio2" name="radio" checked="checked">
-                <label for="radio2">NO</label>
+                <input type="radio" id="circum1" name="radio">
+                <label for="circum1">Circumcised: YES</label>
+                <input type="radio" id="circum2" name="radio" checked="checked">
+                <label for="circum2">Circumcised: NO</label>
             </div>
         </form>
     </div>

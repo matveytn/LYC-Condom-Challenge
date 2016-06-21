@@ -1,54 +1,3 @@
-/* leaving animations ----------------------------------------- */
-/* rotate and fall */
-@keyframes rotateFall {
-  0% {
-    transform: rotateZ(0deg); }
-  20% {
-    transform: rotateZ(10deg);
-    animation-timing-function: ease-out; }
-  40% {
-    transform: rotateZ(17deg); }
-  60% {
-    transform: rotateZ(16deg); }
-  100% {
-    transform: translateY(100%) rotateZ(17deg); } }
-
-/* slide in from the bottom */
-@keyframes slideOutLeft {
-  to {
-    transform: translateX(-100%); } }
-
-@keyframes slideOutRight {
-  to {
-    transform: translateX(100%); } }
-
-/* rotate out newspaper */
-@keyframes rotateOutNewspaper {
-  to {
-    transform: translateZ(-3000px) rotateZ(360deg);
-    opacity: 0; } }
-
-/* entering animations --------------------------------------- */
-/* scale up */
-@keyframes scaleUp {
-  from {
-    opacity: 0.3;
-    -webkit-transform: scale(0.8); } }
-
-/* slide in from the right */
-@keyframes slideInRight {
-  from {
-    transform: translateX(100%); }
-  to {
-    transform: translateX(0); } }
-
-/* slide in from the bottom */
-@keyframes slideInUp {
-  from {
-    transform: translateY(100%); }
-  to {
-    transform: translateY(0); } }
-
 /* move from / to  */
 @-webkit-keyframes moveToLeft {
   from { }
@@ -61,26 +10,6 @@
     -webkit-transform: translateX(-100%);
     transform: translateX(-100%); } }
 
-@-webkit-keyframes moveFromLeft {
-  from {
-    -webkit-transform: translateX(-100%); } }
-
-@keyframes moveFromLeft {
-  from {
-    -webkit-transform: translateX(-100%);
-    transform: translateX(-100%); } }
-
-@-webkit-keyframes moveToRight {
-  from { }
-  to {
-    -webkit-transform: translateX(100%); } }
-
-@keyframes moveToRight {
-  from { }
-  to {
-    -webkit-transform: translateX(100%);
-    transform: translateX(100%); } }
-
 @-webkit-keyframes moveFromRight {
   from {
     -webkit-transform: translateX(100%); } }
@@ -91,183 +20,265 @@
     transform: translateX(100%); } }
 
 /*Applying animations to pages*/
-/* line 151, C:/cygwin64/home/Matt/LYC-Condom-Challenge/assets/src/css/animations.scss */
 .ng-enter {
   animation: moveFromRight 0.6s ease both;
   z-index: 8888; }
 
-/* line 155, C:/cygwin64/home/Matt/LYC-Condom-Challenge/assets/src/css/animations.scss */
 .ng-leave {
   animation: moveToLeft 0.6s ease both;
   z-index: 9999; }
 
-/*# sourceMappingURL=animations.css.map */
 /*  SECTIONS  */
-/* line 3, C:/cygwin64/home/Matt/LYC-Condom-Challenge/assets/src/css/main.scss */
+
 .section {
-  clear: both;
-  padding: 0px;
-  margin: 0px; }
-
-/*  COLUMN SETUP  */
-/* line 12, C:/cygwin64/home/Matt/LYC-Condom-Challenge/assets/src/css/main.scss */
-.col {
-  display: block;
-  float: left; }
-
-/* line 18, C:/cygwin64/home/Matt/LYC-Condom-Challenge/assets/src/css/main.scss */
-.col:first-child {
-  margin-left: 0; }
-
-/*  GROUPING  */
-/* line 26, C:/cygwin64/home/Matt/LYC-Condom-Challenge/assets/src/css/main.scss */
-.group:before,
-.group:after {
-  content: "";
-  display: table; }
-
-/* line 31, C:/cygwin64/home/Matt/LYC-Condom-Challenge/assets/src/css/main.scss */
-.group:after {
-  clear: both; }
-
-/* line 35, C:/cygwin64/home/Matt/LYC-Condom-Challenge/assets/src/css/main.scss */
-.group {
-  zoom: 1;
-  /* For IE 6/7 */ }
-
-/*  GRID OF NINE  */
-/* line 43, C:/cygwin64/home/Matt/LYC-Condom-Challenge/assets/src/css/main.scss */
-.span_9_of_9 {
-  width: 100%; }
-
-/* line 47, C:/cygwin64/home/Matt/LYC-Condom-Challenge/assets/src/css/main.scss */
-.span_8_of_9 {
-  width: 88.71%; }
-
-/* line 51, C:/cygwin64/home/Matt/LYC-Condom-Challenge/assets/src/css/main.scss */
-.span_7_of_9 {
-  width: 77.42%; }
-
-/* line 55, C:/cygwin64/home/Matt/LYC-Condom-Challenge/assets/src/css/main.scss */
-.span_6_of_9 {
-  width: 66.13%; }
-
-/* line 59, C:/cygwin64/home/Matt/LYC-Condom-Challenge/assets/src/css/main.scss */
-.span_5_of_9 {
-  width: 54.84%; }
-
-/* line 63, C:/cygwin64/home/Matt/LYC-Condom-Challenge/assets/src/css/main.scss */
-.span_4_of_9 {
-  width: 43.55%; }
-
-/* line 67, C:/cygwin64/home/Matt/LYC-Condom-Challenge/assets/src/css/main.scss */
-.span_3_of_9 {
-  width: 32.26%; }
-
-/* line 71, C:/cygwin64/home/Matt/LYC-Condom-Challenge/assets/src/css/main.scss */
-.span_2_of_9 {
-  width: 20.97%; }
-
-/* line 75, C:/cygwin64/home/Matt/LYC-Condom-Challenge/assets/src/css/main.scss */
-.span_1_of_9 {
-  width: 9.688%; }
-
-/*  GO FULL WIDTH BELOW 480 PIXELS */
-@media only screen and (max-width: 480px) {
-  /* line 83, C:/cygwin64/home/Matt/LYC-Condom-Challenge/assets/src/css/main.scss */
-  .col {
-    margin: 1% 0 1% 0%; }
-  /* line 94, C:/cygwin64/home/Matt/LYC-Condom-Challenge/assets/src/css/main.scss */
-  .span_1_of_9,
-  .span_2_of_9,
-  .span_3_of_9,
-  .span_4_of_9,
-  .span_5_of_9,
-  .span_6_of_9,
-  .span_7_of_9,
-  .span_8_of_9,
-  .span_9_of_9 {
-    width: 100%; } }
-
-/* Typography */
-/* line 102, C:/cygwin64/home/Matt/LYC-Condom-Challenge/assets/src/css/main.scss */
-* {
-  font-family: 'Work Sans', sans-serif;
-  color: #000; }
-
-/* line 107, C:/cygwin64/home/Matt/LYC-Condom-Challenge/assets/src/css/main.scss */
-h1 {
-  font-size: 40pt;
-  text-transform: uppercase; }
-
-/* line 112, C:/cygwin64/home/Matt/LYC-Condom-Challenge/assets/src/css/main.scss */
-h4 {
-  font-size: 15pt;
-  text-transform: uppercase; }
-
-/* INTRO SCREEN */
-/* line 120, C:/cygwin64/home/Matt/LYC-Condom-Challenge/assets/src/css/main.scss */
-body {
-  background-image: url(../../../media/condomStart.png);
-  background-repeat: repeat; }
-
-a {
-    text-decoration: none;
+    clear: both;
+    padding: 0px;
+    margin: 0px;
 }
 
-/* DICK BUILDING SRCEEN*/
-/* line 126, C:/cygwin64/home/Matt/LYC-Condom-Challenge/assets/src/css/main.scss */
-.build_screen {
-  border: 1px solid black;
-  height: 400px; }
+
+/*  COLUMN SETUP  */
+
+.col {
+    display: block;
+    float: left;
+}
+
+.col:first-child {
+    margin-left: 0;
+}
+
+
+/*  GROUPING  */
+
+.group:before,
+.group:after {
+    content: "";
+    display: table;
+}
+
+.group:after {
+    clear: both;
+}
+
+.group {
+    zoom: 1;
+    /* For IE 6/7 */
+}
+
+
+/*  GRID OF NINE  */
+
+.span_9_of_9 {
+    width: 100%;
+}
+
+.span_8_of_9 {
+    width: 88.71%;
+}
+
+.span_7_of_9 {
+    width: 77.42%;
+}
+
+.span_6_of_9 {
+    width: 66.13%;
+}
+
+.span_5_of_9 {
+    width: 54.84%;
+}
+
+.span_4_of_9 {
+    width: 43.55%;
+}
+
+.span_3_of_9 {
+    width: 32.26%;
+}
+
+.span_2_of_9 {
+    width: 20.97%;
+}
+
+.span_1_of_9 {
+    width: 9.688%;
+}
+
+
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+    .col {
+        margin: 1% 0 1% 0%;
+    }
+    .span_1_of_9,
+    .span_2_of_9,
+    .span_3_of_9,
+    .span_4_of_9,
+    .span_5_of_9,
+    .span_6_of_9,
+    .span_7_of_9,
+    .span_8_of_9,
+    .span_9_of_9 {
+        width: 100%;
+    }
+}
+
+
+/* Typography */
+
+*,
+h1,
+h2,
+h3,
+h4,
+p,
+a {
+    font-family: 'Work Sans', sans-serif;
+    color: #000;
+}
+
+h1 {
+    font-size: 50pt;
+    font-weight: 600;
+    /*    text-transform: uppercase;*/
+    color: rgb(44, 194, 216);
+}
+
+h2 {
+    font-size: 40pt;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 17pt;
+
+}
+
+p {
+    font-size: 14pt;
+    color: #fff;
+    font-weight: 500;
+}
+
+
+/* INTRO SCREEN */
+
+body {
+    background-color: rgb(21, 22, 24);
+    background-image: url(../../../media/condomStartOpacity.png);
+    background-size: 300px 260px;
+    background-repeat: repeat;
+    margin: auto;
+    overflow-x: hidden;
+}
+
+.intro-controls {
+    width: 42%;
+}
+
+.group {
+    margin: 0 auto;
+}
 
 /* make our pages be full width and full height */
+
+
 /* positioned absolutely so that the pages can overlap each other as they enter and leave */
-/* line 136, C:/cygwin64/home/Matt/LYC-Condom-Challenge/assets/src/css/main.scss */
+
 .page {
-  bottom: 0;
-  padding-top: 200px;
-  position: absolute;
-  text-align: center;
-  top: 0;
-  width: 100%; }
+    bottom: 0;
+    padding-top: 10%;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    /*    overflow: hidden;*/
+}
 
-/* line 145, C:/cygwin64/home/Matt/LYC-Condom-Challenge/assets/src/css/main.scss */
-.page h1 {
-  font-size: 60px; }
-
-/* line 146, C:/cygwin64/home/Matt/LYC-Condom-Challenge/assets/src/css/main.scss */
 .page a {
-  margin-top: 50px; }
+    margin-top: 50px;
+}
+
 
 /* PAGES (specific colors for each page)
 ============================================================================= */
-/* line 151, C:/cygwin64/home/Matt/LYC-Condom-Challenge/assets/src/css/main.scss */
-.page-construction {
-  background: #E59400;
-  color: #a55400; }
 
-/* line 152, C:/cygwin64/home/Matt/LYC-Condom-Challenge/assets/src/css/main.scss */
-.page-q1 {
-  background: #ffa6bb;
-  color: #9e0000; }
+.start_btn {
+/*    position: relative;*/
+/*      left: 70%;*/
 
-/* line 153, C:/cygwin64/home/Matt/LYC-Condom-Challenge/assets/src/css/main.scss */
-.page-q2 {
-  background: #00D0BC;
-  color: #E59400; }
-
-/* line 154, C:/cygwin64/home/Matt/LYC-Condom-Challenge/assets/src/css/main.scss */
-.page-finish {
-  background: #a55400;
-  color: #9e0000; }
-
-.intro-controls {
-    transition: all .25s ease-in-out;
-    position: absolute;
-    width: 200px;
-    height: 100px;
+    margin: 2%;
+    padding: 0 15px;
+/*    line-height: 1.8;*/
+    appearance: none;
+    box-shadow: none;
+    border-radius: 4pt;
+    color: #fff;
+    background-color: rgb(44, 194, 216);
+    border: none;
 }
-.intro-controls:hover {
-    transform: scale(1.1);
+
+.start_btn h3 {
+    color: #fff;
+}
+
+.start_btn:focus {
+    outline: none
+}
+
+.page-construction {
+    background: yellow;
+}
+
+/*Penis construction stage*/
+
+#build-stage {
+    padding: 220px 0px;
+    border: 3px solid;
+    border-color: #fff;
+    background: #1e51a8;
+    overflow: hidden;
+}
+
+#measurements {
+    position: relative;
+    text-align: center;
+    color: #fff;
+    padding-bottom: 10px;
+    margin: 0px auto;
+}
+
+#container {
+    width: 80%;
+    height: 225px;
+}
+
+#image {
+    vertical-align: middle;
+    padding: 0 0 30px 0;
+}
+
+#image img {
+    height: 100%;
+    width: 100%
+}
+
+#sgrip,
+#egrip {
+    width: 32px;
+    height: 32px;
+}
+
+#sgrip {
+    bottom: -35px;
+    left: 50%;
+    background-image: url(../../../media/UI/girthhandle.png);
+}
+
+#egrip {
+    right: -65px;
+    top: 40%;
+    background-image: url(../../../media/UI/lengthhandle.png);
 }

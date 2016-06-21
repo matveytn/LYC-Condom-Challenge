@@ -201,3 +201,54 @@ body {
 .page-construction {
     background: yellow;
 }
+
+/*Penis construction stage*/
+
+#build-stage {
+    padding: 220px 0px;
+    border: 3px solid;
+    border-color: #fff;
+    background: #1e51a8;
+    overflow: hidden;
+}
+
+#measurements {
+    position: relative;
+    text-align: center;
+    color: #fff;
+    padding-bottom: 10px;
+    margin: 0px auto;
+}
+
+#container {
+    width: 80%;
+    height: 225px;
+}
+
+#image {
+    vertical-align: middle;
+    padding: 0 0 30px 0;
+}
+
+#image img {
+    height: 100%;
+    width: 100%
+}
+
+#sgrip,
+#egrip {
+    width: 32px;
+    height: 32px;
+}
+
+#sgrip {
+    bottom: -35px;
+    left: 50%;
+    background-image: url(../../../media/UI/girthhandle.png);
+}
+
+#egrip {
+    right: -65px;
+    top: 40%;
+    background-image: url(../../../media/UI/lengthhandle.png);
+}
