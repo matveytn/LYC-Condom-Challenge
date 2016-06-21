@@ -1,123 +1,199 @@
 /*  SECTIONS  */
+
 .section {
-  clear: both;
-  padding: 0px;
-  margin: 0px; }
+    clear: both;
+    padding: 0px;
+    margin: 0px;
+}
+
 
 /*  COLUMN SETUP  */
+
 .col {
-  display: block;
-  float: left; }
+    display: block;
+    float: left;
+}
 
 .col:first-child {
-  margin-left: 0; }
+    margin-left: 0;
+}
+
 
 /*  GROUPING  */
+
 .group:before,
 .group:after {
-  content: "";
-  display: table; }
+    content: "";
+    display: table;
+}
 
 .group:after {
-  clear: both; }
+    clear: both;
+}
 
 .group {
-  zoom: 1;
-  /* For IE 6/7 */ }
+    zoom: 1;
+    /* For IE 6/7 */
+}
+
 
 /*  GRID OF NINE  */
+
 .span_9_of_9 {
-  width: 100%; }
+    width: 100%;
+}
 
 .span_8_of_9 {
-  width: 88.71%; }
+    width: 88.71%;
+}
 
 .span_7_of_9 {
-  width: 77.42%; }
+    width: 77.42%;
+}
 
 .span_6_of_9 {
-  width: 66.13%; }
+    width: 66.13%;
+}
 
 .span_5_of_9 {
-  width: 54.84%; }
+    width: 54.84%;
+}
 
 .span_4_of_9 {
-  width: 43.55%; }
+    width: 43.55%;
+}
 
 .span_3_of_9 {
-  width: 32.26%; }
+    width: 32.26%;
+}
 
 .span_2_of_9 {
-  width: 20.97%; }
+    width: 20.97%;
+}
 
 .span_1_of_9 {
-  width: 9.688%; }
+    width: 9.688%;
+}
+
 
 /*  GO FULL WIDTH BELOW 480 PIXELS */
+
 @media only screen and (max-width: 480px) {
-  .col {
-    margin: 1% 0 1% 0%; }
-  .span_1_of_9,
-  .span_2_of_9,
-  .span_3_of_9,
-  .span_4_of_9,
-  .span_5_of_9,
-  .span_6_of_9,
-  .span_7_of_9,
-  .span_8_of_9,
-  .span_9_of_9 {
-    width: 100%; } }
+    .col {
+        margin: 1% 0 1% 0%;
+    }
+    .span_1_of_9,
+    .span_2_of_9,
+    .span_3_of_9,
+    .span_4_of_9,
+    .span_5_of_9,
+    .span_6_of_9,
+    .span_7_of_9,
+    .span_8_of_9,
+    .span_9_of_9 {
+        width: 100%;
+    }
+}
+
 
 /* Typography */
-* {
-  font-family: 'Work Sans', sans-serif;
-  color: #000; }
+
+*,
+h1,
+h2,
+h3,
+h4,
+p,
+a {
+    font-family: 'Work Sans', sans-serif;
+    color: #000;
+}
 
 h1 {
-  font-size: 40pt;
-  text-transform: uppercase; }
+    font-size: 50pt;
+    font-weight: 600;
+    /*    text-transform: uppercase;*/
+    color: rgb(44, 194, 216);
+}
 
-h4 {
-  font-size: 15pt;
-  text-transform: uppercase; }
+h2 {
+    font-size: 40pt;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 17pt;
+
+}
+
+p {
+    font-size: 14pt;
+    color: #fff;
+    font-weight: 500;
+}
+
 
 /* INTRO SCREEN */
+
 body {
-  background-image: url(../../../media/condomStart.png);
-  background-repeat: repeat;
-  overflow: hidden; }
+    background-color: rgb(21, 22, 24);
+    background-image: url(../../../media/condomStartOpacity.png);
+    background-size: 300px 260px;
+    background-repeat: repeat;
+    filter: alpha(Opacity=90);
+    opacity: 0.9;
+}
+
+.intro-controls {
+    width: 42%;
+}
+
+.group {
+    margin: 0 auto;
+}
 
 /* make our pages be full width and full height */
-/* positioned absolutely so that the pages can overlap each other as they enter and leave */
-.page {
-  bottom: 0;
-  padding-top: 200px;
-  position: absolute;
-  text-align: center;
-  top: 0;
-  width: 100%; }
 
-.page h1 {
-  font-size: 60px; }
+
+/* positioned absolutely so that the pages can overlap each other as they enter and leave */
+
+.page {
+    bottom: 0;
+    padding-top: 10%;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    /*    overflow: hidden;*/
+}
 
 .page a {
-  margin-top: 50px; }
+    margin-top: 50px;
+}
+
 
 /* PAGES (specific colors for each page)
 ============================================================================= */
-.page-construction {
-  background: #E59400;
-  color: #a55400; }
 
-.page-q1 {
-  background: #ffa6bb;
-  color: #9e0000; }
+.start_btn {
+/*    position: relative;*/
+/*      left: 70%;*/
 
-.page-q2 {
-  background: #00D0BC;
-  color: #E59400; }
+    margin: 2%;
+    padding: 0 15px;
+/*    line-height: 1.8;*/
+    appearance: none;
+    box-shadow: none;
+    border-radius: 4pt;
+    color: #fff;
+    background-color: rgb(44, 194, 216);
+    border: none;
+}
 
-.page-finish {
-  background: #a55400;
-  color: #9e0000; }
+.start_btn h3 {
+    color: #fff;
+}
 
+.start_btn:focus {
+    outline: none
+}
