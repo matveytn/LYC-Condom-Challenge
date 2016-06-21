@@ -23,4 +23,8 @@ $(function () {
     $("#circum").buttonset();
 });
 
-$("#demo01").animatedModal();
+$("#demo01").animatedModal({
+    animatedIn: 'lightSpeedIn',
+    animatedOut: 'bounceOutDown',
+    color: '#3498db'
+});
