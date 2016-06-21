@@ -140,8 +140,8 @@ body {
     background-image: url(../../../media/condomStartOpacity.png);
     background-size: 300px 260px;
     background-repeat: repeat;
-    filter: alpha(Opacity=90);
-    opacity: 0.9;
+    margin: auto;
+    overflow-x: hidden;
 }
 
 .intro-controls {
@@ -196,4 +196,8 @@ body {
 
 .start_btn:focus {
     outline: none
+}
+
+.page-construction {
+    background: black;
 }
