@@ -23,43 +23,16 @@ $(function () {
     $("#circum").buttonset();
 });
 
-
-//function showDialog(modal) {
-//    if (modal) {
-//        $("#circum1").animatedModal({
-//            animatedIn: 'lightSpeedIn',
-//            animatedOut: 'bounceOutDown',
-//            color: '#3498db'
-//        });
-//        sessionStorage["PopupShown"] = 'yes';
-//    } else {
-//        console.log('hehe');
-//    }
-//}
-
-
-//
-//$(document).ready(function () {
-//    sessionStorage["PopupShown"] = 'no';
-//});
-
-//$(".close-animatedModal").click(function () {
-//    sessionStorage["PopupShown"] = 'yes';
-//});
-
-$(document).ready(function () {
-//    sessionStorage["PopupShown"] = 'no';
-//    if (sessionStorage["PopupShown"] = 'yes') {
-//        console.log('hehe');
-//    } else {
-        $("#circum1").animatedModal({
-            animatedIn: 'lightSpeedIn',
-            animatedOut: 'bounceOutDown',
-            color: '#3498db'
-        });
-//    }
-});
-
+$('#circum1').one('click', function () {
+    swal({
+        title: 'Confirm',
+        text: 'Are you sure to delete this message?',
+        type: 'warning',
+        showCancelButton: true,
+        confirmButtonText: 'Yes, sir',
+        cancelButtonText: 'Not at all'
+    });
+})
 
 //Building screen penis resize
 
