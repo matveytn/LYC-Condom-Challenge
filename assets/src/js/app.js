@@ -1,5 +1,5 @@
 //Define an application and pull ngRoute and ngAnimate
-var animateApp = angular.module('animateApp', ['ngRoute', 'ngAnimate', 'angular-animated-modal']);
+var animateApp = angular.module('animateApp', ['ngRoute', 'ngAnimate']);
 
 
 //Routing==================================

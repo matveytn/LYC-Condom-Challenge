@@ -24,14 +24,26 @@ $(function () {
 });
 
 $('#circum1').one('click', function () {
-    swal({
-        title: 'Confirm',
-        text: 'Are you sure to delete this message?',
-        type: 'warning',
-        showCancelButton: true,
-        confirmButtonText: 'Yes, sir',
-        cancelButtonText: 'Not at all'
-    });
+    swal("Circumcision", "Most uncircumcised guys should be able to roll the foreskin back to expose the head of the penis before putting on a condom. However, if the foreskin is quite long or is too tight to roll back, a condom can be put on without retracting the foreskin.");
+});
+
+
+//SESSION STORAGE
+
+$("#q1_yes").on('click', function() {
+    sessionStorage.q1 = 'yes';
+});
+
+$("#q1_no").on('click', function() {
+    sessionStorage.q1 = 'no';
+})
+
+$("#q2_yes").on('click', function() {
+    sessionStorage.q2 = 'yes';
+})
+
+$("#q2_no").on('click', function() {
+    sessionStorage.q2 = 'no';
 })
 
 //Building screen penis resize
@@ -54,7 +66,10 @@ $(document).ready(function () {
         },
         resize: function (event, ui) {
             $('#test2').html(Math.round(ui.size.height * 0.4) + "mm");
-            $('#measurements').html("Length: " + Math.round(ui.size.width * 0.3) + "mm - " + "Girth: " + Math.round(ui.size.height * 0.4) + "mm");
+            $('#measurements').html("Length: " + Math.round(ui.size.width * 0.3) + "mm - " + "Circumference: " + Math.round(ui.size.height * 0.4) + "mm");
+            var circumference = Math.round(ui.size.height * 0.4);
+            sessionStorage.penisSize = circumference;
+
         },
 
     });
@@ -108,6 +123,8 @@ $('#circum2').click(function () {
 
 $(function () {
     $("#peniscolour").buttonset();
+//    $("#itchy").buttonset();
+//    $("#sensation").buttonset();
 });
 
 $('#colour1').click(function () {

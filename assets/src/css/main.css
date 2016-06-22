@@ -177,7 +177,7 @@ body {
 /* PAGES (specific colors for each page)
 ============================================================================= */
 
-.start_btn {
+.btn {
     /*    position: relative;*/
     /*      left: 70%;*/
     margin: 2%;
@@ -191,12 +191,16 @@ body {
     border: none;
 }
 
-.start_btn h3 {
+.btn h3 {
     color: #fff;
 }
 
-.start_btn:focus {
+.btn:focus {
     outline: none
+}
+
+.btn_no {
+    background-color: red;
 }
 
 .page-construction,
