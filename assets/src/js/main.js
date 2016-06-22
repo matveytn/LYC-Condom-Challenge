@@ -70,8 +70,7 @@ $(document).ready(function () {
             var circumference = Math.round(ui.size.height * 0.4);
             sessionStorage.penisSize = circumference;
 
-        },
-
+        }
     });
     $('#measurements').html("Length: 177mm - Girth: 80mm");
 });
