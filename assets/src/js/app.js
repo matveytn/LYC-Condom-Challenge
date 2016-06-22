@@ -60,6 +60,6 @@ animateApp.controller('q2Controller', function ($scope) {
 });
 
 //final page controller
-animateApp.controller('finsihController', function ($scope) {
+animateApp.controller('finishController', function ($scope) {
     $scope.pageClass = "page-finish";
 });

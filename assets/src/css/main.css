@@ -123,13 +123,14 @@ h2 {
 
 h3 {
     font-size: 17pt;
-
 }
 
-p {
+p,
+a {
     font-size: 14pt;
-    color: #fff;
+    color: #000;
     font-weight: 500;
+    text-decoration: none;
 }
 
 
@@ -151,6 +152,7 @@ body {
 .group {
     margin: 0 auto;
 }
+
 
 /* make our pages be full width and full height */
 
@@ -176,12 +178,11 @@ body {
 ============================================================================= */
 
 .start_btn {
-/*    position: relative;*/
-/*      left: 70%;*/
-
+    /*    position: relative;*/
+    /*      left: 70%;*/
     margin: 2%;
     padding: 0 15px;
-/*    line-height: 1.8;*/
+    /*    line-height: 1.8;*/
     appearance: none;
     box-shadow: none;
     border-radius: 4pt;
@@ -198,9 +199,17 @@ body {
     outline: none
 }
 
-.page-construction {
-    background: yellow;
+.page-construction,
+.page-q1,
+.page-q2,
+.page-finish {
+    background: white;
 }
+
+.page-home p {
+    color: #fff;
+}
+
 
 /*Penis construction stage*/
 

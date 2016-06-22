@@ -23,11 +23,43 @@ $(function () {
     $("#circum").buttonset();
 });
 
-$("#demo01").animatedModal({
-    animatedIn: 'lightSpeedIn',
-    animatedOut: 'bounceOutDown',
-    color: '#3498db'
+
+//function showDialog(modal) {
+//    if (modal) {
+//        $("#circum1").animatedModal({
+//            animatedIn: 'lightSpeedIn',
+//            animatedOut: 'bounceOutDown',
+//            color: '#3498db'
+//        });
+//        sessionStorage["PopupShown"] = 'yes';
+//    } else {
+//        console.log('hehe');
+//    }
+//}
+
+
+//
+//$(document).ready(function () {
+//    sessionStorage["PopupShown"] = 'no';
+//});
+
+//$(".close-animatedModal").click(function () {
+//    sessionStorage["PopupShown"] = 'yes';
+//});
+
+$(document).ready(function () {
+//    sessionStorage["PopupShown"] = 'no';
+//    if (sessionStorage["PopupShown"] = 'yes') {
+//        console.log('hehe');
+//    } else {
+        $("#circum1").animatedModal({
+            animatedIn: 'lightSpeedIn',
+            animatedOut: 'bounceOutDown',
+            color: '#3498db'
+        });
+//    }
 });
+
 
 //Building screen penis resize
 
