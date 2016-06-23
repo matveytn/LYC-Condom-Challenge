@@ -30,26 +30,19 @@ $('#circum1').one('click', function () {
 
 //SESSION STORAGE
 
-$("#q1_yes").on('click', function () {
-    sessionStorage.q1 = 'yes';
-});
 
-$("#q1_no").on('click', function () {
-    sessionStorage.q1 = 'no';
-})
-
-$("#q2_yes").on('click', function () {
-    sessionStorage.q2 = 'yes';
-})
-
-$("#q2_no").on('click', function () {
-    sessionStorage.q2 = 'no';
-})
 
 //Building screen penis resize
 
 $(document).ready(function () {
     /*$('#draggableHelper').draggable();*/
+
+
+    //    Inital dick size set
+    $("#setSize").on('click', function () {
+        sessionStorage.penisSize = '80';
+    });
+    $('#measurements').html("Length: 177mm - Girth: 80mm");
     $('#image').resizable({
         containment: "#container",
         minHeight: 60,
@@ -69,10 +62,24 @@ $(document).ready(function () {
             $('#measurements').html("Length: " + Math.round(ui.size.width * 0.3) + "mm - " + "Circumference: " + Math.round(ui.size.height * 0.4) + "mm");
             var circumference = Math.round(ui.size.height * 0.4);
             sessionStorage.penisSize = circumference;
-
         }
     });
-    $('#measurements').html("Length: 177mm - Girth: 80mm");
+    $("#q1_yes").on('click', function () {
+        sessionStorage.q1 = 'yes';
+    });
+
+    $("#q1_no").on('click', function () {
+        sessionStorage.q1 = 'no';
+    });
+
+    $("#q2_yes").on('click', function () {
+        sessionStorage.q2 = 'yes';
+    });
+
+    $("#q2_no").on('click', function () {
+        sessionStorage.q2 = 'no';
+    });
+
 });
 
 
@@ -82,8 +89,6 @@ $.getJSON("assets/src/js/condoms.json", function (data) {
     $('#results').html(data.snug.non_latex.thin);
 
 });
-
-//console.log(condoms);
 
 //$(function() {
 //    $('#image').draggable({
