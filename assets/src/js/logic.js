@@ -1,8 +1,0 @@
-var logic = [SNUG, NORMAL, LARGE];
-
-var SNUG = [LATEX, NONLATEX]
-var NORMAL = [LATEX, NONLATEX]
-var LARGE = [LATEX, NONLATEX]
-
-var LATEX = [[THIN], [REGULAR]];
-var NONLATEX = [[THIN], [REGULAR]];

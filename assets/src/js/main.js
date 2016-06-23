@@ -30,19 +30,19 @@ $('#circum1').one('click', function () {
 
 //SESSION STORAGE
 
-$("#q1_yes").on('click', function() {
+$("#q1_yes").on('click', function () {
     sessionStorage.q1 = 'yes';
 });
 
-$("#q1_no").on('click', function() {
+$("#q1_no").on('click', function () {
     sessionStorage.q1 = 'no';
 })
 
-$("#q2_yes").on('click', function() {
+$("#q2_yes").on('click', function () {
     sessionStorage.q2 = 'yes';
 })
 
-$("#q2_no").on('click', function() {
+$("#q2_no").on('click', function () {
     sessionStorage.q2 = 'no';
 })
 
@@ -74,6 +74,16 @@ $(document).ready(function () {
     });
     $('#measurements').html("Length: 177mm - Girth: 80mm");
 });
+
+
+//JSON parse
+$.getJSON("assets/src/js/condoms.json", function (data) {
+
+    $('#results').html(data.snug.non_latex.thin);
+
+});
+
+//console.log(condoms);
 
 //$(function() {
 //    $('#image').draggable({
@@ -122,8 +132,8 @@ $('#circum2').click(function () {
 
 $(function () {
     $("#peniscolour").buttonset();
-//    $("#itchy").buttonset();
-//    $("#sensation").buttonset();
+    //    $("#itchy").buttonset();
+    //    $("#sensation").buttonset();
 });
 
 $('#colour1').click(function () {
