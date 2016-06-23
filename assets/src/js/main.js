@@ -27,20 +27,11 @@ $('#circum1').one('click', function () {
     swal("Circumcision", "Most uncircumcised guys should be able to roll the foreskin back to expose the head of the penis before putting on a condom. However, if the foreskin is quite long or is too tight to roll back, a condom can be put on without retracting the foreskin.");
 });
 
-
-//SESSION STORAGE
-
-
-
 //Building screen penis resize
-
 $(document).ready(function () {
-    /*$('#draggableHelper').draggable();*/
-
-
     //    Inital dick size set
     $("#setSize").on('click', function () {
-        sessionStorage.penisSize = '80';
+        sessionStorage.penisSize = '55';
     });
     $('#measurements').html("Length: 177mm - Girth: 80mm");
     $('#image').resizable({
@@ -80,22 +71,44 @@ $(document).ready(function () {
         sessionStorage.q2 = 'no';
     });
 
+
+    //Choose appropriate text
+    //JSON parse
+    $.getJSON("assets/src/js/condoms.json", function (data) {
+        //Q1 - Do you or your partner experience itchy or irritated skin from condoms?
+        //Q2 - Do you get enough sensation from the condoms you use?
+
+            if (sessionStorage.penisSize > 60) {
+                if (sessionStorage.q1 == 'yes' && sessionStorage.q2 == "yes")
+                    $('#results').html(data.large.non_latex.regular);
+                else if (sessionStorage.q1 == 'yes' && sessionStorage.q2 == "no")
+                    $('#results').html(data.large.non_latex.thin);
+                else if (sessionStorage.q1 == 'no' && sessionStorage.q2 == "yes")
+                    $('#results').html(data.large.latex.regular);
+                else if (sessionStorage.q1 == 'no' && sessionStorage.q2 == "no")
+                    $('#results').html(data.large.latex.thin);
+            } else if (sessionStorage.penisSize < 60 && sessionStorage.penisSize > 50) {
+                if (sessionStorage.q1 == 'yes' && sessionStorage.q2 == "yes")
+                    $('#results').html(data.medium.non_latex.regular);
+                else if (sessionStorage.q1 == 'yes' && sessionStorage.q2 == "no")
+                    $('#results').html(data.medium.non_latex.thin);
+                else if (sessionStorage.q1 == 'no' && sessionStorage.q2 == "yes")
+                    $('#results').html(data.medium.latex.regular);
+                else if (sessionStorage.q1 == 'no' && sessionStorage.q2 == "no")
+                    $('#results').html(data.medium.latex.thin);
+            } else if (sessionStorage.penisSize < 50) {
+                if (sessionStorage.q1 == 'yes' && sessionStorage.q2 == "yes")
+                    $('#results').html(data.snug.non_latex.regular);
+                else if (sessionStorage.q1 == 'yes' && sessionStorage.q2 == "no")
+                    $('#results').html(data.snug.non_latex.thin);
+                else if (sessionStorage.q1 == 'no' && sessionStorage.q2 == "yes")
+                    $('#results').html(data.snug.latex.regular);
+                else if (sessionStorage.q1 == 'no' && sessionStorage.q2 == "no")
+                    $('#results').html(data.snug.latex.thin);
+            }
+//        });
+    });
 });
-
-
-//JSON parse
-$.getJSON("assets/src/js/condoms.json", function (data) {
-
-    $('#results').html(data.snug.non_latex.thin);
-
-});
-
-//$(function() {
-//    $('#image').draggable({
-//        axis: 'x'
-//    });
-//});
-
 
 //Building screen images
 
