@@ -4,7 +4,7 @@
 <!--
  * Penis building:
         - Make penis vertical
-        - Link penis colour to circumcision toggle
+        - Fix buggy image changing
 
  * 2 other skin colour toggles, penis head stays the same
 
@@ -24,7 +24,7 @@
         <div id="container">
             <div id="image">
                 <div id="measurements"></div>
-                <img src="media/Dicks/Uncircumsised_2.png" />
+                <img src="media/Dicks/Med-Uncircum.png" />
                 <div class="ui-resizable-handle ui-resizable-s" id="sgrip"></div>
                 <div class="ui-resizable-handle ui-resizable-e" id="egrip"></div>
             </div>
@@ -36,12 +36,14 @@
         <form>
             <div id="peniscolour">
                 <input type="radio" id="colour1" name="radio">
-                <label for="colour1">Pale</label>
+                <label for="colour1">Light</label>
                 <input type="radio" id="colour2" name="radio" checked="checked">
                 <label for="colour2">Medium</label>
                 <input type="radio" id="colour3" name="radio">
                 <label for="colour3">Dark</label>
             </div>
+        </form>
+        <form>
             <div id="circum">
                 <input type="radio" id="circum1" name="radio">
                 <label for="circum1">Circumcised: YES</label>

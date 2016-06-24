@@ -112,62 +112,73 @@ $(document).ready(function () {
 
 //Building screen images
 
-var images = new Array();
-
-images[0] = new Image();
-images[0].src = '../../../media/Dicks/Circumsised_1.png';
-
-images[2] = new Image();
-images[2].src = '../../../media/Dicks/Circumsised_2.png';
-
-images[5] = new Image();
-images[5].src = '../../../media/Dicks/Circumsised_3.png';
-
-images[1] = new Image();
-images[1].src = '../../../media/Dicks/Uncircumsised_1.png';
-
-images[3] = new Image();
-images[3].src = '../../../media/Dicks/Uncircumsised_2.png';
-
-images[4] = new Image();
-images[4].src = '../../../media/Dicks/Uncircumsised_3.png';
-
 $(function () {
-    $("#circum").buttonset();
-});
 
-$('#circum1').click(function () {
-    if ($('#circum1').is(':checked')) {
-        $("#container #image img").attr("src", images[2].src);
-    }
-});
-
-$('#circum2').click(function () {
-    if ($('#circum2').is(':checked')) {
-        $("#container #image img").attr("src", images[3].src);
-    }
-});
-
-$(function () {
     $("#peniscolour").buttonset();
-    //    $("#itchy").buttonset();
-    //    $("#sensation").buttonset();
-});
+    $("#circum").buttonset();
 
-$('#colour1').click(function () {
-    if ($('#colour1').is(':checked')) {
-        $("#container #image img").attr("src", images[1].src);
-    }
-});
+    var images = new Array();
 
-$('#colour2').click(function () {
-    if ($('#colour2').is(':checked')) {
-        $("#container #image img").attr("src", images[3].src);
-    }
-});
+    images[0] = new Image();
+    images[0].src = '../../../media/Dicks/Light-Circum.png';
 
-$('#colour3').click(function () {
-    if ($('#colour3').is(':checked')) {
-        $("#container #image img").attr("src", images[4].src);
-    }
+    images[1] = new Image();
+    images[1].src = '../../../media/Dicks/Light-Uncircum.png';
+
+    images[2] = new Image();
+    images[2].src = '../../../media/Dicks/Med-Circum.png';
+
+    images[3] = new Image();
+    images[3].src = '../../../media/Dicks/Med-Uncircum.png';
+
+    images[4] = new Image();
+    images[4].src = '../../../media/Dicks/Dark-Circum.png';
+
+    images[5] = new Image();
+    images[5].src = '../../../media/Dicks/Dark-Uncircum.png';
+
+    $('#colour1').click(function () {
+        if ($('#colour1').is(':checked')) {
+            $("#container #image img").attr("src", images[1].src);
+        }
+    });
+
+    $('#colour2').click(function () {
+        if ($('#colour2').is(':checked')) {
+            $("#container #image img").attr("src", images[3].src);
+        }
+    });
+
+    $('#colour3').click(function () {
+        if ($('#colour3').is(':checked')) {
+            $("#container #image img").attr("src", images[5].src);
+        }
+    });
+
+    $('#circum1').change(function () {
+        if ($('#circum1').is(':checked')) {
+            var a = jQuery.grep(images, function( n ,i) {
+              if ( n.src == $("#container #image img").attr("src") )
+              return i;
+            })[0];
+
+            var index = images.indexOf(a);
+
+            $("#container #image img").attr("src", images[index-1].src);
+        }
+    });
+
+    $('#circum2').change(function () {
+        if ($('#circum2').is(':checked')) {
+           var a = jQuery.grep(images, function( n ,i) {
+              if ( n.src == $("#container #image img").attr("src") )
+              return i;
+            })[0];
+
+            var index = images.indexOf(a);
+
+            $("#container #image img").attr("src", images[index+1].src);
+        }
+    });
+
 });
