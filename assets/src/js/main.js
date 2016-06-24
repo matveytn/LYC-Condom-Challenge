@@ -46,13 +46,14 @@ $("#q2_yes, #q2_no").on('click', function (data) {
 
 //Pulse function
 var pulse_properties = {
-    opacity: 1
+    opacity: 0
 };
 
-$("#pulse").pulse(pulse_properties, {
-    duration: 3250,
-    pulses: 5,
-    interval: 800
+var el = $('.target');
+
+el.pulse(pulse_properties, {
+    duration: 1000,
+    pulses: 100
 });
 
 
