@@ -245,6 +245,17 @@ body {
 }
 
 
+/*QUESTION IMAGE OVERLAYS*/
+
+.overlay {
+    background-image: url(../../../media/UI/q1/Irritation.png), url(../../../media/UI/q1/IrritationRed.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+    margin: auto;
+    overflow-x: visible;
+}
+
+
 /*Penis construction stage*/
 
 #build-stage {
@@ -349,16 +360,14 @@ body {
         width: 100%;
         max-width: 420px;
     }
-
-
     h1 {
         font-size: 55pt;
         font-weight: 600;
-/*            text-transform: uppercase;*/
+        /*            text-transform: uppercase;*/
         color: rgb(44, 194, 216);
         margin: 0 auto;
         max-width: 420px;
-/*        padding: 0 100px 0 100px;*/
+        /*        padding: 0 100px 0 100px;*/
         line-height: 100%;
     }
     h2 {
@@ -375,7 +384,6 @@ body {
         font-weight: 500;
         text-decoration: none;
     }
-
     .page {
         text-align: left;
     }
