@@ -98,6 +98,29 @@
 
 /* Typography */
 
+
+/*Custom fonts*/
+
+@font-face {
+    font-family: CalibreWeb-Light;
+    src: url(/assets/fonts/CalibreWeb-Light.eot?) format("eot"), url(/assets/fonts/CalibreWeb-Light.woff) format("woff")
+}
+
+@font-face {
+    font-family: CalibreWeb-Regular;
+    src: url(/assets/fonts/CalibreWeb-Regular.eot?) format("eot"), url(/assets/fonts/CalibreWeb-Regular.woff) format("woff")
+}
+
+@font-face {
+    font-family: CalibreWeb-Medium;
+    src: url(/assets/fonts/CalibreWeb-Medium.eot?) format("eot"), url(/assets/fonts/CalibreWeb-Medium.woff) format("woff")
+}
+
+@font-face {
+    font-family: CalibreWeb-Semibold;
+    src: url(/assets/fonts/CalibreWeb-Semibold.eot?) format("eot"), url(/assets/fonts/CalibreWeb-Semibold.woff) format("woff")
+}
+
 *,
 h1,
 h2,
@@ -105,12 +128,13 @@ h3,
 h4,
 p,
 a {
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'CalibreWeb-Regular', sans-serif;
     color: #000;
 }
 
 h1 {
-    font-size: 50pt;
+    font-family: "CalibreWeb-Semibold", sans-serif;
+    font-size: 60pt;
     font-weight: 600;
     /*    text-transform: uppercase;*/
     color: rgb(44, 194, 216);
@@ -127,7 +151,7 @@ h3 {
 
 p,
 a {
-    font-size: 14pt;
+    font-size: 15pt;
     color: #000;
     font-weight: 500;
     text-decoration: none;
@@ -161,7 +185,7 @@ body {
 
 .page {
     bottom: 0;
-    padding-top: 10%;
+    padding-top: 5%;
     position: absolute;
     text-align: center;
     top: 0;
@@ -226,6 +250,7 @@ body {
 }
 
 #measurements {
+    font-family: 'CalibreWeb-Light', sans-serif;
     position: relative;
     text-align: center;
     color: #fff;
@@ -264,4 +289,11 @@ body {
     right: -65px;
     top: 40%;
     background-image: url(../../../media/UI/lengthhandle.png);
+}
+
+
+/*Pop up background color*/
+
+.sweet-alert {
+    background-color: rgba(255, 255, 255, 0.97);
 }
