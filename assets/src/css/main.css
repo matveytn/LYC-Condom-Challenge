@@ -233,7 +233,6 @@ body {
     background-color: red;
 }
 
-.page-construction,
 .page-q1,
 .page-q2,
 .page-finish {
@@ -242,6 +241,11 @@ body {
 
 .page-home p {
     color: #fff;
+}
+
+.page-construction {
+    background: url(../../../media/PenisBuildScreen/Background.png) no-repeat center fixed;
+    background-size: cover;
 }
 
 
@@ -288,9 +292,6 @@ body {
 
 #build-stage {
     padding: 220px 0px;
-    border: 3px solid;
-    border-color: #fff;
-    background: #1e51a8;
     overflow: hidden;
 }
 
