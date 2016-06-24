@@ -276,25 +276,25 @@ body {
 
 #image img {
     height: 100%;
-    width: 100%
+    width: 20%;
 }
 
-#sgrip,
+#ngrip,
 #egrip {
     width: 32px;
     height: 32px;
 }
 
-#sgrip {
-    bottom: -35px;
+#ngrip {
+    top: -35px;
     left: 50%;
-    background-image: url(../../../media/UI/girthhandle.png);
+    background-image: url(../../../media/UI/lengthhandle.png);
 }
 
 #egrip {
     right: -65px;
     top: 40%;
-    background-image: url(../../../media/UI/lengthhandle.png);
+    background-image: url(../../../media/UI/girthhandle.png);
 }
 
 
