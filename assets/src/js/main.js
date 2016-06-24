@@ -30,19 +30,34 @@ $('#circum1').one('click', function () {
 });
 
 //Confirm build screen
-$("#confirm_build").on('click', function() {
+$("#confirm_build").on('click', function () {
     swal("Choose wisely", "Using the right rubber makes a massive difference, and in New Zealand we’re lucky enough to have a range of sizes funded by Pharmac. This means that once you’ve found the size for you, you can get them at a heavily discounted price from your nurse or doctor.")
-})
+});
 
 //Question 1 pop up
-$("#q1_yes, #q1_no").on('click', function(data) {
-   swal("Allergy caution", "Some people have an allergy to latex which can make condom use uncomfortable. If this sounds like you, have a look for condom packs with the words “non-latex” or “polyisoprene”. These offer the same protection as latex condoms, even for anal sex.");
+$("#q1_yes, #q1_no").on('click', function (data) {
+    swal("Allergy caution", "Some people have an allergy to latex which can make condom use uncomfortable. If this sounds like you, have a look for condom packs with the words “non-latex” or “polyisoprene”. These offer the same protection as latex condoms, even for anal sex.");
 });
 
 //Question 2 popup
-$("#q2_yes, #q2_no").on('click', function(data) {
-   swal("More pleasure?! Yes, please!", "There are plenty of thinner condoms on the market that will give you more feeling during sex. These are just as effective at preventing transmission of HIV and other STIs as regular condoms, and are no more likely to break.");
+$("#q2_yes, #q2_no").on('click', function (data) {
+    swal("More pleasure?! Yes, please!", "There are plenty of thinner condoms on the market that will give you more feeling during sex. These are just as effective at preventing transmission of HIV and other STIs as regular condoms, and are no more likely to break.");
 });
+
+//Pulse function
+var pulse_properties = {
+    opacity: 1
+};
+
+$("#pulse").pulse(pulse_properties, {
+    duration: 3250,
+    pulses: 5,
+    interval: 800
+});
+
+
+
+//-----------------------------------------------------------------------------------------------------
 
 //Building screen penis resize
 $(document).ready(function () {
@@ -95,35 +110,35 @@ $(document).ready(function () {
         //Q1 - Do you or your partner experience itchy or irritated skin from condoms?
         //Q2 - Do you get enough sensation from the condoms you use?
 
-            if (sessionStorage.penisSize > 60) {
-                if (sessionStorage.q1 == 'yes' && sessionStorage.q2 == "yes")
-                    $('#results').html(data.large.non_latex.regular);
-                else if (sessionStorage.q1 == 'yes' && sessionStorage.q2 == "no")
-                    $('#results').html(data.large.non_latex.thin);
-                else if (sessionStorage.q1 == 'no' && sessionStorage.q2 == "yes")
-                    $('#results').html(data.large.latex.regular);
-                else if (sessionStorage.q1 == 'no' && sessionStorage.q2 == "no")
-                    $('#results').html(data.large.latex.thin);
-            } else if (sessionStorage.penisSize < 60 && sessionStorage.penisSize > 50) {
-                if (sessionStorage.q1 == 'yes' && sessionStorage.q2 == "yes")
-                    $('#results').html(data.medium.non_latex.regular);
-                else if (sessionStorage.q1 == 'yes' && sessionStorage.q2 == "no")
-                    $('#results').html(data.medium.non_latex.thin);
-                else if (sessionStorage.q1 == 'no' && sessionStorage.q2 == "yes")
-                    $('#results').html(data.medium.latex.regular);
-                else if (sessionStorage.q1 == 'no' && sessionStorage.q2 == "no")
-                    $('#results').html(data.medium.latex.thin);
-            } else if (sessionStorage.penisSize < 50) {
-                if (sessionStorage.q1 == 'yes' && sessionStorage.q2 == "yes")
-                    $('#results').html(data.snug.non_latex.regular);
-                else if (sessionStorage.q1 == 'yes' && sessionStorage.q2 == "no")
-                    $('#results').html(data.snug.non_latex.thin);
-                else if (sessionStorage.q1 == 'no' && sessionStorage.q2 == "yes")
-                    $('#results').html(data.snug.latex.regular);
-                else if (sessionStorage.q1 == 'no' && sessionStorage.q2 == "no")
-                    $('#results').html(data.snug.latex.thin);
-            }
-//        });
+        if (sessionStorage.penisSize > 60) {
+            if (sessionStorage.q1 == 'yes' && sessionStorage.q2 == "yes")
+                $('#results').html(data.large.non_latex.regular);
+            else if (sessionStorage.q1 == 'yes' && sessionStorage.q2 == "no")
+                $('#results').html(data.large.non_latex.thin);
+            else if (sessionStorage.q1 == 'no' && sessionStorage.q2 == "yes")
+                $('#results').html(data.large.latex.regular);
+            else if (sessionStorage.q1 == 'no' && sessionStorage.q2 == "no")
+                $('#results').html(data.large.latex.thin);
+        } else if (sessionStorage.penisSize < 60 && sessionStorage.penisSize > 50) {
+            if (sessionStorage.q1 == 'yes' && sessionStorage.q2 == "yes")
+                $('#results').html(data.medium.non_latex.regular);
+            else if (sessionStorage.q1 == 'yes' && sessionStorage.q2 == "no")
+                $('#results').html(data.medium.non_latex.thin);
+            else if (sessionStorage.q1 == 'no' && sessionStorage.q2 == "yes")
+                $('#results').html(data.medium.latex.regular);
+            else if (sessionStorage.q1 == 'no' && sessionStorage.q2 == "no")
+                $('#results').html(data.medium.latex.thin);
+        } else if (sessionStorage.penisSize < 50) {
+            if (sessionStorage.q1 == 'yes' && sessionStorage.q2 == "yes")
+                $('#results').html(data.snug.non_latex.regular);
+            else if (sessionStorage.q1 == 'yes' && sessionStorage.q2 == "no")
+                $('#results').html(data.snug.non_latex.thin);
+            else if (sessionStorage.q1 == 'no' && sessionStorage.q2 == "yes")
+                $('#results').html(data.snug.latex.regular);
+            else if (sessionStorage.q1 == 'no' && sessionStorage.q2 == "no")
+                $('#results').html(data.snug.latex.thin);
+        }
+        //        });
     });
 });
 
@@ -174,27 +189,27 @@ $(function () {
 
     $('#circum1').change(function () {
         if ($('#circum1').is(':checked')) {
-            var a = jQuery.grep(images, function( n ,i) {
-              if ( n.src == $("#container #image img").attr("src") )
-              return i;
+            var a = jQuery.grep(images, function (n, i) {
+                if (n.src == $("#container #image img").attr("src"))
+                    return i;
             })[0];
 
             var index = images.indexOf(a);
 
-            $("#container #image img").attr("src", images[index-1].src);
+            $("#container #image img").attr("src", images[index - 1].src);
         }
     });
 
     $('#circum2').change(function () {
         if ($('#circum2').is(':checked')) {
-           var a = jQuery.grep(images, function( n ,i) {
-              if ( n.src == $("#container #image img").attr("src") )
-              return i;
+            var a = jQuery.grep(images, function (n, i) {
+                if (n.src == $("#container #image img").attr("src"))
+                    return i;
             })[0];
 
             var index = images.indexOf(a);
 
-            $("#container #image img").attr("src", images[index+1].src);
+            $("#container #image img").attr("src", images[index + 1].src);
         }
     });
 

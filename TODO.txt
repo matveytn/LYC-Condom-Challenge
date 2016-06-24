@@ -1,0 +1,15 @@
+#TODO list
+
+###Home page
+* Fix background flickering
+* Enlarge button on hover
+
+##Penis building
+* Flip the penis
+* Style literally everything
+
+##Question 1 / Question 2
+* make an image pulse
+* Make the pop up on the same window ?
+
+
