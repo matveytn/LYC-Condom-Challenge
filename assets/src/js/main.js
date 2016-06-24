@@ -169,48 +169,26 @@ $(function () {
     images[5] = new Image();
     images[5].src = '../../../media/Dicks/Dark-Uncircum.png';
 
-    $('#colour1').click(function () {
-        if ($('#colour1').is(':checked')) {
+    $('.penis-config').click(function () {
+        if ($('#colour1').is(':checked') && $('#circum1').is(':checked')) {
+            $("#container #image img").attr("src", images[0].src);
+        }
+        if ($('#colour1').is(':checked') && $('#circum2').is(':checked')) {
             $("#container #image img").attr("src", images[1].src);
         }
-    });
-
-    $('#colour2').click(function () {
-        if ($('#colour2').is(':checked')) {
+        if ($('#colour2').is(':checked') && $('#circum1').is(':checked')) {
+            $("#container #image img").attr("src", images[2].src);
+        }
+        if ($('#colour2').is(':checked') && $('#circum2').is(':checked')) {
             $("#container #image img").attr("src", images[3].src);
         }
-    });
-
-    $('#colour3').click(function () {
-        if ($('#colour3').is(':checked')) {
+        if ($('#colour3').is(':checked') && $('#circum1').is(':checked')) {
+            $("#container #image img").attr("src", images[4].src);
+        }
+        if ($('#colour3').is(':checked') && $('#circum2').is(':checked')) {
             $("#container #image img").attr("src", images[5].src);
         }
-    });
 
-    $('#circum1').change(function () {
-        if ($('#circum1').is(':checked')) {
-            var a = jQuery.grep(images, function (n, i) {
-                if (n.src == $("#container #image img").attr("src"))
-                    return i;
-            })[0];
-
-            var index = images.indexOf(a);
-
-            $("#container #image img").attr("src", images[index - 1].src);
-        }
-    });
-
-    $('#circum2').change(function () {
-        if ($('#circum2').is(':checked')) {
-            var a = jQuery.grep(images, function (n, i) {
-                if (n.src == $("#container #image img").attr("src"))
-                    return i;
-            })[0];
-
-            var index = images.indexOf(a);
-
-            $("#container #image img").attr("src", images[index + 1].src);
-        }
     });
 
 });
