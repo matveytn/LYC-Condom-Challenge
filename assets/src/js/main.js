@@ -53,22 +53,22 @@ $(document).ready(function () {
     $('#measurements').html("Length: 177mm - Girth: 80mm");
     $('#image').resizable({
         containment: "#container",
-        minHeight: 60,
-        minWidth: 120,
-        maxHeight: 200,
-        maxWidth: 600,
+        minHeight: 120,
+        minWidth: 60,
+        maxHeight: 600,
+        maxWidth: 200,
         animate: true,
         animateEasing: "easeOutElastic",
         animateDuration: 700,
         ghost: true,
         handles: {
             'e': '#egrip',
-            's': '#sgrip'
+            'n': '#ngrip'
         },
         resize: function (event, ui) {
             $('#test2').html(Math.round(ui.size.height * 0.4) + "mm");
-            $('#measurements').html("Length: " + Math.round(ui.size.width * 0.3) + "mm - " + "Circumference: " + Math.round(ui.size.height * 0.4) + "mm");
-            var circumference = Math.round(ui.size.height * 0.4);
+            $('#measurements').html("Length: " + Math.round(ui.size.height * 0.3) + "mm - " + "Circumference: " + Math.round(ui.size.width * 0.4) + "mm");
+            var circumference = Math.round(ui.size.width * 0.4);
             sessionStorage.penisSize = circumference;
         }
     });
