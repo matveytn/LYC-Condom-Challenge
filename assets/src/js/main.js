@@ -66,9 +66,9 @@ $(document).ready(function () {
     $("#setSize").on('click', function () {
         sessionStorage.penisSize = '55';
     });
-    $('#measurements').html("Length: 177mm - Girth: 80mm");
-    $('#image').resizable({
-        containment: "#container",
+    $('#measurements').html("Length: 177mm, Girth: 80mm");
+    $('#build-penis').resizable({
+        containment: "#build-container",
         minHeight: 120,
         minWidth: 60,
         maxHeight: 600,
@@ -83,7 +83,7 @@ $(document).ready(function () {
         },
         resize: function (event, ui) {
             $('#test2').html(Math.round(ui.size.height * 0.4) + "mm");
-            $('#measurements').html("Length: " + Math.round(ui.size.height * 0.3) + "mm - " + "Circumference: " + Math.round(ui.size.width * 0.4) + "mm");
+            $('#measurements').html("Length: " + Math.round(ui.size.height * 0.3) + "mm, " + "Girth: " + Math.round(ui.size.width * 0.4) + "mm");
             var circumference = Math.round(ui.size.width * 0.4);
             sessionStorage.penisSize = circumference;
         }
@@ -172,22 +172,22 @@ $(function () {
 
     $('.penis-config').click(function () {
         if ($('#colour1').is(':checked') && $('#circum1').is(':checked')) {
-            $("#container #image img").attr("src", images[0].src);
+            $("#build-container #build-penis img").attr("src", images[0].src);
         }
         if ($('#colour1').is(':checked') && $('#circum2').is(':checked')) {
-            $("#container #image img").attr("src", images[1].src);
+            $("#build-container #build-penis img").attr("src", images[1].src);
         }
         if ($('#colour2').is(':checked') && $('#circum1').is(':checked')) {
-            $("#container #image img").attr("src", images[2].src);
+            $("#build-container #build-penis img").attr("src", images[2].src);
         }
         if ($('#colour2').is(':checked') && $('#circum2').is(':checked')) {
-            $("#container #image img").attr("src", images[3].src);
+            $("#build-container #build-penis img").attr("src", images[3].src);
         }
         if ($('#colour3').is(':checked') && $('#circum1').is(':checked')) {
-            $("#container #image img").attr("src", images[4].src);
+            $("#build-container #build-penis img").attr("src", images[4].src);
         }
         if ($('#colour3').is(':checked') && $('#circum2').is(':checked')) {
-            $("#container #image img").attr("src", images[5].src);
+            $("#build-container #build-penis img").attr("src", images[5].src);
         }
 
     });

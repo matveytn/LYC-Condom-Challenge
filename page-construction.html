@@ -18,42 +18,52 @@
 -->
 <script src="assets/src/js/main.js"></script>
 <div class="section group">
-    <div class="col span_6_of_9 build_screen" id="build-stage">
-        <!-- RENDER BODY -->
+    <div class="col span_9_of_9 build_screen" id="build-stage">
+        <div id="build-logo">
+            <img src="media/PenisBuildScreen/TextLogo.png" />
+        </div>
 
-        <div id="container">
-            <div id="image">
-                <div id="measurements"></div>
+        <div id="build-pants">
+            <img id="pants-back" src="media/PenisBuildScreen/PantsBack.png" />
+            <img id="pants-front" src="media/PenisBuildScreen/PantsFront.png" />
+            <div id="measurements"></div>
+        </div>
+
+        <div id="build-container">
+            <div id="build-penis">
                 <img src="media/Dicks/Med-Uncircum.png" />
                 <div class="ui-resizable-handle ui-resizable-s" id="ngrip"></div>
                 <div class="ui-resizable-handle ui-resizable-e" id="egrip"></div>
             </div>
         </div>
-
-        <!-- RENDER BODY END -->
     </div>
-    <div class="col span__3_of_9">
-        <form>
-            <div class="penis-config" id="peniscolour">
-                <input type="radio" id="colour1" name="radio">
-                <label for="colour1">Light</label>
-                <input type="radio" id="colour2" name="radio" checked="checked">
-                <label for="colour2">Medium</label>
-                <input type="radio" id="colour3" name="radio">
-                <label for="colour3">Dark</label>
-            </div>
-        </form>
-        <form>
-            <div class="penis-config" id="circum">
-                <input type="radio" id="circum1" name="radio">
-                <label for="circum1">Circumcised: YES</label>
-                <input type="radio" id="circum2" name="radio" checked="checked">
-                <label for="circum2">Circumcised: NO</label>
-            </div>
-        </form>
+    <div class="col span__3_of_9" id="build-ui">
+        <img id="build-ui-bg" src="media/PenisBuildScreen/UI-Box.png" />
+        <div id="build-ui-icons">
+            <form>
+                <div class="penis-config" id="peniscolour">
+                    <input type="radio" id="colour1" name="radio">
+                    <label for="colour1">Light</label>
+                    <input type="radio" id="colour2" name="radio" checked="checked">
+                    <label for="colour2">Medium</label>
+                    <input type="radio" id="colour3" name="radio">
+                    <label for="colour3">Dark</label>
+                </div>
+            </form>
+            <form>
+                <div class="penis-config" id="circum">
+                    <input type="radio" id="circum1" name="radio">
+                    <label for="circum1">Circumcised</label>
+                    <input type="radio" id="circum2" name="radio" checked="checked">
+                    <label for="circum2">Uncircumcised</label>
+                </div>
+            </form>
+            <br>
+            <a href="#q1" id="confirm_build">
+            <button class="btn">
+                <h3>Done?</h3>
+            </button>
+            </a>
+        </div>
     </div>
-    <a href="#q1" id="confirm_build">
-        <button class="btn">
-            <h3>Done?</h3></button>
-    </a>
 </div>
