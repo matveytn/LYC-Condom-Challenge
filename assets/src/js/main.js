@@ -18,11 +18,6 @@ $(function () {
         });
 });
 
-
-$(function () {
-    $("#circum").buttonset();
-});
-
 //Pop ups managed
 
 $('#circum1').one('click', function () {

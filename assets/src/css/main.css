@@ -307,8 +307,7 @@ body {
 
 #build-ui {
     position: relative;
-    width: 30%;
-    min-width: 260px;
+    min-width: 320px;
     float: right;
     right: 10%;
     background: url(../../../media/PenisBuildScreen/UI-Box.png) no-repeat;
@@ -322,6 +321,13 @@ body {
     position: absolute;
     width: 100%;
     top: 10%;
+}
+#light-swatch,
+#med-swatch,
+#dark-swatch,
+#circum-icon,
+#uncircum-icon {
+    width: 50px;
 }
 
 /*
