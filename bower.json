@@ -8,6 +8,7 @@
     "angular-route": "~1.5.7",
     "animate.css": "~3.5.2",
     "sweetalert": "~1.1.3",
-    "jquery-pulse": "jquery.pulse.js#*"
+    "jquery-pulse": "jquery.pulse.js#*",
+    "normalize-css": "normalize.css#^4.1.1"
   }
 }

@@ -199,8 +199,13 @@ body {
     margin-top: 50px;
 }
 
-.page-finish {
+.page-finish p,
+.page-finish h3 {
     text-align: left;
+}
+
+.page-finish .btn h3 {
+    text-align: center;
 }
 
 
@@ -208,25 +213,31 @@ body {
 ============================================================================= */
 
 .btn {
-    /*    position: relative;*/
-    /*      left: 70%;*/
+    /*
+        position: relative;
+          left: 70%;
+*/
     margin: 2%;
     padding: 0 15px;
-    /*    line-height: 1.8;*/
+    /*            line-height: 1.8;*/
     appearance: none;
     box-shadow: none;
     border-radius: 4pt;
     color: #fff;
     background-color: rgb(44, 194, 216);
     border: none;
+    transition: all 0.2s ease 0s;
 }
 
 .btn h3 {
     color: #fff;
 }
 
-.btn:focus {
-    outline: none
+.btn:focus,
+.btn:hover {
+    outline: none;
+    transform: scale(1.07);
+    transition: all 0.2s ease 0s;
 }
 
 .btn_no {
@@ -234,9 +245,19 @@ body {
 }
 
 .page-q1,
-.page-q2,
+.page-q2 {
+    background: #e5e5e5;
+    /*    position: relative;*/
+    height: auto !important;
+    min-height: 100%;
+    /*    overflow: hidden;*/
+}
+
 .page-finish {
-    background: white;
+    background: #e5e5e5;
+    position: relative;
+    height: auto !important;
+    min-height: 100%;
 }
 
 .page-home p {
@@ -248,33 +269,41 @@ body {
     background-size: cover;
 }
 
+.condom_list {
+    font-family: 'CalibreWeb-Light', sans-serif;
+    font-size: 21px;
+}
+
+.condom_list_special {
+    font-size: 30px;
+}
+
 
 /*QUESTION IMAGE OVERLAYS*/
-
-
-/*
-#overlay {
-    width: 100%;
-    height: 500px;
-    background-image: url(../../../media/UI/q1/Irritation.png);
-    background-size: auto;
-    background-repeat: no-repeat;
-    margin: auto;
-    overflow-x: visible;
-}
-*/
 
 .overlay {
     /*    border: 1px solid #000;*/
     position: relative;
+    margin: 5% 0 4.5%;
+}
 
+.overlay2 {
+    /*    border: 1px solid #000;*/
+    position: relative;
+    margin: .6% 0;
 }
 
 .img1 {
     /*    border: 1px solid #f00;*/
     position: relative;
     z-index: 2;
-    width: 20%;
+    width: 35%;
+    left: 17.625%;
+}
+
+.irritation img {
+    width: 26%;
+    margin: 0 auto;
 }
 
 .target {
@@ -282,9 +311,121 @@ body {
     position: relative;
     z-index: 1;
     opacity: 1;
-/*    top: 6%;*/
-    left: -20.2%;
-    width: 20%;
+    /*    top: 6%;*/
+    left: -17.625%;
+    width: 35%;
+    overflow: hidden;
+}
+
+#setSize .btn {
+    /*    width: 20%;*/
+    position: absolute;
+    top: 0;
+    width: 6%;
+    min-width: 100px;
+}
+
+#q1_yes .btn,
+#q1_no .btn,
+#q2_yes .btn,
+#q2_no .btn {
+    width: 8%;
+    margin-left: 10px;
+    margin-right: 10px;
+    min-width: 120px;
+}
+
+.q_text {
+    margin: 0 auto 4%;
+    padding: 0 7%;
+}
+
+.border_white {
+    background-color: #fff;
+    margin: 2% auto;
+    width: 70%;
+    padding: 3% 2%;
+    border-radius: 40px;
+}
+
+.border_white2 {
+    background-color: #fff;
+    margin: 2% auto;
+    width: 70%;
+    padding: 3% 2% 2%;
+    border-radius: 40px;
+}
+
+
+/*Sweet alert custom styles*/
+
+.sweet-alert {
+    background-color: white;
+    width: 478px;
+    padding: 30px;
+    border-radius: 30px;
+    text-align: center;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin-left: -256px;
+    margin-top: -200px;
+    overflow: hidden;
+    display: none;
+    z-index: 99999;
+}
+
+@media all and (max-width: 540px) {
+    .sweet-alert {
+        width: auto;
+        margin-left: 0;
+        margin-right: 0;
+        left: 15px;
+        right: 15px;
+    }
+}
+
+.sweet-alert h2 {
+    font-family: 'CalibreWeb-Medium', sans-serif;
+    color: #575757;
+    font-size: 40px;
+    text-align: center;
+    font-weight: 600;
+    text-transform: none;
+    position: relative;
+    margin: 25px 0;
+    padding: 0;
+    line-height: 40px;
+    display: block;
+}
+
+.sweet-alert p {
+    font-family: 'CalibreWeb-Regular', sans-serif;
+    color: #797979;
+    font-size: 22px;
+    text-align: center;
+    font-weight: 300;
+    position: relative;
+    text-align: inherit;
+    float: none;
+    margin: 0;
+    padding: 0;
+    line-height: normal;
+}
+
+.sweet-alert button {
+    font-family: 'CalibreWeb-Regular', sans-serif;
+    background-color: #2cc2d8;
+    color: white;
+    border: none;
+    box-shadow: none;
+    font-size: 26px;
+    font-weight: 500;
+    -webkit-border-radius: 4px;
+    border-radius: 5px;
+    padding: 10px 32px;
+    margin: 26px 5px 0 5px;
+    cursor: pointer;
 }
 
 
@@ -313,15 +454,18 @@ body {
     background: url(../../../media/PenisBuildScreen/UI-Box.png) no-repeat;
     background-size: contain;
 }
+
 #build-ui-bg {
     width: 100%;
     opacity: 0;
 }
+
 #build-ui-icons {
     position: absolute;
     width: 100%;
     top: 10%;
 }
+
 #light-swatch,
 #med-swatch,
 #dark-swatch,
@@ -329,6 +473,7 @@ body {
 #uncircum-icon {
     width: 50px;
 }
+
 
 /*
 #build-pants {
@@ -407,6 +552,78 @@ body {
     background-color: rgba(255, 255, 255, 0.97);
 }
 
+@media (max-width: 895px) {
+    /*    Question image overlays*/
+    .overlay {
+        /*    border: 1px solid #000;*/
+        position: relative;
+        margin: 5% 0 4.5%;
+    }
+    .overlay2 {
+        /*    border: 1px solid #000;*/
+        position: relative;
+        margin: .6% 0;
+    }
+    .img1 {
+        /*    border: 1px solid #f00;*/
+        position: relative;
+        z-index: 2;
+        width: 45%;
+        left: 22.85%;
+    }
+    .irritation img {
+        width: 42%;
+        margin: 0 auto;
+    }
+    .target {
+        /*    border: 1px solid #0f0;*/
+        position: relative;
+        z-index: 1;
+        opacity: 1;
+        /*    top: 6%;*/
+        left: -22.85%;
+        width: 45%;
+        overflow: hidden;
+    }
+    .q_text {
+        margin: 0 auto 4%;
+        padding: 0 7%;
+        font-size: 25pt;
+    }
+    .border_white {
+        background-color: #fff;
+        margin: 2% auto;
+        width: 70%;
+        padding: 3% 2%;
+        border-radius: 40px;
+    }
+    .border_white2 {
+        background-color: #fff;
+        margin: 2% auto;
+        width: 70%;
+        padding: 3% 2% 2%;
+        border-radius: 40px;
+    }
+    #setSize .btn {
+        /*            width: 20%;*/
+        position: absolute;
+        top: 0;
+        width: 5%;
+        min-width: 80px;
+        line-height: 0.7;
+    }
+    #q1_yes .btn,
+    #q1_no .btn,
+    #q2_yes .btn,
+    #q2_no .btn {
+        width: 6%;
+        margin-left: 10px;
+        margin-right: 10px;
+        min-width: 100px;
+        line-height: 0.7;
+    }
+}
+
 @media (max-width: 735px) {
     /* INTRO SCREEN */
     body {
@@ -451,6 +668,22 @@ body {
     .intro-controls {
         width: 100%;
         max-width: 420px;
+        /*         margin: 0 0 0 3%;*/
+    }
+    .intro-controls .btn {
+        position: relative;
+        left: -34.5%;
+    }
+    #slogan {
+        /*        margin: 0 0 0 3%;*/
+    }
+    h1,
+    h2,
+    h3,
+    p,
+    a {
+        text-align: left;
+        /*        margin: 10px;*/
     }
     h1 {
         font-size: 55pt;
@@ -478,5 +711,81 @@ body {
     }
     .btn {
         margin: 0;
+    }
+    /*    Question image overlays*/
+    .overlay {
+        /*    border: 1px solid #000;*/
+        position: relative;
+        margin: 5% 0 4.5%;
+    }
+    .overlay2 {
+        /*    border: 1px solid #000;*/
+        position: relative;
+        margin: .6% 0;
+    }
+    .img1 {
+        /*    border: 1px solid #f00;*/
+        position: relative;
+        z-index: 2;
+        width: 48%;
+        left: 24.5%;
+    }
+    .irritation img {
+        width: 45%;
+        margin: 0 auto;
+    }
+    .target {
+        /*    border: 1px solid #0f0;*/
+        position: relative;
+        z-index: 1;
+        opacity: 1;
+        /*    top: 6%;*/
+        left: -24.5%;
+        width: 48%;
+        overflow: hidden;
+    }
+    .page-q1 .q_text, .page-q2 .q_text, .page-finish .q_text {
+        margin: 0 auto 4%;
+        padding: 0 7%;
+        font-size: 23pt;
+        text-align: center;
+    }
+    .page-q1 .border_white {
+        background-color: #fff;
+        margin: 2% auto;
+        width: 70%;
+        padding: 3% 2%;
+        border-radius: 40px;
+    }
+    .border_white2 {
+        background-color: #fff;
+        margin: 2% auto;
+        width: 70%;
+        padding: 3% 2% 2%;
+        border-radius: 40px;
+    }
+    #setSize .btn {
+        /*            width: 20%;*/
+        position: absolute;
+        top: 0;
+        width: 5%;
+        min-width: 80px;
+        line-height: 0.3;
+        margin: 2%;
+    }
+    #q1_yes .btn,
+    #q1_no .btn,
+    #q2_yes .btn,
+    #q2_no .btn {
+        width: 6%;
+        margin-left: 10px;
+        margin-right: 10px;
+        min-width: 100px;
+        line-height: 0.3;
+       margin: 7% 1%;
+    }
+
+    .btn h3 {
+        text-align: center;
     }
 }

@@ -1,12 +1,28 @@
-$(function () {
-    var x = 0;
-    var y = 0;
-    setInterval(function () {
-        x += 1.16;
-        y -= 1;
+//$(function () {
+//    var x = 0;
+//    var y = 0;
+//    setInterval(function () {
+//        x += 1.16;
+//        y -= 1;
+//        $('body').css('background-position', x + 'px ' + y + 'px');
+//    }, 40);
+//});
+
+
+$(document).ready(function () {
+    $(function () {
+        var x = 0;
+        var y = 0;
+        setInterval(function () {
+            x += 1.16;
+            y -= 1;
+            $('body').css('background-position', x + 'px ' + y + 'px');
+        }, 40);
+    });
+    $("#confirm_build").on('click', function () {
         $('body').css('background-position', x + 'px ' + y + 'px');
-    }, 40);
-});
+    });
+})
 
 //Building screen buttons and toggles
 
@@ -20,23 +36,52 @@ $(function () {
 
 //Pop ups managed
 
+//Circumcision
 $('#circum1').one('click', function () {
-    swal("Circumcision", "Most uncircumcised guys should be able to roll the foreskin back to expose the head of the penis before putting on a condom. However, if the foreskin is quite long or is too tight to roll back, a condom can be put on without retracting the foreskin.");
+    swal({
+        title: "Circumcision",
+        text: "Most uncircumcised guys should be able to roll the foreskin back to expose the head of the penis before putting on a condom. However, if the foreskin is quite long or is too tight to roll back, a condom can be put on without retracting the foreskin.",
+        confirmButtonColor: "#2cc2d8",
+        confirmButtonText: "Got it!",
+        closeOnConfirm: false
+    });
 });
 
+
 //Confirm build screen
+
 $("#confirm_build").on('click', function () {
-    swal("Choose wisely", "Using the right rubber makes a massive difference, and in New Zealand we’re lucky enough to have a range of sizes funded by Pharmac. This means that once you’ve found the size for you, you can get them at a heavily discounted price from your nurse or doctor.")
+    swal({
+        title: "Choose wisely",
+        text: "Using the right rubber makes a massive difference, and in New Zealand we’re lucky enough to have a range of sizes funded by Pharmac. This means that once you’ve found the size for you, you can get them at a heavily discounted price from your nurse or doctor.",
+        confirmButtonColor: "#2cc2d8",
+        confirmButtonText: "Got it!",
+        closeOnConfirm: false
+    });
 });
 
 //Question 1 pop up
+
 $("#q1_yes, #q1_no").on('click', function (data) {
-    swal("Allergy caution", "Some people have an allergy to latex which can make condom use uncomfortable. If this sounds like you, have a look for condom packs with the words “non-latex” or “polyisoprene”. These offer the same protection as latex condoms, even for anal sex.");
+    swal({
+        title: "Allergy caution",
+        text: "Some people have an allergy to latex which can make condom use uncomfortable. If this sounds like you, have a look for condom packs with the words “non-latex” or “polyisoprene”. These offer the same protection as latex condoms, even for anal sex.",
+        type: "info",
+        confirmButtonColor: "#2cc2d8",
+        confirmButtonText: "Got it!",
+        closeOnConfirm: false
+    });
 });
 
 //Question 2 popup
 $("#q2_yes, #q2_no").on('click', function (data) {
-    swal("More pleasure?! Yes, please!", "There are plenty of thinner condoms on the market that will give you more feeling during sex. These are just as effective at preventing transmission of HIV and other STIs as regular condoms, and are no more likely to break.");
+    swal({
+        title: "More pleasure?! Yes, please!",
+        text: "There are plenty of thinner condoms on the market that will give you more feeling during sex. These are just as effective at preventing transmission of HIV and other STIs as regular condoms, and are no more likely to break.",
+        confirmButtonColor: "#2cc2d8",
+        confirmButtonText: "Got it!",
+        closeOnConfirm: false
+    });
 });
 
 //Pulse function
@@ -137,6 +182,7 @@ $(document).ready(function () {
         //        });
     });
 });
+
 
 //Building screen images
 
