@@ -150,6 +150,11 @@ h3 {
     font-size: 17pt;
 }
 
+h4 {
+    font-size: 17pt;
+    line-height: 1.2;
+}
+
 p,
 a {
     font-size: 17pt;
@@ -269,13 +274,14 @@ body {
     background-size: cover;
 }
 
-.condom_list {
+.condom_list, .condom_list_special {
     font-family: 'CalibreWeb-Light', sans-serif;
     font-size: 21px;
 }
 
 .condom_list_special {
-    font-size: 30px;
+/*    font-size: 30px;*/
+    display: inline-block;
 }
 
 
