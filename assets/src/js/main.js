@@ -103,8 +103,8 @@ el.pulse(pulse_properties, {
 //Building screen penis resize
 $(document).ready(function () {
     //    Inital dick size set
-    $("#setSize").on('click', function () {
-        sessionStorage.penisSize = '55';
+    $("#initial_dick_size .btn").on('click', function () {
+        sessionStorage.penisSize = '77';
     });
     $('#measurements').html("Length: 177mm, Girth: 80mm");
     $('#build-penis').resizable({
