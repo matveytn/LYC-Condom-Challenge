@@ -247,17 +247,18 @@ body {
 .page-q1,
 .page-q2 {
     background: #e5e5e5;
-    /*    position: relative;*/
-    height: auto !important;
+    /*        position: relative;*/
+    height: 100%;
     min-height: 100%;
     /*    overflow: hidden;*/
 }
 
 .page-finish {
     background: #e5e5e5;
-    position: relative;
-    height: auto !important;
-    min-height: 100%;
+    /*    position: relative;*/
+    height: 100%;
+    min-height: 120%;
+/*    overflow: hidden;*/
 }
 
 .page-home p {
@@ -622,6 +623,21 @@ body {
         min-width: 100px;
         line-height: 0.7;
     }
+    .page-q1,
+    .page-q2 {
+        background: #e5e5e5;
+        /*        position: relative;*/
+        height: 60%;
+/*        min-height: 100%;*/
+            overflow: hidden;
+    }
+    .page-finish {
+        background: #e5e5e5;
+        /*    position: relative;*/
+        height: 100%;
+        min-height: 120%;
+/*        overflow: hidden;*/
+    }
 }
 
 @media (max-width: 735px) {
@@ -655,6 +671,21 @@ body {
         color: #000;
         font-weight: 500;
         text-decoration: none;
+    }
+    .page-q1,
+    .page-q2 {
+        background: #e5e5e5;
+        /*        position: relative;*/
+        height: 50%;
+/*        min-height: 100%;*/
+            overflow: hidden;
+    }
+    .page-finish {
+        background: #e5e5e5;
+        /*    position: relative;*/
+        height: 100%;
+        min-height: 130%;
+/*        overflow: hidden;*/
     }
 }
 
@@ -744,7 +775,9 @@ body {
         width: 48%;
         overflow: hidden;
     }
-    .page-q1 .q_text, .page-q2 .q_text, .page-finish .q_text {
+    .page-q1 .q_text,
+    .page-q2 .q_text,
+    .page-finish .q_text {
         margin: 0 auto 4%;
         padding: 0 7%;
         font-size: 23pt;
@@ -782,10 +815,24 @@ body {
         margin-right: 10px;
         min-width: 100px;
         line-height: 0.3;
-       margin: 7% 1%;
+        margin: 7% 1%;
     }
-
     .btn h3 {
         text-align: center;
+    }
+    .page-q1,
+    .page-q2 {
+        background: #e5e5e5;
+        /*        position: relative;*/
+        height: 40%;
+/*        min-height: 100%;*/
+        /*    overflow: hidden;*/
+    }
+    .page-finish {
+        background: #e5e5e5;
+        /*    position: relative;*/
+        height: 70%;
+        min-height: 139%;
+        /*        overflow: hidden;*/
     }
 }
