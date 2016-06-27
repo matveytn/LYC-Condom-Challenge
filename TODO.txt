@@ -12,3 +12,8 @@ back button padding is wrong in portairt mode
 phone
 increase margin
 make pop up responsive
+
+
+BACK button animation in the wrong direction
+
+POP up screen only change the page when "OK got it" is pressed
