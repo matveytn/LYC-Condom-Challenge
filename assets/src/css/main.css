@@ -220,12 +220,15 @@ body {
     margin: 2%;
     padding: 0 15px;
     /*            line-height: 1.8;*/
+    -webkit-appearance: none;
+    -moz-appearance: none;
     appearance: none;
     box-shadow: none;
     border-radius: 4pt;
     color: #fff;
     background-color: rgb(44, 194, 216);
     border: none;
+    -webkit-transition: all 0.2s ease 0s;
     transition: all 0.2s ease 0s;
 }
 
@@ -236,8 +239,12 @@ body {
 .btn:focus,
 .btn:hover {
     outline: none;
+    -webkit-transform: scale(1.07);
     transform: scale(1.07);
+    -webkit-transition: all 0.2s ease 0s;
     transition: all 0.2s ease 0s;
+    cursor: pointer;
+    cursor: hand;
 }
 
 .btn_no {
@@ -251,14 +258,6 @@ body {
     height: 100%;
     min-height: 100%;
     /*    overflow: hidden;*/
-}
-
-.page-finish {
-    background: #e5e5e5;
-    /*    position: relative;*/
-    height: 100%;
-    min-height: 120%;
-/*    overflow: hidden;*/
 }
 
 .page-home p {
@@ -351,7 +350,7 @@ body {
 
 .border_white2 {
     background-color: #fff;
-    margin: 2% auto;
+    margin: 2% auto 5%;
     width: 70%;
     padding: 3% 2% 2%;
     border-radius: 40px;
@@ -422,7 +421,6 @@ body {
     box-shadow: none;
     font-size: 26px;
     font-weight: 500;
-    -webkit-border-radius: 4px;
     border-radius: 5px;
     padding: 10px 32px;
     margin: 26px 5px 0 5px;
@@ -600,7 +598,7 @@ body {
     }
     .border_white2 {
         background-color: #fff;
-        margin: 2% auto;
+        margin: 2% auto 7%;
         width: 70%;
         padding: 3% 2% 2%;
         border-radius: 40px;
@@ -628,15 +626,8 @@ body {
         background: #e5e5e5;
         /*        position: relative;*/
         height: 60%;
-/*        min-height: 100%;*/
-            overflow: hidden;
-    }
-    .page-finish {
-        background: #e5e5e5;
-        /*    position: relative;*/
-        height: 100%;
-        min-height: 120%;
-/*        overflow: hidden;*/
+        /*        min-height: 100%;*/
+        overflow: hidden;
     }
 }
 
@@ -654,7 +645,6 @@ body {
     h1 {
         font-size: 55pt;
         font-weight: 600;
-        /*    text-transform: uppercase;*/
         color: rgb(44, 194, 216);
         margin: 0;
     }
@@ -675,17 +665,8 @@ body {
     .page-q1,
     .page-q2 {
         background: #e5e5e5;
-        /*        position: relative;*/
         height: 50%;
-/*        min-height: 100%;*/
-            overflow: hidden;
-    }
-    .page-finish {
-        background: #e5e5e5;
-        /*    position: relative;*/
-        height: 100%;
-        min-height: 130%;
-/*        overflow: hidden;*/
+        overflow: hidden;
     }
 }
 
@@ -699,14 +680,10 @@ body {
     .intro-controls {
         width: 100%;
         max-width: 420px;
-        /*         margin: 0 0 0 3%;*/
     }
     .intro-controls .btn {
         position: relative;
         left: -34.5%;
-    }
-    #slogan {
-        /*        margin: 0 0 0 3%;*/
     }
     h1,
     h2,
@@ -714,16 +691,13 @@ body {
     p,
     a {
         text-align: left;
-        /*        margin: 10px;*/
     }
     h1 {
         font-size: 55pt;
         font-weight: 600;
-        /*            text-transform: uppercase;*/
         color: rgb(44, 194, 216);
         margin: 0 auto;
         max-width: 420px;
-        /*        padding: 0 100px 0 100px;*/
         line-height: 100%;
     }
     h2 {
@@ -745,17 +719,14 @@ body {
     }
     /*    Question image overlays*/
     .overlay {
-        /*    border: 1px solid #000;*/
         position: relative;
         margin: 5% 0 4.5%;
     }
     .overlay2 {
-        /*    border: 1px solid #000;*/
         position: relative;
         margin: .6% 0;
     }
     .img1 {
-        /*    border: 1px solid #f00;*/
         position: relative;
         z-index: 2;
         width: 48%;
@@ -766,11 +737,9 @@ body {
         margin: 0 auto;
     }
     .target {
-        /*    border: 1px solid #0f0;*/
         position: relative;
         z-index: 1;
         opacity: 1;
-        /*    top: 6%;*/
         left: -24.5%;
         width: 48%;
         overflow: hidden;
@@ -792,13 +761,12 @@ body {
     }
     .border_white2 {
         background-color: #fff;
-        margin: 2% auto;
+        margin: 2% auto 7%;
         width: 70%;
         padding: 3% 2% 2%;
         border-radius: 40px;
     }
     #setSize .btn {
-        /*            width: 20%;*/
         position: absolute;
         top: 0;
         width: 5%;
@@ -823,16 +791,6 @@ body {
     .page-q1,
     .page-q2 {
         background: #e5e5e5;
-        /*        position: relative;*/
         height: 40%;
-/*        min-height: 100%;*/
-        /*    overflow: hidden;*/
-    }
-    .page-finish {
-        background: #e5e5e5;
-        /*    position: relative;*/
-        height: 70%;
-        min-height: 139%;
-        /*        overflow: hidden;*/
     }
 }
