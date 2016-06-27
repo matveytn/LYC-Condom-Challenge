@@ -270,11 +270,13 @@ left: 70%;
     .condom_list_special {
         font-family: 'CalibreWeb-Light', sans-serif;
         font-size: 21px;
+
     }
 
     .condom_list_special {
         /*    font-size: 30px;*/
         display: inline-block;
+        line-height: 0;
     }
     /*QUESTION IMAGE OVERLAYS*/
 
@@ -1066,3 +1068,8 @@ overflow: hidden;
             z-index: 4;
         }
     }
+
+
+#results {
+    margin: 0 11px;
+}
