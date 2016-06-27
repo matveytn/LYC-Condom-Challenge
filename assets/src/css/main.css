@@ -1,4 +1,4 @@
-/*  SECTIONS  */
+    /*  SECTIONS  */
 
 .section {
     clear: both;
@@ -219,8 +219,8 @@ body {
 
 .btn {
     /*
-        position: relative;
-          left: 70%;
+position: relative;
+left: 70%;
 */
     margin: 2%;
     padding: 0 15px;
@@ -274,13 +274,14 @@ body {
     background-size: cover;
 }
 
-.condom_list, .condom_list_special {
+.condom_list,
+.condom_list_special {
     font-family: 'CalibreWeb-Light', sans-serif;
     font-size: 21px;
 }
 
 .condom_list_special {
-/*    font-size: 30px;*/
+    /*    font-size: 30px;*/
     display: inline-block;
 }
 
@@ -482,7 +483,7 @@ body {
 
 /*
 #build-pants {
-    overflow: hidden;
+overflow: hidden;
 }
 */
 
@@ -557,173 +558,7 @@ body {
     background-color: rgba(255, 255, 255, 0.97);
 }
 
-@media (max-width: 895px) {
-    /*    Question image overlays*/
-    .overlay {
-        /*    border: 1px solid #000;*/
-        position: relative;
-        margin: 5% 0 4.5%;
-    }
-    .overlay2 {
-        /*    border: 1px solid #000;*/
-        position: relative;
-        margin: .6% 0;
-    }
-    .img1 {
-        /*    border: 1px solid #f00;*/
-        position: relative;
-        z-index: 2;
-        width: 45%;
-        left: 22.85%;
-    }
-    .irritation img {
-        width: 42%;
-        margin: 0 auto;
-    }
-    .target {
-        /*    border: 1px solid #0f0;*/
-        position: relative;
-        z-index: 1;
-        opacity: 1;
-        /*    top: 6%;*/
-        left: -22.85%;
-        width: 45%;
-        overflow: hidden;
-    }
-    .q_text {
-        margin: 0 auto 4%;
-        padding: 0 7%;
-        font-size: 25pt;
-    }
-    .border_white {
-        background-color: #fff;
-        margin: 2% auto;
-        width: 70%;
-        padding: 3% 2%;
-        border-radius: 40px;
-    }
-    .border_white2 {
-        background-color: #fff;
-        margin: 2% auto 7%;
-        width: 70%;
-        padding: 3% 2% 2%;
-        border-radius: 40px;
-    }
-    #setSize .btn {
-        /*            width: 20%;*/
-        position: absolute;
-        top: 0;
-        width: 5%;
-        min-width: 80px;
-        line-height: 0.7;
-    }
-    #q1_yes .btn,
-    #q1_no .btn,
-    #q2_yes .btn,
-    #q2_no .btn {
-        width: 6%;
-        margin-left: 10px;
-        margin-right: 10px;
-        min-width: 100px;
-        line-height: 0.7;
-    }
-    .page-q1,
-    .page-q2 {
-        background: #e5e5e5;
-        /*        position: relative;*/
-        height: 60%;
-        /*        min-height: 100%;*/
-        overflow: hidden;
-    }
-}
-
-@media (max-width: 735px) {
-    /* INTRO SCREEN */
-    body {
-        background-size: 241.5px 210px;
-        margin: auto;
-        overflow-x: hidden;
-    }
-    .intro-controls {
-        width: 100%;
-        max-width: 420px;
-    }
-    h1 {
-        font-size: 55pt;
-        font-weight: 600;
-        color: rgb(44, 194, 216);
-        margin: 0;
-    }
-    h2 {
-        font-size: 40pt;
-        font-weight: 600;
-    }
-    h3 {
-        font-size: 17pt;
-    }
-    p,
-    a {
-        font-size: 16pt;
-        color: #000;
-        font-weight: 500;
-        text-decoration: none;
-    }
-    .page-q1,
-    .page-q2 {
-        background: #e5e5e5;
-        height: 50%;
-        overflow: hidden;
-    }
-}
-
-@media (max-width: 607px) {
-    /* INTRO SCREEN */
-    body {
-        background-size: 207px 180px;
-        margin: auto;
-        overflow-x: hidden;
-    }
-    .intro-controls {
-        width: 100%;
-        max-width: 420px;
-    }
-    .intro-controls .btn {
-        position: relative;
-        left: -34.5%;
-    }
-    h1,
-    h2,
-    h3,
-    p,
-    a {
-        text-align: left;
-    }
-    h1 {
-        font-size: 55pt;
-        font-weight: 600;
-        color: rgb(44, 194, 216);
-        margin: 0 auto;
-        max-width: 420px;
-        line-height: 100%;
-    }
-    h2 {
-        font-size: 40pt;
-        font-weight: 600;
-    }
-    h3 {
-        font-size: 17pt;
-    }
-    p,
-    a {
-        font-size: 16pt;
-        color: #000;
-        font-weight: 500;
-        text-decoration: none;
-    }
-    .btn {
-        margin: 0;
-    }
-    /*    Question image overlays*/
+@media (max-width: 1374px) {
     .overlay {
         position: relative;
         margin: 5% 0 4.5%;
@@ -736,7 +571,7 @@ body {
         position: relative;
         z-index: 2;
         width: 48%;
-        left: 24.5%;
+        left: 24.2%;
     }
     .irritation img {
         width: 45%;
@@ -746,57 +581,350 @@ body {
         position: relative;
         z-index: 1;
         opacity: 1;
-        left: -24.5%;
+        left: -24.2%;
         width: 48%;
-        overflow: hidden;
-    }
-    .page-q1 .q_text,
-    .page-q2 .q_text,
-    .page-finish .q_text {
-        margin: 0 auto 4%;
-        padding: 0 7%;
-        font-size: 23pt;
-        text-align: center;
-    }
-    .page-q1 .border_white {
-        background-color: #fff;
-        margin: 2% auto;
-        width: 70%;
-        padding: 3% 2%;
-        border-radius: 40px;
-    }
-    .border_white2 {
-        background-color: #fff;
-        margin: 2% auto 7%;
-        width: 70%;
-        padding: 3% 2% 2%;
-        border-radius: 40px;
-    }
-    #setSize .btn {
-        position: absolute;
-        top: 0;
-        width: 5%;
-        min-width: 80px;
-        line-height: 0.3;
-        margin: 2%;
-    }
-    #q1_yes .btn,
-    #q1_no .btn,
-    #q2_yes .btn,
-    #q2_no .btn {
-        width: 6%;
-        margin-left: 10px;
-        margin-right: 10px;
-        min-width: 100px;
-        line-height: 0.3;
-        margin: 7% 1%;
-    }
-    .btn h3 {
-        text-align: center;
-    }
-    .page-q1,
-    .page-q2 {
-        background: #e5e5e5;
-        height: 40%;
     }
 }
+
+@media (max-width: 1180px) {
+    .overlay {
+        position: relative;
+        margin: 5% 0 4.5%;
+    }
+    .overlay2 {
+        position: relative;
+        margin: .6% 0;
+    }
+    .img1 {
+        position: relative;
+        z-index: 2;
+        width: 48%;
+        left: 24.25%;
+    }
+    .irritation img {
+        width: 45%;
+        margin: 0 auto;
+    }
+    .target {
+        position: relative;
+        z-index: 1;
+        opacity: 1;
+        left: -24.25%;
+        width: 48%;
+    }
+    @media (max-width: 895px) {
+        /*    Question image overlays*/
+        .overlay {
+            /*    border: 1px solid #000;*/
+            position: relative;
+            margin: 5% 0 4.5%;
+        }
+        .overlay2 {
+            /*    border: 1px solid #000;*/
+            position: relative;
+            margin: .6% 0;
+        }
+        .img1 {
+            /*    border: 1px solid #f00;*/
+            position: relative;
+            z-index: 2;
+            width: 45%;
+            left: 22.85%;
+        }
+        .irritation img {
+            width: 42%;
+            margin: 0 auto;
+        }
+        .target {
+            /*    border: 1px solid #0f0;*/
+            position: relative;
+            z-index: 1;
+            opacity: 1;
+            /*    top: 6%;*/
+            left: -22.85%;
+            width: 45%;
+            overflow: hidden;
+        }
+        .q_text {
+            margin: 0 auto 4%;
+            padding: 0 7%;
+            font-size: 25pt;
+        }
+        .border_white {
+            background-color: #fff;
+            margin: 2% auto;
+            width: 70%;
+            padding: 3% 2%;
+            border-radius: 40px;
+        }
+        .border_white2 {
+            background-color: #fff;
+            margin: 2% auto 7%;
+            width: 70%;
+            padding: 3% 2% 2%;
+            border-radius: 40px;
+        }
+        #setSize .btn {
+            /*            width: 20%;*/
+            position: absolute;
+            top: 0;
+            width: 9%;
+            min-width: 110px;
+            line-height: 0.7;
+        }
+        #q1_yes .btn,
+        #q1_no .btn,
+        #q2_yes .btn,
+        #q2_no .btn {
+            width: 6%;
+            margin-left: 10px;
+            margin-right: 10px;
+            min-width: 100px;
+            line-height: 0.7;
+        }
+        .page-q1,
+        .page-q2 {
+            background: #e5e5e5;
+            /*        position: relative;*/
+            height: 60%;
+            /*        min-height: 100%;*/
+            overflow: hidden;
+        }
+    }
+    @media (max-width: 735px) {
+        /* INTRO SCREEN */
+        body {
+            background-size: 241.5px 210px;
+            margin: auto;
+            overflow-x: hidden;
+        }
+        .intro-controls {
+            width: 100%;
+            max-width: 420px;
+        }
+        h1 {
+            font-size: 55pt;
+            font-weight: 600;
+            color: rgb(44, 194, 216);
+            margin: 0;
+        }
+        h2 {
+            font-size: 40pt;
+            font-weight: 600;
+        }
+        h3 {
+            font-size: 17pt;
+        }
+        p,
+        a {
+            font-size: 16pt;
+            color: #000;
+            font-weight: 500;
+            text-decoration: none;
+        }
+        .page-q1,
+        .page-q2 {
+            background: #e5e5e5;
+            height: 50%;
+            overflow: hidden;
+        }
+        /*Sweet alert custom styles*/
+        .sweet-alert {
+            width: 340px;
+            padding: 30px;
+            border-radius: 30px;
+            left: 50%;
+            top: 40%;
+            margin-left: -200px;
+            margin-top: -200px;
+        }
+        .sweet-alert h2 {
+            font-size: 30px;
+            text-align: center;
+            margin: 5px 0;
+            padding: 0;
+            line-height: 40px;
+        }
+        .sweet-alert p {
+            font-size: 19px;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            line-height: normal;
+        }
+        .sweet-alert button {
+            font-size: 21px;
+            line-height: 1.7;
+            font-weight: 500;
+            border-radius: 5px;
+            padding: 10px 32px;
+            margin: 2px 5px 0 5px;
+            cursor: pointer;
+        }
+    }
+    @media (max-width: 607px) {
+        /* INTRO SCREEN */
+        body {
+            background-size: 207px 180px;
+            margin: auto;
+            overflow-x: hidden;
+        }
+        .intro-controls {
+            width: 100%;
+            max-width: 300px;
+            margin: 0 5%;
+        }
+        .intro-controls .btn {
+            position: relative;
+            left: -34.5%;
+        }
+        h1,
+        h2,
+        h3,
+        p,
+        a {
+            text-align: left;
+        }
+        h1 {
+            font-size: 55pt;
+            font-weight: 600;
+            color: rgb(44, 194, 216);
+            /*        margin: 0 auto;*/
+            max-width: 420px;
+            line-height: 100%;
+        }
+        .intro-title {
+            margin: 0 5%;
+        }
+        h2 {
+            font-size: 40pt;
+            font-weight: 600;
+        }
+        h3 {
+            font-size: 17pt;
+        }
+        p,
+        a {
+            font-size: 16pt;
+            color: #000;
+            font-weight: 500;
+            text-decoration: none;
+        }
+        #initial_dick_size .btn {
+            position: relative;
+            left: -29%;
+        }
+        /*    Question image overlays*/
+        .overlay {
+            position: relative;
+            margin: 5% 0 4.5%;
+        }
+        .overlay2 {
+            position: relative;
+            margin: .6% 0;
+        }
+        .img1 {
+            position: relative;
+            z-index: 2;
+            width: 48%;
+            left: 24.5%;
+        }
+        .irritation img {
+            width: 45%;
+            margin: 0 auto;
+        }
+        .target {
+            position: relative;
+            z-index: 1;
+            opacity: 1;
+            left: -24.5%;
+            width: 48%;
+            overflow: hidden;
+        }
+        .page-q1 .q_text,
+        .page-q2 .q_text,
+        .page-finish .q_text {
+            margin: 0 auto 4%;
+            padding: 0 7%;
+            font-size: 23pt;
+            text-align: center;
+        }
+        .page-q1 .border_white {
+            background-color: #fff;
+            margin: 2% auto;
+            width: 70%;
+            padding: 3% 2%;
+            border-radius: 40px;
+        }
+        .border_white2 {
+            background-color: #fff;
+            margin: 2% auto 7%;
+            width: 70%;
+            padding: 3% 2% 2%;
+            border-radius: 40px;
+        }
+        #setSize .btn {
+            position: absolute;
+            top: 0;
+            width: 10%;
+            min-width: 110px;
+            line-height: 0.3;
+            margin: 2%;
+        }
+        #q1_yes .btn,
+        #q1_no .btn,
+        #q2_yes .btn,
+        #q2_no .btn {
+            width: 6%;
+            margin-left: 10px;
+            margin-right: 10px;
+            min-width: 100px;
+            line-height: 0.3;
+            margin: 7% 1%;
+        }
+        .btn h3 {
+            text-align: center;
+        }
+        #initial_dick_size .btn {
+            margin: 0 0 50px 0;
+        }
+        .page-q1,
+        .page-q2 {
+            background: #e5e5e5;
+            height: 40%;
+        }
+        /*Sweet alert custom styles*/
+        .sweet-alert {
+            width: 80%;
+            min-width: 0px;
+            padding: 30px 10px;
+            border-radius: 30px;
+            left: 8%;
+            top: 40%;
+            margin: 0;
+            margin-top: -200px;
+        }
+        .sweet-alert h2 {
+            font-size: 30px;
+            text-align: center;
+            margin: 5px 0;
+            padding: 0;
+            line-height: 40px;
+        }
+        .sweet-alert p {
+            font-size: 19px;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            line-height: normal;
+        }
+        .sweet-alert button {
+            font-size: 21px;
+            line-height: 1.7;
+            font-weight: 500;
+            border-radius: 5px;
+            padding: 10px 32px;
+            margin: 2px 5px 0 5px;
+            cursor: pointer;
+        }
+    }

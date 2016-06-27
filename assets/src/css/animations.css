@@ -41,12 +41,12 @@
     z-index: 9999;
 }
 
-.trunk.ng-enter  {
+.page-q1 .ng-enter  {
     animation: moveToLeft 0.6s ease both;
     z-index: 9999;
 }
 
-.trunk.ng-leave  {
+.page-q1 .ng-leave  {
     animation: moveFromRight 0.6s ease both;
     z-index: 8888;
 }
