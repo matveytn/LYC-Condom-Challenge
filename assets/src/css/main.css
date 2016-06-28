@@ -762,12 +762,23 @@ left: 70%;
     }
 }
 
+@media (max-width: 1500px)
+{
+    #build-container {
+        position: absolute;
+        height: 68%;
+        bottom: 0%;
+        left: 30%;
+        z-index: 2;
+    }
+}
+
 @media (max-width: 1210px) {
     #build-container {
         position: absolute;
-        height: 70%;
+        height: 56%;
         bottom: 0%;
-        left: 27%;
+        left: 29%;
         z-index: 2;
     }
     #build-penis {
@@ -784,9 +795,9 @@ left: 70%;
 @media (max-width: 920px) {
     #build-container {
         position: absolute;
-        height: 67%;
+        height: 47%;
         bottom: 0%;
-        left: 24%;
+        left: 29%;
         z-index: 2;
     }
     #build-penis {
