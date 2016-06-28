@@ -436,6 +436,10 @@ body {
 
 /*Penis construction stage*/
 
+.mobile-ui {
+    display: none;
+}
+
 #build-logo img {
     position: fixed;
     float: left;
@@ -488,15 +492,15 @@ body {
 
 #pants-back {
     position: absolute;
-    width: 91%;
+    height: 25%;
     bottom: 0px;
-    left: 27.9%;
+    left: 0px;
     z-index: 1;
 }
 
 #pants-front {
     position: absolute;
-    width: 55%;
+    height: 25%;
     bottom: -2px;
     left: 0px;
     z-index: 3;
@@ -676,8 +680,8 @@ body {
     }
 }
 
-@media (max-width: 607px) {
-    /* INTRO SCREEN */
+@media (orientation: portrait) {
+    /*  INTRO SCREEN  */
     body {
         background-size: 207px 180px;
         margin: auto;
@@ -723,7 +727,7 @@ body {
     .btn {
         margin: 0;
     }
-    /*    Question image overlays*/
+    /*  Question image overlays  */
     .overlay {
         position: relative;
         margin: 5% 0 4.5%;
@@ -798,5 +802,31 @@ body {
     .page-q2 {
         background: #e5e5e5;
         height: 40%;
+    }
+    /*  Penis building screen mobile view  */
+    .desktop-ui {
+        display: none;
+    }
+    .mobile-ui {
+        display: block;
+    }
+    #build-ui {
+        position: fixed;
+        float: right;
+        top: 20px;
+        right: -190px;
+        background: url(../../../media/PenisBuildScreen/Mobile-UI-Box.png) no-repeat;
+        background-size: contain;
+    }
+    #build-ui-bg {
+        height: 560px;
+        width: 100px;
+        opacity: 0;
+    }
+    #build-ui-icons {
+        position: absolute;
+        padding-left: 12px;
+        width: 10%;
+        top: 10%;
     }
 }
