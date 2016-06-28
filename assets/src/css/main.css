@@ -27,7 +27,6 @@
         clear: both;
     }
 
-<<<<<<< HEAD
 /* Typography */
 
 
@@ -37,7 +36,6 @@
     font-family: CalibreWeb-Light;
     src: url(../../../assets/fonts/CalibreWeb-Light.eot?) format("eot"), url(../../../assets/fonts/CalibreWeb-Light.woff) format("woff")
 }
-=======
     .group {
         zoom: 1;
         /* For IE 6/7 */
@@ -55,7 +53,6 @@
     .span_7_of_9 {
         width: 77.42%;
     }
->>>>>>> gh-pages
 
     .span_6_of_9 {
         width: 66.13%;
@@ -233,8 +230,8 @@ left: 70%;
 
     .page-q1,
     .page-q2 {
-        background: #e5e5e5;
-        /*        position: relative;*/
+/*        background: #e5e5e5;*/
+                position: relative;
         height: 100%;
         min-height: 100%;
         /*    overflow: hidden;*/
@@ -707,8 +704,8 @@ left: 70%;
             }
             .page-q1,
             .page-q2 {
-                background: #e5e5e5;
-                /*        position: relative;*/
+/*                background: #e5e5e5;*/
+/*                        position: static;*/
                 height: 60%;
                 /*        min-height: 100%;*/
                 overflow: hidden;
@@ -750,7 +747,7 @@ left: 70%;
             }
             .page-q1,
             .page-q2 {
-                background: #e5e5e5;
+/*                background: #e5e5e5;*/
                 height: 50%;
                 overflow: hidden;
             }
@@ -918,8 +915,9 @@ left: 70%;
             }
             .page-q1,
             .page-q2 {
-                background: #e5e5e5;
-                height: 40%;
+                position: relative;
+/*                background: #e5e5e5;*/
+                height: 100%;
             }
             /*Sweet alert custom styles*/
             .sweet-alert {
@@ -980,8 +978,8 @@ left: 70%;
         }
         .page-q1,
         .page-q2 {
-            background: #e5e5e5;
-            height: 40%;
+/*            background: rgb(229, 229, 229);*/
+            height: 100%;
         }
         /*  Penis building screen mobile view  */
         .desktop-ui {
