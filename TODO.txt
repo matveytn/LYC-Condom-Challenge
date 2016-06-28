@@ -1,15 +1,16 @@
 #TODO list
 
-###Home page
-* Fix background flickering
-* Enlarge button on hover
+ipad
+Fonts are not displaying correctly, all bold
 
-##Penis building
-* Flip the penis
-* Style literally everything
+android
+background is slow as fuck
 
-##Question 1 / Question 2
-* make an image pulse
-* Make the pop up on the same window ?
+both, phone
+back button padding is wrong in portairt mode
+
+phone
+increase margin
+make pop up responsive
 
 
