@@ -80,24 +80,7 @@
     .span_1_of_9 {
         width: 9.688%;
     }
-    /*  GO FULL WIDTH BELOW 480 PIXELS */
 
-    @media only screen and (max-width: 480px) {
-        .col {
-            margin: 1% 0 1% 0%;
-        }
-        .span_1_of_9,
-        .span_2_of_9,
-        .span_3_of_9,
-        .span_4_of_9,
-        .span_5_of_9,
-        .span_6_of_9,
-        .span_7_of_9,
-        .span_8_of_9,
-        .span_9_of_9 {
-            width: 100%;
-        }
-    }
     /* Typography */
     /*Custom fonts*/
 
@@ -446,7 +429,7 @@ left: 70%;
 
     #build-ui {
         position: relative;
-        min-width: 320px;
+        width: 360px;
         float: right;
         right: 10%;
         background: url(../../../media/PenisBuildScreen/UI-Box.png) no-repeat;
@@ -461,7 +444,7 @@ left: 70%;
     #build-ui-icons {
         position: absolute;
         width: 100%;
-        top: 10%;
+        top: 7%;
     }
 
     #light-swatch,
@@ -471,11 +454,19 @@ left: 70%;
     #uncircum-icon {
         width: 50px;
     }
-    /*
-#build-pants {
-overflow: hidden;
-}
-*/
+
+    .ui-state-default,
+    .ui-widget-content,
+    .ui-state-default,
+    .ui-widget-header,
+    .ui-state-default {
+        background: rgba(51, 51, 51, 0);
+        border: 0px solid;
+    }
+    .ui-state-active {
+        background: #fff;
+        border-radius: 100px;
+    }
 
     #pants-back {
         position: absolute;
@@ -1008,7 +999,7 @@ overflow: hidden;
             background-size: contain;
         }
         #build-ui-bg {
-            height: 560px;
+            height: 550px;
             width: 100px;
             opacity: 0;
         }
@@ -1016,7 +1007,7 @@ overflow: hidden;
             position: absolute;
             padding-left: 12px;
             width: 10%;
-            top: 10%;
+            top: 6%;
         }
         #light-swatch,
         #med-swatch,
@@ -1025,11 +1016,6 @@ overflow: hidden;
         #uncircum-icon {
             width: 50px;
         }
-        /*
-    #build-pants {
-        overflow: hidden;
-    }
-    */
         #pants-back {
             position: absolute;
             height: 40%;
