@@ -168,22 +168,22 @@ $(function () {
     var images = new Array();
 
     images[0] = new Image();
-    images[0].src = '../media/Dicks/Light-Circum.png';
+    images[0].src = '../../../media/Dicks/Light-Circum.png';
 
     images[1] = new Image();
-    images[1].src = '../media/Dicks/Light-Uncircum.png';
+    images[1].src = '../../../media/Dicks/Light-Uncircum.png';
 
     images[2] = new Image();
-    images[2].src = '../media/Dicks/Med-Circum.png';
+    images[2].src = '../../../media/Dicks/Med-Circum.png';
 
     images[3] = new Image();
-    images[3].src = '../media/Dicks/Med-Uncircum.png';
+    images[3].src = '../../../media/Dicks/Med-Uncircum.png';
 
     images[4] = new Image();
-    images[4].src = '../media/Dicks/Dark-Circum.png';
+    images[4].src = '../../../media/Dicks/Dark-Circum.png';
 
     images[5] = new Image();
-    images[5].src = '../media/Dicks/Dark-Uncircum.png';
+    images[5].src = '../../../media/Dicks/Dark-Uncircum.png';
 
     $('.penis-config').click(function () {
         if ($('#colour1').is(':checked') && $('#circum1').is(':checked')) {
