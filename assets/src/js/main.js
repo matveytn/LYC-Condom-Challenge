@@ -86,7 +86,7 @@ $(document).ready(function () {
     $("#initial_dick_size .btn").on('click', function () {
         sessionStorage.penisSize = '77';
     });
-    $('#measurements').html("Length: 177mm, Girth: 80mm");
+    $('#measurements').html("Length: 177mm," + "<br>" + "Girth: 80mm");
     $('#build-penis').resizable({
         containment: "#build-container",
         minHeight: 120,
@@ -103,7 +103,7 @@ $(document).ready(function () {
         },
         resize: function (event, ui) {
             $('#test2').html(Math.round(ui.size.height * 0.4) + "mm");
-            $('#measurements').html("Length: " + Math.round(ui.size.height * 0.3) + "mm, " + "Girth: " + Math.round(ui.size.width * 0.4) + "mm");
+            $('#measurements').html("Length: " + Math.round(ui.size.height * 0.3) + "mm" + "<br>" + "Girth: " + Math.round(ui.size.width * 0.4) + "mm");
             var circumference = Math.round(ui.size.width * 0.4);
             sessionStorage.penisSize = circumference;
         }
