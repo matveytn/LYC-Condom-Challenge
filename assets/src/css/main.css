@@ -26,16 +26,14 @@
     .group:after {
         clear: both;
     }
+    /* Typography */
+    /*Custom fonts*/
 
-/* Typography */
+    @font-face {
+        font-family: CalibreWeb-Light;
+        src: url(../../../assets/fonts/CalibreWeb-Light.eot?) format("eot"), url(../../../assets/fonts/CalibreWeb-Light.woff) format("woff")
+    }
 
-
-/*Custom fonts*/
-
-@font-face {
-    font-family: CalibreWeb-Light;
-    src: url(../../../assets/fonts/CalibreWeb-Light.eot?) format("eot"), url(../../../assets/fonts/CalibreWeb-Light.woff) format("woff")
-}
     .group {
         zoom: 1;
         /* For IE 6/7 */
@@ -77,7 +75,6 @@
     .span_1_of_9 {
         width: 9.688%;
     }
-
     /* Typography */
     /*Custom fonts*/
 
@@ -230,8 +227,8 @@ left: 70%;
 
     .page-q1,
     .page-q2 {
-/*        background: #e5e5e5;*/
-                position: relative;
+        /*        background: #e5e5e5;*/
+        position: relative;
         height: 100%;
         min-height: 100%;
         /*    overflow: hidden;*/
@@ -250,7 +247,6 @@ left: 70%;
     .condom_list_special {
         font-family: 'CalibreWeb-Light', sans-serif;
         font-size: 21px;
-
     }
 
     .condom_list_special {
@@ -460,6 +456,7 @@ left: 70%;
         background: rgba(51, 51, 51, 0);
         border: 0px solid;
     }
+
     .ui-state-active {
         background: #fff;
         border-radius: 100px;
@@ -483,6 +480,7 @@ left: 70%;
 
     #build-container {
         position: relative;
+        left: 100px;
         height: 90%;
         z-index: 2;
     }
@@ -529,6 +527,14 @@ left: 70%;
 
     .sweet-alert {
         background-color: rgba(255, 255, 255, 0.97);
+    }
+
+    #build-container {
+        position: absolute;
+        /*        height: 40%;*/
+        /*        bottom: 0px;*/
+        left: 440px;
+        z-index: 1;
     }
 
     @media (max-width: 1374px) {
@@ -733,8 +739,8 @@ left: 70%;
             }
             .page-q1,
             .page-q2 {
-/*                background: #e5e5e5;*/
-/*                        position: static;*/
+                /*                background: #e5e5e5;*/
+                /*                        position: static;*/
                 height: 60%;
                 /*        min-height: 100%;*/
                 overflow: hidden;
@@ -776,7 +782,7 @@ left: 70%;
             }
             .page-q1,
             .page-q2 {
-/*                background: #e5e5e5;*/
+                /*                background: #e5e5e5;*/
                 height: 50%;
                 overflow: hidden;
             }
@@ -813,6 +819,13 @@ left: 70%;
                 margin: 2px 5px 0 5px;
                 cursor: pointer;
             }
+            #build-container {
+                position: fixed;
+                /*        height: 40%;*/
+                /*        bottom: 0px;*/
+                left: -80px;;
+                z-index: 1;
+            }
         }
         @media (max-width: 607px) {
             /* INTRO SCREEN */
@@ -841,7 +854,7 @@ left: 70%;
                 font-size: 55pt;
                 font-weight: 600;
                 color: rgb(44, 194, 216);
-                        margin: 0;
+                margin: 0;
                 width: 100%;
                 max-width: 420px;
                 line-height: 100%;
@@ -945,7 +958,7 @@ left: 70%;
             .page-q1,
             .page-q2 {
                 position: relative;
-/*                background: #e5e5e5;*/
+                /*                background: #e5e5e5;*/
                 height: 100%;
             }
             /*Sweet alert custom styles*/
@@ -1007,7 +1020,7 @@ left: 70%;
         }
         .page-q1,
         .page-q2 {
-/*            background: rgb(229, 229, 229);*/
+            /*            background: rgb(229, 229, 229);*/
             height: 100%;
         }
         /*  Penis building screen mobile view  */
@@ -1051,7 +1064,7 @@ left: 70%;
             z-index: 3;
         }
         #build-container {
-            position: relative;
+/*            position: relative;*/
             height: 90%;
             z-index: 2;
         }
@@ -1075,7 +1088,6 @@ left: 70%;
         }
     }
 
-
-#results {
-    margin: 7px 12px;
-}
+    #results {
+        margin: 7px 12px;
+    }
