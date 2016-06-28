@@ -762,7 +762,7 @@ left: 70%;
     }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1210px) {
     #build-container {
         position: absolute;
         height: 70%;
@@ -781,7 +781,7 @@ left: 70%;
     }
 }
 
-@media (max-width: 910px) {
+@media (max-width: 920px) {
     #build-container {
         position: absolute;
         height: 67%;
