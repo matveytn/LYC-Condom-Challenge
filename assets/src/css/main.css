@@ -492,7 +492,7 @@ body {
 
 #pants-back {
     position: absolute;
-    height: 25%;
+    height: 40%;
     bottom: 0px;
     left: 0px;
     z-index: 1;
@@ -500,7 +500,7 @@ body {
 
 #pants-front {
     position: absolute;
-    height: 25%;
+    height: 40%;
     bottom: -2px;
     left: 0px;
     z-index: 3;
@@ -508,7 +508,6 @@ body {
 
 #build-container {
     position: relative;
-    width: 80%;
     height: 90%;
     z-index: 2;
 }
@@ -516,13 +515,11 @@ body {
 #build-penis {
     position: absolute;
     bottom: 0px;
-    left: 40%;
-    max-width: 20%;
-    max-height: 90%;
+    left: 30%;
+    height: 90%;
 }
 
 #build-penis img {
-    width: 100%;
     height: 100%;
 }
 
@@ -828,5 +825,62 @@ body {
         padding-left: 12px;
         width: 10%;
         top: 10%;
+    }
+    #light-swatch,
+    #med-swatch,
+    #dark-swatch,
+    #circum-icon,
+    #uncircum-icon {
+        width: 50px;
+    }
+
+
+    /*
+    #build-pants {
+        overflow: hidden;
+    }
+    */
+
+    #pants-back {
+        position: absolute;
+        height: 40%;
+        bottom: 0px;
+        left: -300px;
+        z-index: 1;
+    }
+
+    #pants-front {
+        position: absolute;
+        height: 40%;
+        bottom: -2px;
+        left: -300px;
+        z-index: 3;
+    }
+
+    #build-container {
+        position: relative;
+        height: 90%;
+        z-index: 2;
+    }
+
+    #build-penis {
+        position: absolute;
+        bottom: 0px;
+        left: 30%;
+        height: 90%;
+    }
+
+    #build-penis img {
+        height: 100%;
+    }
+
+    #measurements {
+        font-family: 'CalibreWeb-Light', sans-serif;
+        position: absolute;
+        bottom: 20px;
+        left: 35%;
+        text-align: center;
+        color: #fff;
+        z-index: 4;
     }
 }
