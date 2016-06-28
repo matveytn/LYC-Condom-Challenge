@@ -1,23 +1,9 @@
 #TODO list
 
-ipad
-Fonts are not displaying correctly, all bold
-
 android
 background is slow as fuck
 
-both, phone
-back button padding is wrong in portairt mode
-
-phone
-increase margin
-make pop up responsive
-
-<<<<<<< HEAD
 
 BACK button animation in the wrong direction
 
 POP up screen only change the page when "OK got it" is pressed
-=======
-konami code staggering beauty
->>>>>>> origin/new_interface

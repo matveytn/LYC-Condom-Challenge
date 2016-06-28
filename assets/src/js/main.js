@@ -30,7 +30,9 @@ $("#confirm_build").on('click', function () {
         text: "Using the right rubber makes a massive difference, and in New Zealand we’re lucky enough to have a range of sizes funded by Pharmac. This means that once you’ve found the size for you, you can get them at a heavily discounted price from your nurse or doctor.",
         confirmButtonColor: "#2cc2d8",
         confirmButtonText: "Got it!",
-        closeOnConfirm: false
+        closeOnConfirm: true
+    }, function () {
+        document.location.href = "#q1";
     });
 });
 
@@ -43,9 +45,12 @@ $("#q1_yes, #q1_no").on('click', function (data) {
         type: "info",
         confirmButtonColor: "#2cc2d8",
         confirmButtonText: "Got it!",
-        closeOnConfirm: false
+        closeOnConfirm: true
+    }, function () {
+        document.location.href = "#q2";
     });
 });
+
 
 //Question 2 popup
 $("#q2_yes, #q2_no").on('click', function (data) {
@@ -54,7 +59,9 @@ $("#q2_yes, #q2_no").on('click', function (data) {
         text: "There are plenty of thinner condoms on the market that will give you more feeling during sex. These are just as effective at preventing transmission of HIV and other STIs as regular condoms, and are no more likely to break.",
         confirmButtonColor: "#2cc2d8",
         confirmButtonText: "Got it!",
-        closeOnConfirm: false
+        closeOnConfirm: true
+    }, function () {
+        document.location.href = "#finish";
     });
 });
 
@@ -69,7 +76,6 @@ el.pulse(pulse_properties, {
     duration: 1000,
     pulses: 100
 });
-
 
 
 //-----------------------------------------------------------------------------------------------------
@@ -153,9 +159,9 @@ $(document).ready(function () {
             else if (sessionStorage.q1 == 'no' && sessionStorage.q2 == "no")
                 $('#results').html(data.snug.latex.thin);
         }
-        //        });
     });
 });
+
 
 
 //Building screen images
