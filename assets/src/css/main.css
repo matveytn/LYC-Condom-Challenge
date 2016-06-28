@@ -445,9 +445,8 @@ left: 70%;
 #build-stage {
     position: fixed;
     bottom: 0px;
-    top: 20px;
-    overflow: hidden;
-    min-height: 700px
+    top: 10%;
+    min-height: 700px;
 }
 
 #build-ui {
