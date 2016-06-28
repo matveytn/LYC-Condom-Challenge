@@ -1,31 +1,36 @@
-    /*  SECTIONS  */
+/*  SECTIONS  */
 
-    .section {
-        clear: both;
-        padding: 0px;
-        margin: 0px;
-    }
-    /*  COLUMN SETUP  */
+.section {
+    clear: both;
+    padding: 0px;
+    margin: 0px;
+}
 
-    .col {
-        display: block;
-        float: left;
-    }
 
-    .col:first-child {
-        margin-left: 0;
-    }
-    /*  GROUPING  */
+/*  COLUMN SETUP  */
 
-    .group:before,
-    .group:after {
-        content: "";
-        display: table;
-    }
+.col {
+    display: block;
+    float: left;
+}
 
-    .group:after {
-        clear: both;
-    }
+.col:first-child {
+    margin-left: 0;
+}
+
+
+/*  GROUPING  */
+
+.group:before,
+.group:after {
+    content: "";
+    display: table;
+}
+
+.group:after {
+    clear: both;
+}
+
 
 /* Typography */
 
@@ -36,414 +41,681 @@
     font-family: CalibreWeb-Light;
     src: url(../../../assets/fonts/CalibreWeb-Light.eot?) format("eot"), url(../../../assets/fonts/CalibreWeb-Light.woff) format("woff")
 }
-    .group {
-        zoom: 1;
-        /* For IE 6/7 */
-    }
-    /*  GRID OF NINE  */
 
-    .span_9_of_9 {
+.group {
+    zoom: 1;
+    /* For IE 6/7 */
+}
+
+
+/*  GRID OF NINE  */
+
+.span_9_of_9 {
+    width: 100%;
+}
+
+.span_8_of_9 {
+    width: 88.71%;
+}
+
+.span_7_of_9 {
+    width: 77.42%;
+}
+
+.span_6_of_9 {
+    width: 66.13%;
+}
+
+.span_5_of_9 {
+    width: 54.84%;
+}
+
+.span_4_of_9 {
+    width: 43.55%;
+}
+
+.span_3_of_9 {
+    width: 32.26%;
+}
+
+.span_2_of_9 {
+    width: 20.97%;
+}
+
+.span_1_of_9 {
+    width: 9.688%;
+}
+
+
+/* Typography */
+
+
+/*Custom fonts*/
+
+@font-face {
+    font-family: CalibreWeb-Light;
+    src: url(../../../assets/fonts/CalibreWeb-Light.eot?) format("eot"), url(../../../assets/fonts/CalibreWeb-Light.woff) format("woff")
+}
+
+@font-face {
+    font-family: CalibreWeb-Regular;
+    src: url(../../../assets/fonts/CalibreWeb-Regular.eot?) format("eot"), url(../../../assets/fonts/CalibreWeb-Regular.woff) format("woff")
+}
+
+@font-face {
+    font-family: CalibreWeb-Medium;
+    src: url(../../../assets/fonts/CalibreWeb-Medium.eot?) format("eot"), url(../../../assets/fonts/CalibreWeb-Medium.woff) format("woff")
+}
+
+@font-face {
+    font-family: CalibreWeb-Semibold;
+    src: url(../../../assets/fonts/CalibreWeb-Semibold.eot?) format("eot"), url(../../../assets/fonts/CalibreWeb-Semibold.woff) format("woff")
+}
+
+*,
+h1,
+h2,
+h3,
+h4,
+p,
+a {
+    font-family: 'CalibreWeb-Regular', sans-serif;
+    color: #000;
+}
+
+h1 {
+    font-family: "CalibreWeb-Semibold", sans-serif;
+    font-size: 60pt;
+    font-weight: 600;
+    /*    text-transform: uppercase;*/
+    color: rgb(44, 194, 216);
+    margin: 1% 5% 1%;
+}
+
+h2 {
+    font-size: 40pt;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 17pt;
+}
+
+h4 {
+    font-size: 17pt;
+    line-height: 1.2;
+}
+
+p,
+a {
+    font-size: 17pt;
+    color: #000;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+
+/* INTRO SCREEN */
+
+body {
+    background-color: #151618;
+    background-image: url(../../../media/condomStartOpacity.png);
+    background-size: 300px 260px;
+    background-repeat: repeat;
+    margin: auto;
+    overflow-x: hidden;
+}
+
+.intro-controls {
+    width: 42%;
+    max-width: 400px;
+}
+
+.group {
+    margin: 0 auto;
+}
+
+
+/* make our pages be full width and full height */
+
+
+/* positioned absolutely so that the pages can overlap each other as they enter and leave */
+
+.page {
+    bottom: 0;
+    padding-top: 100px;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    /*    overflow: hidden;*/
+}
+
+.page a {
+    margin-top: 50px;
+}
+
+.page-finish p,
+.page-finish h3 {
+    text-align: left;
+}
+
+.page-finish .btn h3 {
+    text-align: center;
+}
+
+
+/* PAGES (specific colors for each page)
+============================================================================= */
+
+.btn {
+    /*
+position: relative;
+left: 70%;
+*/
+    margin: 2%;
+    padding: 0 15px;
+    /*            line-height: 1.8;*/
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    box-shadow: none;
+    border-radius: 4pt;
+    color: #fff;
+    background-color: rgb(44, 194, 216);
+    border: none;
+    -webkit-transition: all 0.2s ease 0s;
+    transition: all 0.2s ease 0s;
+}
+
+.btn h3 {
+    color: #fff;
+}
+
+.btn:focus,
+.btn:hover {
+    outline: none;
+    -webkit-transform: scale(1.07);
+    transform: scale(1.07);
+    -webkit-transition: all 0.2s ease 0s;
+    transition: all 0.2s ease 0s;
+    cursor: pointer;
+    cursor: hand;
+}
+
+.btn_no {
+    background-color: red;
+}
+
+.page-q1,
+.page-q2 {
+    /*        background: #e5e5e5;*/
+    position: relative;
+    height: 100%;
+    min-height: 100%;
+    /*    overflow: hidden;*/
+}
+
+.page-home p {
+    color: #fff;
+}
+
+.page-construction {
+    background: url(../../../media/PenisBuildScreen/Background.png) no-repeat center fixed;
+    background-size: cover;
+    overflow: visible;
+}
+
+.condom_list,
+.condom_list_special {
+    font-family: 'CalibreWeb-Light', sans-serif;
+    font-size: 21px;
+}
+
+.condom_list_special {
+    /*    font-size: 30px;*/
+    display: inline-block;
+    line-height: 0;
+}
+
+
+/*QUESTION IMAGE OVERLAYS*/
+
+.overlay {
+    /*    border: 1px solid #000;*/
+    position: relative;
+    margin: 5% 0 4.5%;
+}
+
+.overlay2 {
+    /*    border: 1px solid #000;*/
+    position: relative;
+    margin: .6% 0;
+}
+
+.img1 {
+    /*    border: 1px solid #f00;*/
+    position: relative;
+    z-index: 2;
+    width: 35%;
+    left: 17.625%;
+}
+
+.irritation img {
+    width: 26%;
+    margin: 0 auto;
+}
+
+.target {
+    /*    border: 1px solid #0f0;*/
+    position: relative;
+    z-index: 1;
+    opacity: 1;
+    /*    top: 6%;*/
+    left: -17.625%;
+    width: 35%;
+    overflow: hidden;
+}
+
+#setSize .btn {
+    /*    width: 20%;*/
+    position: absolute;
+    top: 0;
+    width: 6%;
+    min-width: 100px;
+}
+
+#q1_yes .btn,
+#q1_no .btn,
+#q2_yes .btn,
+#q2_no .btn {
+    width: 8%;
+    margin-left: 10px;
+    margin-right: 10px;
+    min-width: 120px;
+}
+
+.q_text {
+    margin: 0 auto 4%;
+    padding: 0 7%;
+}
+
+.border_white {
+    background-color: #fff;
+    margin: 2% auto;
+    width: 70%;
+    padding: 3% 2%;
+    border-radius: 40px;
+}
+
+.border_white2 {
+    background-color: #fff;
+    margin: 2% auto 5%;
+    width: 70%;
+    padding: 3% 2% 2%;
+    border-radius: 40px;
+}
+
+
+/*Sweet alert custom styles*/
+
+.sweet-alert {
+    background-color: white;
+    width: 478px;
+    padding: 30px;
+    border-radius: 30px;
+    text-align: center;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin-left: -256px;
+    margin-top: -200px;
+    overflow: hidden;
+    display: none;
+    z-index: 99999;
+}
+
+@media all and (max-width: 540px) {
+    .sweet-alert {
+        width: auto;
+        margin-left: 0;
+        margin-right: 0;
+        left: 15px;
+        right: 15px;
+    }
+}
+
+.sweet-alert h2 {
+    font-family: 'CalibreWeb-Medium', sans-serif;
+    color: #575757;
+    font-size: 40px;
+    text-align: center;
+    font-weight: 600;
+    text-transform: none;
+    position: relative;
+    margin: 25px 0;
+    padding: 0;
+    line-height: 40px;
+    display: block;
+}
+
+.sweet-alert p {
+    font-family: 'CalibreWeb-Regular', sans-serif;
+    color: #797979;
+    font-size: 22px;
+    text-align: center;
+    font-weight: 300;
+    position: relative;
+    text-align: inherit;
+    float: none;
+    margin: 0;
+    padding: 0;
+    line-height: normal;
+}
+
+.sweet-alert button {
+    font-family: 'CalibreWeb-Regular', sans-serif;
+    background-color: #2cc2d8;
+    color: white;
+    border: none;
+    box-shadow: none;
+    font-size: 26px;
+    font-weight: 500;
+    border-radius: 5px;
+    padding: 10px 32px;
+    margin: 26px 5px 0 5px;
+    cursor: pointer;
+}
+
+
+/*Penis construction stage*/
+
+.mobile-ui {
+    display: none;
+}
+
+#build-logo img {
+    position: fixed;
+    float: left;
+    width: 15%;
+    left: 25px;
+    top: 20px;
+}
+
+#build-stage {
+    position: fixed;
+    bottom: 0px;
+    top: 20px;
+    overflow: hidden;
+    min-height: 700px
+}
+
+#build-ui {
+    position: relative;
+    width: 360px;
+    float: right;
+    right: 10%;
+    background: url(../../../media/PenisBuildScreen/UI-Box.png) no-repeat;
+    background-size: contain;
+}
+
+#build-ui-bg {
+    width: 100%;
+    opacity: 0;
+}
+
+#build-ui-icons {
+    position: absolute;
+    width: 100%;
+    top: 7%;
+}
+
+#light-swatch,
+#med-swatch,
+#dark-swatch,
+#circum-icon,
+#uncircum-icon {
+    width: 50px;
+}
+
+.ui-state-default,
+.ui-widget-content,
+.ui-state-default,
+.ui-widget-header,
+.ui-state-default {
+    background: rgba(51, 51, 51, 0);
+    border: 0px solid;
+}
+
+.ui-state-active {
+    background: #fff;
+    border-radius: 100px;
+}
+
+#pants-back {
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+    z-index: 1;
+}
+
+#pants-front {
+    position: absolute;
+    width: 100%;
+    bottom: -2px;
+    left: 0px;
+    z-index: 3;
+}
+
+#build-container {
+    position: absolute;
+    height: 80%;
+    bottom: 0%;
+    left: 29%;
+    z-index: 2;
+}
+
+#build-penis {
+    position: relative;
+    bottom: 0px;
+    /*        left: 30%;*/
+    height: 90%;
+}
+
+#build-penis img {
+    height: 100%;
+}
+
+#measurements {
+    font-family: 'CalibreWeb-Light', sans-serif;
+    position: absolute;
+    bottom: 20px;
+    left: 35%;
+    text-align: center;
+    color: #fff;
+    z-index: 4;
+}
+
+#ngrip,
+#egrip {
+    width: 32px;
+    height: 32px;
+}
+
+#ngrip {
+    top: -45px;
+    left: 45%;
+    background-image: url(../../../media/UI/lengthhandle.png);
+}
+
+#egrip {
+    right: -35px;
+    top: 40%;
+    background-image: url(../../../media/UI/girthhandle.png);
+}
+
+
+/*Pop up background color*/
+
+.sweet-alert {
+    background-color: rgba(255, 255, 255, 0.97);
+}
+
+@media (max-width: 1374px) {
+    .overlay {
+        position: relative;
+        margin: 5% 0 4.5%;
+    }
+    .overlay2 {
+        position: relative;
+        margin: .6% 0;
+    }
+    .img1 {
+        position: relative;
+        z-index: 2;
+        width: 48%;
+        left: 24.2%;
+    }
+    .irritation img {
+        width: 45%;
+        margin: 0 auto;
+    }
+    .target {
+        position: relative;
+        z-index: 1;
+        opacity: 1;
+        left: -24.2%;
+        width: 48%;
+    }
+}
+
+@media (max-width: 1180px) and (orientation: portrait) {
+    /*  INTRO SCREEN  */
+    body {
+        background-size: 207px 180px;
+        margin: auto;
+        overflow-x: hidden;
+    }
+    .intro-controls {
         width: 100%;
+        max-width: 420px;
     }
-
-    .span_8_of_9 {
-        width: 88.71%;
+    .intro-controls .btn {
+        position: relative;
+        left: -34.5%;
     }
-
-    .span_7_of_9 {
-        width: 77.42%;
-    }
-
-    .span_6_of_9 {
-        width: 66.13%;
-    }
-
-    .span_5_of_9 {
-        width: 54.84%;
-    }
-
-    .span_4_of_9 {
-        width: 43.55%;
-    }
-
-    .span_3_of_9 {
-        width: 32.26%;
-    }
-
-    .span_2_of_9 {
-        width: 20.97%;
-    }
-
-    .span_1_of_9 {
-        width: 9.688%;
-    }
-
-    /* Typography */
-    /*Custom fonts*/
-
-    @font-face {
-        font-family: CalibreWeb-Light;
-        src: url(../../../assets/fonts/CalibreWeb-Light.eot?) format("eot"), url(../../../assets/fonts/CalibreWeb-Light.woff) format("woff")
-    }
-
-    @font-face {
-        font-family: CalibreWeb-Regular;
-        src: url(../../../assets/fonts/CalibreWeb-Regular.eot?) format("eot"), url(../../../assets/fonts/CalibreWeb-Regular.woff) format("woff")
-    }
-
-    @font-face {
-        font-family: CalibreWeb-Medium;
-        src: url(../../../assets/fonts/CalibreWeb-Medium.eot?) format("eot"), url(../../../assets/fonts/CalibreWeb-Medium.woff) format("woff")
-    }
-
-    @font-face {
-        font-family: CalibreWeb-Semibold;
-        src: url(../../../assets/fonts/CalibreWeb-Semibold.eot?) format("eot"), url(../../../assets/fonts/CalibreWeb-Semibold.woff) format("woff")
-    }
-
-    *,
     h1,
     h2,
     h3,
-    h4,
     p,
     a {
-        font-family: 'CalibreWeb-Regular', sans-serif;
-        color: #000;
+        text-align: left;
     }
-
     h1 {
-        font-family: "CalibreWeb-Semibold", sans-serif;
-        font-size: 60pt;
+        font-size: 55pt;
         font-weight: 600;
-        /*    text-transform: uppercase;*/
         color: rgb(44, 194, 216);
-        margin: 1% 5% 1%;
+        margin: 0 auto;
+        max-width: 420px;
+        line-height: 100%;
     }
-
     h2 {
         font-size: 40pt;
         font-weight: 600;
     }
-
     h3 {
         font-size: 17pt;
     }
-
-    h4 {
-        font-size: 17pt;
-        line-height: 1.2;
-    }
-
     p,
     a {
-        font-size: 17pt;
+        font-size: 16pt;
         color: #000;
         font-weight: 500;
         text-decoration: none;
     }
-    /* INTRO SCREEN */
-
-    body {
-        background-color: #151618;
-        background-image: url(../../../media/condomStartOpacity.png);
-        background-size: 300px 260px;
-        background-repeat: repeat;
-        margin: auto;
-        overflow-x: hidden;
-    }
-
-    .intro-controls {
-        width: 42%;
-        max-width: 400px;
-    }
-
-    .group {
-        margin: 0 auto;
-    }
-    /* make our pages be full width and full height */
-    /* positioned absolutely so that the pages can overlap each other as they enter and leave */
-
-    .page {
-        bottom: 0;
-        padding-top: 100px;
-        position: absolute;
-        text-align: center;
-        top: 0;
-        width: 100%;
-        /*    overflow: hidden;*/
-    }
-
-    .page a {
-        margin-top: 50px;
-    }
-
-    .page-finish p,
-    .page-finish h3 {
-        text-align: left;
-    }
-
-    .page-finish .btn h3 {
-        text-align: center;
-    }
-    /* PAGES (specific colors for each page)
-============================================================================= */
-
     .btn {
-        /*
-position: relative;
-left: 70%;
-*/
-        margin: 2%;
-        padding: 0 15px;
-        /*            line-height: 1.8;*/
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        appearance: none;
-        box-shadow: none;
-        border-radius: 4pt;
-        color: #fff;
-        background-color: rgb(44, 194, 216);
-        border: none;
-        -webkit-transition: all 0.2s ease 0s;
-        transition: all 0.2s ease 0s;
+        margin: 0;
     }
-
-    .btn h3 {
-        color: #fff;
-    }
-
-    .btn:focus,
-    .btn:hover {
-        outline: none;
-        -webkit-transform: scale(1.07);
-        transform: scale(1.07);
-        -webkit-transition: all 0.2s ease 0s;
-        transition: all 0.2s ease 0s;
-        cursor: pointer;
-        cursor: hand;
-    }
-
-    .btn_no {
-        background-color: red;
-    }
-
-    .page-q1,
-    .page-q2 {
-/*        background: #e5e5e5;*/
-                position: relative;
-        height: 100%;
-        min-height: 100%;
-        /*    overflow: hidden;*/
-    }
-
-    .page-home p {
-        color: #fff;
-    }
-
-    .page-construction {
-        background: url(../../../media/PenisBuildScreen/Background.png) no-repeat center fixed;
-        background-size: cover;
-    }
-
-    .condom_list,
-    .condom_list_special {
-        font-family: 'CalibreWeb-Light', sans-serif;
-        font-size: 21px;
-
-    }
-
-    .condom_list_special {
-        /*    font-size: 30px;*/
-        display: inline-block;
-        line-height: 0;
-    }
-    /*QUESTION IMAGE OVERLAYS*/
-
+    /*  Question image overlays  */
     .overlay {
-        /*    border: 1px solid #000;*/
         position: relative;
         margin: 5% 0 4.5%;
     }
-
     .overlay2 {
-        /*    border: 1px solid #000;*/
         position: relative;
         margin: .6% 0;
     }
-
     .img1 {
-        /*    border: 1px solid #f00;*/
         position: relative;
         z-index: 2;
-        width: 35%;
-        left: 17.625%;
+        width: 48%;
+        left: 24.25%;
     }
-
     .irritation img {
-        width: 26%;
+        width: 45%;
         margin: 0 auto;
     }
-
     .target {
-        /*    border: 1px solid #0f0;*/
         position: relative;
         z-index: 1;
         opacity: 1;
-        /*    top: 6%;*/
-        left: -17.625%;
-        width: 35%;
-        overflow: hidden;
+        left: -24.25%;
+        width: 48%;
     }
-
     #setSize .btn {
-        /*    width: 20%;*/
         position: absolute;
         top: 0;
-        width: 6%;
-        min-width: 100px;
+        width: 5%;
+        min-width: 80px;
+        line-height: 0.3;
+        margin: 2%;
     }
-
     #q1_yes .btn,
     #q1_no .btn,
     #q2_yes .btn,
     #q2_no .btn {
-        width: 8%;
+        width: 6%;
         margin-left: 10px;
         margin-right: 10px;
-        min-width: 120px;
+        min-width: 100px;
+        line-height: 0.3;
+        margin: 7% 1%;
     }
-
-    .q_text {
-        margin: 0 auto 4%;
-        padding: 0 7%;
-    }
-
-    .border_white {
-        background-color: #fff;
-        margin: 2% auto;
-        width: 70%;
-        padding: 3% 2%;
-        border-radius: 40px;
-    }
-
-    .border_white2 {
-        background-color: #fff;
-        margin: 2% auto 5%;
-        width: 70%;
-        padding: 3% 2% 2%;
-        border-radius: 40px;
-    }
-    /*Sweet alert custom styles*/
-
-    .sweet-alert {
-        background-color: white;
-        width: 478px;
-        padding: 30px;
-        border-radius: 30px;
+    .btn h3 {
         text-align: center;
-        position: fixed;
-        left: 50%;
-        top: 50%;
-        margin-left: -256px;
-        margin-top: -200px;
-        overflow: hidden;
+    }
+    .page-q1,
+    .page-q2 {
+        /*            background: rgb(229, 229, 229);*/
+        height: 100%;
+    }
+    /*  Penis building screen mobile view  */
+    .desktop-ui {
         display: none;
-        z-index: 99999;
     }
-
-    @media all and (max-width: 540px) {
-        .sweet-alert {
-            width: auto;
-            margin-left: 0;
-            margin-right: 0;
-            left: 15px;
-            right: 15px;
-        }
-    }
-
-    .sweet-alert h2 {
-        font-family: 'CalibreWeb-Medium', sans-serif;
-        color: #575757;
-        font-size: 40px;
-        text-align: center;
-        font-weight: 600;
-        text-transform: none;
-        position: relative;
-        margin: 25px 0;
-        padding: 0;
-        line-height: 40px;
+    .mobile-ui {
         display: block;
     }
-
-    .sweet-alert p {
-        font-family: 'CalibreWeb-Regular', sans-serif;
-        color: #797979;
-        font-size: 22px;
-        text-align: center;
-        font-weight: 300;
-        position: relative;
-        text-align: inherit;
-        float: none;
-        margin: 0;
-        padding: 0;
-        line-height: normal;
-    }
-
-    .sweet-alert button {
-        font-family: 'CalibreWeb-Regular', sans-serif;
-        background-color: #2cc2d8;
-        color: white;
-        border: none;
-        box-shadow: none;
-        font-size: 26px;
-        font-weight: 500;
-        border-radius: 5px;
-        padding: 10px 32px;
-        margin: 26px 5px 0 5px;
-        cursor: pointer;
-    }
-    /*Penis construction stage*/
-
-    .mobile-ui {
-        display: none;
-    }
-
-    #build-logo img {
-        position: fixed;
-        float: left;
-        width: 15%;
-        left: 25px;
-        top: 20px;
-    }
-
-    #build-stage {
-        position: fixed;
-        bottom: 0px;
-        top: 20px;
-        overflow: hidden;
-    }
-
     #build-ui {
-        position: relative;
-        width: 360px;
+        position: fixed;
         float: right;
-        right: 10%;
-        background: url(../../../media/PenisBuildScreen/UI-Box.png) no-repeat;
+        top: 20px;
+        right: -190px;
+        background: url(../../../media/PenisBuildScreen/Mobile-UI-Box.png) no-repeat;
         background-size: contain;
     }
-
     #build-ui-bg {
-        width: 100%;
+        height: 550px;
+        width: 100px;
         opacity: 0;
     }
-
     #build-ui-icons {
         position: absolute;
-        width: 100%;
-        top: 7%;
+        padding-left: 12px;
+        width: 10%;
+        top: 6%;
     }
-
     #light-swatch,
     #med-swatch,
     #dark-swatch,
@@ -451,53 +723,34 @@ left: 70%;
     #uncircum-icon {
         width: 50px;
     }
-
-    .ui-state-default,
-    .ui-widget-content,
-    .ui-state-default,
-    .ui-widget-header,
-    .ui-state-default {
-        background: rgba(51, 51, 51, 0);
-        border: 0px solid;
-    }
-    .ui-state-active {
-        background: #fff;
-        border-radius: 100px;
-    }
-
     #pants-back {
         position: absolute;
         height: 40%;
         bottom: 0px;
-        left: 0px;
+        left: -300px;
         z-index: 1;
     }
-
     #pants-front {
         position: absolute;
         height: 40%;
         bottom: -2px;
-        left: 0px;
+        left: -300px;
         z-index: 3;
     }
-
     #build-container {
         position: relative;
         height: 90%;
         z-index: 2;
     }
-
     #build-penis {
         position: absolute;
         bottom: 0px;
         left: 30%;
         height: 90%;
     }
-
     #build-penis img {
         height: 100%;
     }
-
     #measurements {
         font-family: 'CalibreWeb-Light', sans-serif;
         position: absolute;
@@ -507,552 +760,290 @@ left: 70%;
         color: #fff;
         z-index: 4;
     }
+}
 
-    #ngrip,
-    #egrip {
-        width: 32px;
-        height: 32px;
+@media (max-width: 1200px) {
+    #build-container {
+        position: absolute;
+        height: 70%;
+        bottom: 0%;
+        left: 27%;
+        z-index: 2;
     }
-
-    #ngrip {
-        top: -45px;
-        left: 45%;
-        background-image: url(../../../media/UI/lengthhandle.png);
+    #build-penis {
+        position: relative;
+        bottom: 0px;
+        /*        left: 30%;*/
+        height: 90%;
     }
-
-    #egrip {
-        right: -35px;
-        top: 40%;
-        background-image: url(../../../media/UI/girthhandle.png);
+    #build-penis img {
+        height: 100%;
     }
-    /*Pop up background color*/
+}
 
+@media (max-width: 910px) {
+    #build-container {
+        position: absolute;
+        height: 67%;
+        bottom: 0%;
+        left: 24%;
+        z-index: 2;
+    }
+    #build-penis {
+        position: relative;
+        bottom: 0px;
+        /*        left: 30%;*/
+        height: 90%;
+    }
+    #build-penis img {
+        height: 100%;
+    }
+}
+
+@media (max-width: 735px) {
+    /* INTRO SCREEN */
+    body {
+        background-size: 241.5px 210px;
+        margin: auto;
+        overflow-x: hidden;
+    }
+    .intro-controls {
+        width: 100%;
+        max-width: 420px;
+    }
+    h1 {
+        font-size: 55pt;
+        font-weight: 600;
+        color: rgb(44, 194, 216);
+        margin: 0 auto;
+    }
+    h2 {
+        font-size: 40pt;
+        font-weight: 600;
+    }
+    h3 {
+        font-size: 17pt;
+    }
+    p,
+    a {
+        font-size: 16pt;
+        color: #000;
+        font-weight: 500;
+        text-decoration: none;
+    }
+    .intro-title {
+        margin: 0 5%;
+    }
+    .page-q1,
+    .page-q2 {
+        /*                background: #e5e5e5;*/
+        height: 50%;
+        overflow: hidden;
+    }
+    /*Sweet alert custom styles*/
     .sweet-alert {
-        background-color: rgba(255, 255, 255, 0.97);
+        width: 340px;
+        padding: 30px;
+        border-radius: 30px;
+        left: 50%;
+        top: 40%;
+        margin-left: -200px;
+        margin-top: -200px;
     }
-
-    @media (max-width: 1374px) {
-        .overlay {
-            position: relative;
-            margin: 5% 0 4.5%;
-        }
-        .overlay2 {
-            position: relative;
-            margin: .6% 0;
-        }
-        .img1 {
-            position: relative;
-            z-index: 2;
-            width: 48%;
-            left: 24.2%;
-        }
-        .irritation img {
-            width: 45%;
-            margin: 0 auto;
-        }
-        .target {
-            position: relative;
-            z-index: 1;
-            opacity: 1;
-            left: -24.2%;
-            width: 48%;
-        }
+    .sweet-alert h2 {
+        font-size: 30px;
+        text-align: center;
+        margin: 5px 0;
+        padding: 0;
+        line-height: 40px;
     }
-
-    @media (max-width: 1180px) and (orientation: portrait) {
-        /*  INTRO SCREEN  */
-        body {
-            background-size: 207px 180px;
-            margin: auto;
-            overflow-x: hidden;
-        }
-        .intro-controls {
-            width: 100%;
-            max-width: 420px;
-        }
-        .intro-controls .btn {
-            position: relative;
-            left: -34.5%;
-        }
-        h1,
-        h2,
-        h3,
-        p,
-        a {
-            text-align: left;
-        }
-        h1 {
-            font-size: 55pt;
-            font-weight: 600;
-            color: rgb(44, 194, 216);
-            margin: 0 auto;
-            max-width: 420px;
-            line-height: 100%;
-        }
-        h2 {
-            font-size: 40pt;
-            font-weight: 600;
-        }
-        h3 {
-            font-size: 17pt;
-        }
-        p,
-        a {
-            font-size: 16pt;
-            color: #000;
-            font-weight: 500;
-            text-decoration: none;
-        }
-        .btn {
-            margin: 0;
-        }
-        /*  Question image overlays  */
-        .overlay {
-            position: relative;
-            margin: 5% 0 4.5%;
-        }
-        .overlay2 {
-            position: relative;
-            margin: .6% 0;
-        }
-        .img1 {
-            position: relative;
-            z-index: 2;
-            width: 48%;
-            left: 24.25%;
-        }
-        .irritation img {
-            width: 45%;
-            margin: 0 auto;
-        }
-        .target {
-            position: relative;
-            z-index: 1;
-            opacity: 1;
-            left: -24.25%;
-            width: 48%;
-        }
-        @media (max-width: 895px) {
-            /*    Question image overlays*/
-            .overlay {
-                /*    border: 1px solid #000;*/
-                position: relative;
-                margin: 5% 0 4.5%;
-            }
-            .overlay2 {
-                /*    border: 1px solid #000;*/
-                position: relative;
-                margin: .6% 0;
-            }
-            .img1 {
-                /*    border: 1px solid #f00;*/
-                position: relative;
-                z-index: 2;
-                width: 45%;
-                left: 22.85%;
-            }
-            .irritation img {
-                width: 42%;
-                margin: 0 auto;
-            }
-            .target {
-                /*    border: 1px solid #0f0;*/
-                position: relative;
-                z-index: 1;
-                opacity: 1;
-                /*    top: 6%;*/
-                left: -22.85%;
-                width: 45%;
-                overflow: hidden;
-            }
-            .q_text {
-                margin: 0 auto 4%;
-                padding: 0 7%;
-                font-size: 25pt;
-            }
-            .border_white {
-                background-color: #fff;
-                margin: 2% auto;
-                width: 70%;
-                padding: 3% 2%;
-                border-radius: 40px;
-            }
-            .border_white2 {
-                background-color: #fff;
-                margin: 2% auto 7%;
-                width: 70%;
-                padding: 3% 2% 2%;
-                border-radius: 40px;
-            }
-            #setSize .btn {
-                /*            width: 20%;*/
-                position: absolute;
-                top: 0;
-                width: 9%;
-                min-width: 110px;
-                line-height: 0.7;
-            }
-            #q1_yes .btn,
-            #q1_no .btn,
-            #q2_yes .btn,
-            #q2_no .btn {
-                width: 6%;
-                margin-left: 10px;
-                margin-right: 10px;
-                min-width: 100px;
-                line-height: 0.7;
-            }
-            .page-q1,
-            .page-q2 {
-/*                background: #e5e5e5;*/
-/*                        position: static;*/
-                height: 60%;
-                /*        min-height: 100%;*/
-                overflow: hidden;
-            }
-        }
-        @media (max-width: 735px) {
-            /* INTRO SCREEN */
-            body {
-                background-size: 241.5px 210px;
-                margin: auto;
-                overflow-x: hidden;
-            }
-            .intro-controls {
-                width: 100%;
-                max-width: 420px;
-            }
-            h1 {
-                font-size: 55pt;
-                font-weight: 600;
-                color: rgb(44, 194, 216);
-                margin: 0 auto;
-            }
-            h2 {
-                font-size: 40pt;
-                font-weight: 600;
-            }
-            h3 {
-                font-size: 17pt;
-            }
-            p,
-            a {
-                font-size: 16pt;
-                color: #000;
-                font-weight: 500;
-                text-decoration: none;
-            }
-            .intro-title {
-                margin: 0 5%;
-            }
-            .page-q1,
-            .page-q2 {
-/*                background: #e5e5e5;*/
-                height: 50%;
-                overflow: hidden;
-            }
-            /*Sweet alert custom styles*/
-            .sweet-alert {
-                width: 340px;
-                padding: 30px;
-                border-radius: 30px;
-                left: 50%;
-                top: 40%;
-                margin-left: -200px;
-                margin-top: -200px;
-            }
-            .sweet-alert h2 {
-                font-size: 30px;
-                text-align: center;
-                margin: 5px 0;
-                padding: 0;
-                line-height: 40px;
-            }
-            .sweet-alert p {
-                font-size: 19px;
-                text-align: center;
-                margin: 0;
-                padding: 0;
-                line-height: normal;
-            }
-            .sweet-alert button {
-                font-size: 21px;
-                line-height: 1.7;
-                font-weight: 500;
-                border-radius: 5px;
-                padding: 10px 32px;
-                margin: 2px 5px 0 5px;
-                cursor: pointer;
-            }
-        }
-        @media (max-width: 607px) {
-            /* INTRO SCREEN */
-            body {
-                background-size: 207px 180px;
-                margin: auto;
-                overflow-x: hidden;
-            }
-            .intro-controls {
-                width: 100%;
-                max-width: 300px;
-                margin: 0 5%;
-            }
-            .intro-controls .btn {
-                position: relative;
-                left: -34.5%;
-            }
-            h1,
-            h2,
-            h3,
-            p,
-            a {
-                text-align: left;
-            }
-            h1 {
-                font-size: 55pt;
-                font-weight: 600;
-                color: rgb(44, 194, 216);
-                        margin: 0;
-                width: 100%;
-                max-width: 420px;
-                line-height: 100%;
-            }
-            .intro-title {
-                position: relative;
-                left: -0px;
-            }
-            h2 {
-                font-size: 40pt;
-                font-weight: 600;
-            }
-            h3 {
-                font-size: 17pt;
-            }
-            p,
-            a {
-                font-size: 16pt;
-                color: #000;
-                font-weight: 500;
-                text-decoration: none;
-            }
-            #initial_dick_size .btn {
-                position: relative;
-                left: -29%;
-            }
-            /*    Question image overlays*/
-            .overlay {
-                position: relative;
-                margin: 5% 0 4.5%;
-            }
-            .overlay2 {
-                position: relative;
-                margin: .6% 0;
-            }
-            .img1 {
-                position: relative;
-                z-index: 2;
-                width: 48%;
-                left: 24.5%;
-            }
-            .irritation img {
-                width: 45%;
-                margin: 0 auto;
-            }
-            .target {
-                position: relative;
-                z-index: 1;
-                opacity: 1;
-                left: -24.5%;
-                width: 48%;
-                overflow: hidden;
-            }
-            .page-q1 .q_text,
-            .page-q2 .q_text,
-            .page-finish .q_text {
-                margin: 0 auto 4%;
-                padding: 0 7%;
-                font-size: 23pt;
-                text-align: center;
-            }
-            .page-q1 .border_white {
-                background-color: #fff;
-                margin: 2% auto;
-                width: 89%;
-                padding: 3% 2%;
-                border-radius: 40px;
-            }
-            .border_white2 {
-                background-color: #fff;
-                margin: 2% auto 7%;
-                width: 89%;
-                padding: 3% 2% 2%;
-                border-radius: 40px;
-            }
-            #setSize .btn {
-                position: absolute;
-                top: 0;
-                width: 10%;
-                min-width: 110px;
-                line-height: 0.3;
-                margin: 2%;
-            }
-            #q1_yes .btn,
-            #q1_no .btn,
-            #q2_yes .btn,
-            #q2_no .btn {
-                width: 6%;
-                margin-left: 10px;
-                margin-right: 10px;
-                min-width: 100px;
-                line-height: 0.3;
-                margin: 7% 1%;
-            }
-            .btn h3 {
-                text-align: center;
-            }
-            #initial_dick_size .btn {
-                margin: 0 0 50px 0;
-            }
-            .page-q1,
-            .page-q2 {
-                position: relative;
-/*                background: #e5e5e5;*/
-                height: 100%;
-            }
-            /*Sweet alert custom styles*/
-            .sweet-alert {
-                width: 80%;
-                min-width: 0px;
-                padding: 30px 10px;
-                border-radius: 30px;
-                left: 8%;
-                top: 50%;
-                margin: 0;
-                margin-top: -200px;
-            }
-            .sweet-alert h2 {
-                font-size: 30px;
-                text-align: center;
-                margin: 5px 0;
-                padding: 0;
-                line-height: 40px;
-            }
-            .sweet-alert p {
-                font-size: 19px;
-                text-align: center;
-                margin: 0;
-                padding: 0;
-                line-height: normal;
-            }
-            .sweet-alert button {
-                font-size: 21px;
-                line-height: 1.7;
-                font-weight: 500;
-                border-radius: 5px;
-                padding: 10px 32px;
-                margin: 2px 5px 0 5px;
-                cursor: pointer;
-            }
-        }
-        #setSize .btn {
-            position: absolute;
-            top: 0;
-            width: 5%;
-            min-width: 80px;
-            line-height: 0.3;
-            margin: 2%;
-        }
-        #q1_yes .btn,
-        #q1_no .btn,
-        #q2_yes .btn,
-        #q2_no .btn {
-            width: 6%;
-            margin-left: 10px;
-            margin-right: 10px;
-            min-width: 100px;
-            line-height: 0.3;
-            margin: 7% 1%;
-        }
-        .btn h3 {
-            text-align: center;
-        }
-        .page-q1,
-        .page-q2 {
-/*            background: rgb(229, 229, 229);*/
-            height: 100%;
-        }
-        /*  Penis building screen mobile view  */
-        .desktop-ui {
-            display: none;
-        }
-        .mobile-ui {
-            display: block;
-        }
-        #build-ui {
-            position: fixed;
-            float: right;
-            top: 20px;
-            right: -190px;
-            background: url(../../../media/PenisBuildScreen/Mobile-UI-Box.png) no-repeat;
-            background-size: contain;
-        }
-        #build-ui-bg {
-            height: 550px;
-            width: 100px;
-            opacity: 0;
-        }
-        #build-ui-icons {
-            position: absolute;
-            padding-left: 12px;
-            width: 10%;
-            top: 6%;
-        }
-        #light-swatch,
-        #med-swatch,
-        #dark-swatch,
-        #circum-icon,
-        #uncircum-icon {
-            width: 50px;
-        }
-        #pants-back {
-            position: absolute;
-            height: 40%;
-            bottom: 0px;
-            left: -300px;
-            z-index: 1;
-        }
-        #pants-front {
-            position: absolute;
-            height: 40%;
-            bottom: -2px;
-            left: -300px;
-            z-index: 3;
-        }
-        #build-container {
-            position: relative;
-            height: 90%;
-            z-index: 2;
-        }
-        #build-penis {
-            position: absolute;
-            bottom: 0px;
-            left: 30%;
-            height: 90%;
-        }
-        #build-penis img {
-            height: 100%;
-        }
-        #measurements {
-            font-family: 'CalibreWeb-Light', sans-serif;
-            position: absolute;
-            bottom: 20px;
-            left: 35%;
-            text-align: center;
-            color: #fff;
-            z-index: 4;
-        }
+    .sweet-alert p {
+        font-size: 19px;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        line-height: normal;
     }
+    .sweet-alert button {
+        font-size: 21px;
+        line-height: 1.7;
+        font-weight: 500;
+        border-radius: 5px;
+        padding: 10px 32px;
+        margin: 2px 5px 0 5px;
+        cursor: pointer;
+    }
+}
 
+@media (max-width: 607px) {
+    /* INTRO SCREEN */
+    body {
+        background-size: 207px 180px;
+        margin: auto;
+        overflow-x: hidden;
+    }
+    .intro-controls {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 5%;
+    }
+    .intro-controls .btn {
+        position: relative;
+        left: -34.5%;
+    }
+    h1,
+    h2,
+    h3,
+    p,
+    a {
+        text-align: left;
+    }
+    h1 {
+        font-size: 55pt;
+        font-weight: 600;
+        color: rgb(44, 194, 216);
+        margin: 0;
+        width: 100%;
+        max-width: 420px;
+        line-height: 100%;
+    }
+    .intro-title {
+        position: relative;
+        left: -0px;
+    }
+    h2 {
+        font-size: 40pt;
+        font-weight: 600;
+    }
+    h3 {
+        font-size: 17pt;
+    }
+    p,
+    a {
+        font-size: 16pt;
+        color: #000;
+        font-weight: 500;
+        text-decoration: none;
+    }
+    #initial_dick_size .btn {
+        position: relative;
+        left: -29%;
+    }
+    /*    Question image overlays*/
+    .overlay {
+        position: relative;
+        margin: 5% 0 4.5%;
+    }
+    .overlay2 {
+        position: relative;
+        margin: .6% 0;
+    }
+    .img1 {
+        position: relative;
+        z-index: 2;
+        width: 48%;
+        left: 24.5%;
+    }
+    .irritation img {
+        width: 45%;
+        margin: 0 auto;
+    }
+    .target {
+        position: relative;
+        z-index: 1;
+        opacity: 1;
+        left: -24.5%;
+        width: 48%;
+        overflow: hidden;
+    }
+    .page-q1 .q_text,
+    .page-q2 .q_text,
+    .page-finish .q_text {
+        margin: 0 auto 4%;
+        padding: 0 7%;
+        font-size: 23pt;
+        text-align: center;
+    }
+    .page-q1 .border_white {
+        background-color: #fff;
+        margin: 2% auto;
+        width: 89%;
+        padding: 3% 2%;
+        border-radius: 40px;
+    }
+    .border_white2 {
+        background-color: #fff;
+        margin: 2% auto 7%;
+        width: 89%;
+        padding: 3% 2% 2%;
+        border-radius: 40px;
+    }
+    #setSize .btn {
+        position: absolute;
+        top: 0;
+        width: 10%;
+        min-width: 110px;
+        line-height: 0.3;
+        margin: 2%;
+    }
+    #q1_yes .btn,
+    #q1_no .btn,
+    #q2_yes .btn,
+    #q2_no .btn {
+        width: 6%;
+        margin-left: 10px;
+        margin-right: 10px;
+        min-width: 100px;
+        line-height: 0.3;
+        margin: 7% 1%;
+    }
+    .btn h3 {
+        text-align: center;
+    }
+    #initial_dick_size .btn {
+        margin: 0 0 50px 0;
+    }
+    .page-q1,
+    .page-q2 {
+        position: relative;
+        /*                background: #e5e5e5;*/
+        height: 100%;
+    }
+    /*Sweet alert custom styles*/
+    .sweet-alert {
+        width: 80%;
+        min-width: 0px;
+        padding: 30px 10px;
+        border-radius: 30px;
+        left: 8%;
+        top: 50%;
+        margin: 0;
+        margin-top: -200px;
+    }
+    .sweet-alert h2 {
+        font-size: 30px;
+        text-align: center;
+        margin: 5px 0;
+        padding: 0;
+        line-height: 40px;
+    }
+    .sweet-alert p {
+        font-size: 19px;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        line-height: normal;
+    }
+    .sweet-alert button {
+        font-size: 21px;
+        line-height: 1.7;
+        font-weight: 500;
+        border-radius: 5px;
+        padding: 10px 32px;
+        margin: 2px 5px 0 5px;
+        cursor: pointer;
+    }
+}
 
 #results {
     margin: 7px 12px;
