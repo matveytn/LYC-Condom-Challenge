@@ -562,6 +562,35 @@ left: 70%;
         }
     }
 
+    @media (max-width: 1250px) {
+        /* Switch build stage UI to sidebar */
+        .desktop-ui {
+            display: none;
+        }
+        .mobile-ui {
+            display: block;
+        }
+        #build-ui {
+            position: fixed;
+            float: right;
+            top: 20px;
+            right: -190px;
+            background: url(../../../media/PenisBuildScreen/Mobile-UI-Box.png) no-repeat;
+            background-size: contain;
+        }
+        #build-ui-bg {
+            height: 550px;
+            width: 100px;
+            opacity: 0;
+        }
+        #build-ui-icons {
+            position: absolute;
+            padding-left: 12px;
+            width: 10%;
+            top: 6%;
+        }
+    }
+
     @media (max-width: 1180px) and (orientation: portrait) {
         /*  INTRO SCREEN  */
         body {
@@ -1008,13 +1037,6 @@ left: 70%;
             padding-left: 12px;
             width: 10%;
             top: 6%;
-        }
-        #light-swatch,
-        #med-swatch,
-        #dark-swatch,
-        #circum-icon,
-        #uncircum-icon {
-            width: 50px;
         }
         #pants-back {
             position: absolute;
