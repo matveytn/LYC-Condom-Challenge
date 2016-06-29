@@ -537,7 +537,7 @@ left: 70%;
 }
 
 h5 {
-    margin: 10px 0 0 0;
+    margin: 10px 0 0px 0;
     text-align: left !important;
     font-size: 1.5vw;
 }
@@ -773,6 +773,11 @@ h5 {
     #build-penis img {
         height: 100%;
     }
+    h5 {
+        margin: 10px 0 -5px 0;
+        text-align: left !important;
+        font-size: 1.9vw;
+    }
 }
 
 @media (max-width: 920px) {
@@ -792,6 +797,11 @@ h5 {
     #build-penis img {
         height: 100%;
     }
+    h5 {
+        margin: 30px 0 0 0;
+        text-align: left !important;
+        font-size: 2.1vw;
+    }
 }
 
 @media (max-width: 828px) {
@@ -810,6 +820,18 @@ h5 {
     }
     #build-penis img {
         height: 100%;
+    }
+    #measurements_div {
+        position: fixed;
+        top: 98%;
+        left: 190px;
+        z-index: 100;
+        width: 200px;
+    }
+    h5 {
+        margin: 0px 0 -5px 0px;
+        text-align: left !important;
+        font-size: 23px;
     }
 }
 
