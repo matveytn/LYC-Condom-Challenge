@@ -87,27 +87,12 @@ $(document).ready(function () {
         sessionStorage.penisSize = '77';
     });
     $('#measurements').html("Length: 177mm," + "<br>" + "Girth: 80mm");
-    $('#build-penis').resizable({
-        containment: "#build-container",
-        minHeight: 120,
-        minWidth: 60,
-        maxHeight: 600,
-        maxWidth: 200,
-        animate: true,
-        animateEasing: "easeOutElastic",
-        animateDuration: 700,
-        ghost: true,
-        handles: {
-            'e': '#egrip',
-            'n': '#ngrip'
-        },
-        resize: function (event, ui) {
-            $('#test2').html(Math.round(ui.size.height * 0.4) + "mm");
-            $('#measurements').html("Length: " + Math.round(ui.size.height * 0.3) + "mm" + "<br>" + "Girth: " + Math.round(ui.size.width * 0.4) + "mm");
-            var circumference = Math.round(ui.size.width * 0.4);
-            sessionStorage.penisSize = circumference;
-        }
+
+    $('#build-penis').draggable({
+        axis: "y",
+        containment: '#build-stage'
     });
+
     $("#q1_yes").on('click', function () {
         sessionStorage.q1 = 'yes';
     });
