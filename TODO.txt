@@ -3,7 +3,16 @@
 android
 background is slow as fuck
 
+animation transition for back buttons
 
-BACK button animation in the wrong direction
+replace old penis assets
 
-POP up screen only change the page when "OK got it" is pressed
+adjust penis heights in media queries
+
+adjust media queries to UI
+
+allow penis to be dragged below screen level (contained within separate div?)
+
+constrain penis resize
+
+add working handle for height drag

@@ -92,6 +92,16 @@ $(document).ready(function () {
         axis: "y",
         containment: '#build-stage'
     });
+    $('#build-penis').resizable({
+        aspectRatio: true,
+        animate: true,
+        animateEasing: "easeOutElastic",
+        animateDuration: 700,
+        ghost: true,
+        handles: {
+            'e': '#egrip'
+        }
+    });
 
     $("#q1_yes").on('click', function () {
         sessionStorage.q1 = 'yes';
