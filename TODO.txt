@@ -15,4 +15,4 @@ allow penis to be dragged below screen level (contained within separate div?)
 
 constrain penis resize
 
-add working handle for height drag
+measurement calculation
