@@ -446,16 +446,16 @@ left: 70%;
     position: relative;
     height: 100%;
     width: 200px;
-/*    bottom: 10px;*/
-/*    max-height: 600px;*/
+    /*    bottom: 10px;*/
+    /*    max-height: 600px;*/
 }
 
 #build-stage {
     position: fixed;
     bottom: 0px;
-/*    top: 10%;*/
+    /*    top: 10%;*/
     min-height: 800px;
-/*    max-height: 585px;*/
+    /*    max-height: 585px;*/
 }
 
 #build-ui {
@@ -522,7 +522,6 @@ left: 70%;
     bottom: 0%;
     left: 29%;
     z-index: 2;
-
 }
 
 #build-penis {
@@ -746,7 +745,7 @@ h5 {
         width: 100%;
         min-width: 1200px;
         bottom: 0px;
-        left: -100px;
+        left: -230px;
         z-index: 1;
     }
     #pants-front {
@@ -754,7 +753,7 @@ h5 {
         width: 100%;
         bottom: -2px;
         min-width: 1200px;
-        left: -100px;
+        left: -230px;
         z-index: 3;
     }
 }
@@ -822,7 +821,7 @@ h5 {
         position: fixed;
         height: 70%;
         bottom: 0%;
-        left: 230px;
+        left: 120px;
         z-index: 2;
     }
     #build-penis {
@@ -1090,6 +1089,34 @@ h5 {
         padding: 10px 32px;
         margin: 2px 5px 0 5px;
         cursor: pointer;
+    }
+    #build-ui {
+        position: fixed;
+        float: right;
+        top: 40px;
+        right: -240px;
+        background: url(../../../media/PenisBuildScreen/Mobile-UI-Box.png) no-repeat;
+        background-size: contain;
+    }
+    #build-ui-bg {
+        height: 500px;
+        width: 110px;
+        opacity: 0;
+    }
+    #build-ui-icons {
+        position: absolute;
+        padding-left: 6px;
+        width: 10%;
+        top: 3%;
+    }
+    #confirm_build .btn {
+        width: 70px;
+        margin: 8px;
+        padding: 0;
+        line-height: .8;
+    }
+    #confirm_build .btn h3 {
+        text-align: center;
     }
 }
 
