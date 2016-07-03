@@ -86,12 +86,19 @@ $(document).ready(function () {
     $("#initial_dick_size .btn").on('click', function () {
         sessionStorage.penisSize = '77';
     });
-    $('#measurements').html("Length: 177mm," + "<br>" + "Girth: 80mm");
+    sessionStorage.measurementsDrag = "Length: " + "138mm"
+    sessionStorage.measurementsResize = "Girth: " + "51mm";
+    $("#measurements").html(sessionStorage.measurementsDrag + "<br>" + sessionStorage.measurementsResize);
 
     $('#build-penis').draggable({
         axis: "y",
         containment: '#build-stage',
-        handle: '#ngrip'
+        handle: '#ngrip',
+        drag: function (event, ui) {
+            var measurementsDrag = "Length: " + Math.round((ui.position.top -450) * -0.3) + "mm, ";
+            sessionStorage.measurementsDrag = measurementsDrag;
+            $("#measurements").html(sessionStorage.measurementsDrag + sessionStorage.measurementsResize);
+        }
     }).resizable({
         aspectRatio: true,
 
@@ -101,6 +108,13 @@ $(document).ready(function () {
         ghost: true,
         handles: {
             'e': '#egrip'
+        },
+        resize: function (event, ui) {
+            var measurementsResize = "Girth: " + Math.round(ui.size.width * 0.7) + "mm";
+            var circumference = Math.round(ui.size.width * 0.5);
+            sessionStorage.measurementsResize = measurementsResize;
+            sessionStorage.penisSize = circumference;
+            $("#measurements").html(sessionStorage.measurementsDrag + sessionStorage.measurementsResize);
         }
     });
 
@@ -157,8 +171,6 @@ $(document).ready(function () {
         }
     });
 });
-
-
 
 //Building screen images
 
