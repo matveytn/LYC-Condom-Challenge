@@ -588,10 +588,21 @@ h5 {
     display: none;
 }
 
+.video_thumbnail p {
+      font-size: 15pt;
+    margin: 0 15px;
+}
+
+.video_thumbnail_hidden p {
+      font-size: 14pt;
+    margin: 0 15% 15px;
+}
+
 
 /*Pop up background color*/
 
 .sweet-alert {
+
     background-color: rgba(255, 255, 255, 0.97);
 }
 

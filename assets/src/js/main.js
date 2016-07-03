@@ -88,6 +88,12 @@ $(document).ready(function () {
     sessionStorage.measurementsDrag = "Length: " + "138mm"
     sessionStorage.measurementsResize = "Girth: " + "51mm";
     $("#measurements").html(sessionStorage.measurementsDrag + "<br>" + sessionStorage.measurementsResize);
+    $.globalVars = {
+        originalTop: 0,
+        originalLeft: 0,
+        maxHeight: $("#build-penis").height() - $("#build-container").height(),
+        maxWidth: $("#build-penis").width() - $("#build-container").width()
+    };
 
     $('#build-penis').draggable({
         axis: "y",
@@ -97,6 +103,22 @@ $(document).ready(function () {
             var measurementsDrag = "Length: " + Math.round((ui.position.top - 450) * -0.3) + "mm, ";
             sessionStorage.measurementsDrag = measurementsDrag;
             $("#measurements").html(sessionStorage.measurementsDrag + "<br>" + sessionStorage.measurementsResize);
+            var newTop = ui.position.top;
+            var newLeft = ui.position.left;
+            if (ui.position.top < 0 && ui.position.top * -1 > $.globalVars.maxHeight) {
+                newTop = $.globalVars.maxHeight * -1;
+            }
+            if (ui.position.top > 0) {
+                newTop = 0;
+            }
+            if (ui.position.left < 0 && ui.position.left * -1 > $.globalVars.maxWidth) {
+                newLeft = $.globalVars.maxWidth * -1;
+            }
+            if (ui.position.left > 0) {
+                newLeft = 0;
+            }
+            ui.position.top = newTop;
+            ui.position.left = newLeft;
         }
     }).resizable({
         aspectRatio: true,
