@@ -581,6 +581,7 @@ h5 {
     border-radius: 10px;
     width: 100%;
     max-width: 400px;
+    cursor: hand;
 }
 
 .video_thumbnail_hidden {
@@ -635,7 +636,7 @@ h5 {
     }
     .intro-controls .btn {
         position: relative;
-        left: -34.5%;
+        left: 0%;
     }
     h1,
     h2,
