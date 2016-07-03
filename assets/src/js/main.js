@@ -90,7 +90,7 @@ $(document).ready(function () {
 
     $('#build-penis').draggable({
         axis: "y",
-        containment: '.build_screen',
+        containment: '#build-stage',
         handle: '#ngrip'
     }).resizable({
         aspectRatio: true,
