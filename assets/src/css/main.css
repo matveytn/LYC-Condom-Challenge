@@ -571,6 +571,16 @@ h5 {
     cursor: ew-resize;
     background-image: url(../../../media/UI/girthhandle.png);
 }
+.video_thumbnail {
+    display: block;
+    margin: 3.4% 0 0 0;
+}
+
+.video_thumbnail img {
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+}
 
 
 /*Pop up background color*/
