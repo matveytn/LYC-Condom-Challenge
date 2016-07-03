@@ -94,7 +94,7 @@ $(document).ready(function () {
         scroll: false,
         handle: '#ngrip',
         drag: function (event, ui) {
-            var measurementsDrag = "Length: " + Math.round((ui.position.top -450) * -0.3) + "mm, ";
+            var measurementsDrag = "Length: " + Math.round((ui.position.top - 450) * -0.3) + "mm, ";
             sessionStorage.measurementsDrag = measurementsDrag;
             $("#measurements").html(sessionStorage.measurementsDrag + "<br>" + sessionStorage.measurementsResize);
         }
@@ -220,3 +220,15 @@ $(function () {
     });
 
 });
+
+
+//Change size based on media query
+$(window).resize(function () {
+        var width = $(window).width();
+        if (width <= 920) {
+            $('#results_pointer').removeClass('span_6_of_9').addClass('span_9_of_9');
+        } else {
+            $('#results_pointer').removeClass('span_9_of_9').addClass('span_6_of_9');
+        }
+    })
+    .resize(); //trigger the resize event on page load.
