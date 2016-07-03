@@ -92,7 +92,7 @@ $(document).ready(function () {
 
     $('#build-penis').draggable({
         axis: "y",
-        containment: '#build-stage',
+        scroll: false,
         handle: '#ngrip',
         drag: function (event, ui) {
             var measurementsDrag = "Length: " + Math.round((ui.position.top -450) * -0.3) + "mm, ";
@@ -101,7 +101,6 @@ $(document).ready(function () {
         }
     }).resizable({
         aspectRatio: true,
-
         animate: true,
         animateEasing: "easeOutElastic",
         animateDuration: 700,
