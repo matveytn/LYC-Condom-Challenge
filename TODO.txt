@@ -4,8 +4,6 @@ android - background is slow as fuck
 
 animation transition for back buttons
 
-replace old penis assets
-
 adjust penis heights in media queries
 
 adjust media queries to UI
@@ -13,5 +11,3 @@ adjust media queries to UI
 allow penis to be dragged below screen level (contained within separate div?)
 
 constrain penis resize
-
-measurement calculation

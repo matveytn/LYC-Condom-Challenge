@@ -90,11 +90,11 @@ $(document).ready(function () {
 
     $('#build-penis').draggable({
         axis: "y",
-        containment: '#build-stage',
+        containment: '.build_screen',
         handle: '#ngrip'
-    });
-    $('#build-penis').resizable({
+    }).resizable({
         aspectRatio: true,
+
         animate: true,
         animateEasing: "easeOutElastic",
         animateDuration: 700,

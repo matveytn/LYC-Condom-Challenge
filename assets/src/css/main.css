@@ -261,7 +261,7 @@ left: 70%;
 }
 
 .page-construction {
-    background: url(../../../media/PenisBuildScreen/Background.png) no-repeat center fixed;
+    background: url(../../../media/PenisBuildScreen/Background.jpg) no-repeat center fixed;
     background-size: cover;
     overflow: visible;
 }
@@ -442,11 +442,20 @@ left: 70%;
     top: 20px;
 }
 
+.contain {
+    position: relative;
+    height: 100%;
+    width: 200px;
+/*    bottom: 10px;*/
+/*    max-height: 600px;*/
+}
+
 #build-stage {
     position: fixed;
     bottom: 0px;
-    top: 10%;
-    min-height: 700px;
+/*    top: 10%;*/
+    min-height: 585px;
+/*    max-height: 585px;*/
 }
 
 #build-ui {
@@ -513,6 +522,7 @@ left: 70%;
     bottom: 0%;
     left: 29%;
     z-index: 2;
+
 }
 
 #build-penis {
