@@ -97,7 +97,7 @@ $(document).ready(function () {
         drag: function (event, ui) {
             var measurementsDrag = "Length: " + Math.round((ui.position.top -450) * -0.3) + "mm, ";
             sessionStorage.measurementsDrag = measurementsDrag;
-            $("#measurements").html(sessionStorage.measurementsDrag + sessionStorage.measurementsResize);
+            $("#measurements").html(sessionStorage.measurementsDrag + "<br>" + sessionStorage.measurementsResize);
         }
     }).resizable({
         aspectRatio: true,
@@ -114,7 +114,7 @@ $(document).ready(function () {
             var circumference = Math.round(ui.size.width * 0.5);
             sessionStorage.measurementsResize = measurementsResize;
             sessionStorage.penisSize = circumference;
-            $("#measurements").html(sessionStorage.measurementsDrag + sessionStorage.measurementsResize);
+            $("#measurements").html(sessionStorage.measurementsDrag + "<br>" + sessionStorage.measurementsResize);
         }
     });
 
