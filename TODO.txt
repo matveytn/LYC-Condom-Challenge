@@ -1,9 +1,5 @@
 #TODO list
 
-android - background is slow as fuck
-
-animation transition for back buttons
-
 adjust penis heights in media queries
 
 adjust media queries to UI

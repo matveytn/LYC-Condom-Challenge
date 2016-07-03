@@ -150,7 +150,7 @@ $(document).ready(function () {
                 $('#results').html(data.large.latex.regular);
             else if (sessionStorage.q1 == 'no' && sessionStorage.q2 == "no")
                 $('#results').html(data.large.latex.thin);
-        } else if (sessionStorage.penisSize < 60 && sessionStorage.penisSize > 50) {
+        } else if (sessionStorage.penisSize <= 60 && sessionStorage.penisSize > 50) {
             if (sessionStorage.q1 == 'yes' && sessionStorage.q2 == "yes")
                 $('#results').html(data.medium.non_latex.regular);
             else if (sessionStorage.q1 == 'yes' && sessionStorage.q2 == "no")
@@ -159,7 +159,7 @@ $(document).ready(function () {
                 $('#results').html(data.medium.latex.regular);
             else if (sessionStorage.q1 == 'no' && sessionStorage.q2 == "no")
                 $('#results').html(data.medium.latex.thin);
-        } else if (sessionStorage.penisSize < 50) {
+        } else if (sessionStorage.penisSize <= 50) {
             if (sessionStorage.q1 == 'yes' && sessionStorage.q2 == "yes")
                 $('#results').html(data.snug.non_latex.regular);
             else if (sessionStorage.q1 == 'yes' && sessionStorage.q2 == "no")
