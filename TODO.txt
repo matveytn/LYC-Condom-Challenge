@@ -1,7 +1,6 @@
 #TODO list
 
-android
-background is slow as fuck
+android - background is slow as fuck
 
 animation transition for back buttons
 
