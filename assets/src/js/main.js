@@ -42,7 +42,6 @@ $("#q1_yes, #q1_no").on('click', function (data) {
     swal({
         title: "Allergy caution",
         text: "Some people have an allergy to latex which can make condom use uncomfortable. If this sounds like you, have a look for condom packs with the words “non-latex” or “polyisoprene”. These offer the same protection as latex condoms, even for anal sex.",
-        type: "info",
         confirmButtonColor: "#2cc2d8",
         confirmButtonText: "Got it!",
         closeOnConfirm: true
