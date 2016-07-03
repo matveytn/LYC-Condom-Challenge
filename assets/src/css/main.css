@@ -708,6 +708,9 @@ h5 {
         height: 100%;
     }
     /*  Penis building screen mobile view  */
+    #build-logo img {
+        width: 120px;
+    }
     .desktop-ui {
         display: none;
     }
@@ -739,22 +742,6 @@ h5 {
     #circum-icon,
     #uncircum-icon {
         width: 50px;
-    }
-    #pants-back {
-        position: absolute;
-        width: 100%;
-        min-width: 1200px;
-        bottom: 0px;
-        left: -230px;
-        z-index: 1;
-    }
-    #pants-front {
-        position: absolute;
-        width: 100%;
-        bottom: -2px;
-        min-width: 1200px;
-        left: -230px;
-        z-index: 3;
     }
 }
 
@@ -836,7 +823,7 @@ h5 {
     #measurements_div {
         position: fixed;
         top: 98%;
-        left: 190px;
+        left: 70px;
         z-index: 100;
         width: 200px;
     }
@@ -844,6 +831,22 @@ h5 {
         margin: 0px 0 -5px 0px;
         text-align: left !important;
         font-size: 23px;
+    }
+    #pants-back {
+        position: absolute;
+        width: 100%;
+        min-width: 1200px;
+        bottom: 0px;
+        left: -230px;
+        z-index: 1;
+    }
+    #pants-front {
+        position: absolute;
+        width: 100%;
+        bottom: -2px;
+        min-width: 1200px;
+        left: -230px;
+        z-index: 3;
     }
 }
 
@@ -1093,7 +1096,7 @@ h5 {
     #build-ui {
         position: fixed;
         float: right;
-        top: 40px;
+        top: 20px;
         right: -240px;
         background: url(../../../media/PenisBuildScreen/Mobile-UI-Box.png) no-repeat;
         background-size: contain;
