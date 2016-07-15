@@ -533,6 +533,7 @@ left: 70%;
 
 #build-penis img {
     height: 100%;
+    max-width: 200px;
 }
 
 #measurements {
@@ -589,12 +590,12 @@ h5 {
 }
 
 .video_thumbnail p {
-      font-size: 15pt;
+    font-size: 15pt;
     margin: 0 15px;
 }
 
 .video_thumbnail_hidden p {
-      font-size: 14pt;
+    font-size: 14pt;
     margin: 0 15% 15px;
 }
 
@@ -602,7 +603,6 @@ h5 {
 /*Pop up background color*/
 
 .sweet-alert {
-
     background-color: rgba(255, 255, 255, 0.97);
 }
 

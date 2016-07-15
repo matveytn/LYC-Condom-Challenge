@@ -89,10 +89,22 @@ $(document).ready(function () {
     sessionStorage.measurementsResize = "Girth: " + "51mm";
     $("#measurements").html(sessionStorage.measurementsDrag + "<br>" + sessionStorage.measurementsResize);
 
+    var dragDistance = 100;
+
     $('#build-penis').draggable({
         axis: "y",
         scroll: false,
         handle: '#ngrip',
+        scroll: false,
+        containment: "build-container",
+        drag: function (event, ui) {
+
+            ui.position.top = Math.min(ui.position.top, ui.helper.next().offset().top + ui.helper.next().height() - dragDistance);
+            ui.position.top = Math.max(ui.position.top, ui.helper.prev().offset().top + dragDistance);
+
+            resize();
+        }
+
     }).resizable({
         aspectRatio: true,
         animate: true,
