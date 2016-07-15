@@ -7,3 +7,5 @@ adjust media queries to UI
 allow penis to be dragged below screen level (contained within separate div?)
 
 constrain penis resize
+
+jquery resizable helper z-index needs to be behind pants-front
