@@ -10,32 +10,13 @@ constrain penis resize
 
 jquery resizable helper z-index needs to be behind pants-front
 
+minimal dick length is 80mm
 
 1)      Add in a transparent instructional panel on the Construction screen. These will only show up once and disappear with the first click.
-Text for penis arrows: “Drag here to adjust the size of your dick.”
+Text for penis arrows: “Drag handles to adjust the size of your dick.”
 Text for circumcision boxes: “Cut/Uncut? Select here!”
 
 2)      The text for the penis length doesn’t adjust when the arrows are dragged.
 
-3)      Penis length and girth need to have ranges built in that they can’t go above or below:
-
-Length range: 80mm to 250mm
-Girth Range: 60mm to 200mm (I wrote 45-69 in the final brief which was using diameter, not circumference. This was a mistake on my part – sorry!).
-
-The final recommendations will be based on the input girth, so will fall into these size ranges:
-
-Snug: 60-100mm
-Regular: 110-140mm
-Large: 150-200mm
-
- 
-
-4)      At the moment, the penis size that loads up clicks through to the large condom sizes. It would be better if this clicked through to a recommendation for Regular (eg if the user doesn’t play with the settings at all) – let’s load it up to start at 140mm for length and 125mm for girth.
-
-5)      When dragged, the penis base extends out beyond the fly of the jeans – this shouldn’t happen.
-
-6)      On the mobile version, let’s reorder it so the recommendation comes first, followed by the “Order free condoms” button, with the video at the bottom.
-
- 
 
 7)      Add in a share to Facebook button on the final recommendation screen. This will export the image, with placeholder text for the post as “I just built my dick at EndingHIV.org.nz!”

@@ -585,18 +585,26 @@ h5 {
     cursor: hand;
 }
 
-.video_thumbnail_hidden {
-    display: none;
-}
-
 .video_thumbnail p {
     font-size: 15pt;
     margin: 0 15px;
 }
 
-.video_thumbnail_hidden p {
-    font-size: 14pt;
-    margin: 0 15% 15px;
+.video_thumbnail {
+    display: block;
+}
+
+.video_thumbnail img {
+    border-radius: 10px;
+    max-width: 400px;
+    cursor: hand;
+    margin: 20px 0;
+}
+
+.video_thumbnail p {
+    font-size: 15pt;
+    margin: 0 auto 20px;
+    max-width: 300px;
 }
 
 
@@ -828,16 +836,22 @@ h5 {
         text-align: left !important;
         font-size: 2.1vw;
     }
-    .video_thumbnail_hidden {
-        display: block;
-    }
-    .video_thumbnail_hidden img {
-        display: block;
-        margin: 0 auto 2%;
-        width: 60%;
-    }
     .video_thumbnail {
-        display: none;
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .video_thumbnail img {
+        border-radius: 10px;
+        width: 80%;
+        max-width: 350px;
+        cursor: hand;
+        margin: 20px 0;
+    }
+    .video_thumbnail p {
+        font-size: 15pt;
+        margin: 0 auto 20px;
+        max-width: 300px;
     }
 }
 

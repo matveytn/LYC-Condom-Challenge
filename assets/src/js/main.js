@@ -83,10 +83,10 @@ el.pulse(pulse_properties, {
 $(document).ready(function () {
     //    Inital dick size set
     $("#initial_dick_size .btn").on('click', function () {
-        sessionStorage.penisSize = '77';
+        sessionStorage.penisSize = '125';
     });
-    sessionStorage.measurementsDrag = "Length: " + "138mm"
-    sessionStorage.measurementsResize = "Girth: " + "51mm";
+    sessionStorage.measurementsDrag = "Length: " + "140mm"
+    sessionStorage.measurementsResize = "Girth: " + "125mm";
     $("#measurements").html(sessionStorage.measurementsDrag + "<br>" + sessionStorage.measurementsResize);
 
     var dragDistance = 100;
@@ -115,7 +115,7 @@ $(document).ready(function () {
             'e': '#egrip'
         },
         resize: function (event, ui) {
-            var measurementsResize = "Girth: " + Math.round(ui.size.width * 0.7) + "mm";
+            var measurementsResize = "Girth: " + Math.round(ui.size.width * 2.07) + "mm";
             var circumference = Math.round(ui.size.width * 0.5);
             sessionStorage.measurementsResize = measurementsResize;
             sessionStorage.penisSize = circumference;
@@ -146,7 +146,7 @@ $(document).ready(function () {
         //Q1 - Do you or your partner experience itchy or irritated skin from condoms?
         //Q2 - Do you get enough sensation from the condoms you use?
 
-        if (sessionStorage.penisSize > 60) {
+        if (sessionStorage.penisSize > 150 && sessionStorage.penisSize <= 200) {
             if (sessionStorage.q1 == 'yes' && sessionStorage.q2 == "yes")
                 $('#results').html(data.large.non_latex.regular);
             else if (sessionStorage.q1 == 'yes' && sessionStorage.q2 == "no")
@@ -155,7 +155,7 @@ $(document).ready(function () {
                 $('#results').html(data.large.latex.regular);
             else if (sessionStorage.q1 == 'no' && sessionStorage.q2 == "no")
                 $('#results').html(data.large.latex.thin);
-        } else if (sessionStorage.penisSize <= 60 && sessionStorage.penisSize > 50) {
+        } else if (sessionStorage.penisSize > 110 && sessionStorage.penisSize <= 150) {
             if (sessionStorage.q1 == 'yes' && sessionStorage.q2 == "yes")
                 $('#results').html(data.medium.non_latex.regular);
             else if (sessionStorage.q1 == 'yes' && sessionStorage.q2 == "no")
@@ -164,7 +164,7 @@ $(document).ready(function () {
                 $('#results').html(data.medium.latex.regular);
             else if (sessionStorage.q1 == 'no' && sessionStorage.q2 == "no")
                 $('#results').html(data.medium.latex.thin);
-        } else if (sessionStorage.penisSize <= 50) {
+        } else if (sessionStorage.penisSize > 60 && sessionStorage.penisSize <= 110) {
             if (sessionStorage.q1 == 'yes' && sessionStorage.q2 == "yes")
                 $('#results').html(data.snug.non_latex.regular);
             else if (sessionStorage.q1 == 'yes' && sessionStorage.q2 == "no")
