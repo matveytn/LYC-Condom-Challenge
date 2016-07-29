@@ -45,6 +45,15 @@ animateApp.controller('homeController', function ($scope) {
         $(function () {
             var x = 0;
             var y = 0;
+
+            clear Id
+
+            Reset animation
+
+            store the id in a session storage
+
+            FACEbook sdk share
+
             setInterval(function () {
                 x += 1.16;
                 y -= 1;

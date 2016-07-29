@@ -1,4 +1,5 @@
-/*  SECTIONS  */
+/* SECTIONS
+   ================================================== */
 
 .section {
     clear: both;
@@ -6,20 +7,18 @@
     margin: 0px;
 }
 
-
-/*  COLUMN SETUP  */
+/* COLUMN SETUP
+   ================================================== */
 
 .col {
     display: block;
     float: left;
 }
 
-.col:first-child {
-    margin-left: 0;
-}
+.col:first-child { margin-left: 0 }
 
-
-/*  GROUPING  */
+/* GROUPING
+   ================================================== */
 
 .group:before,
 .group:after {
@@ -27,19 +26,15 @@
     display: table;
 }
 
-.group:after {
-    clear: both;
-}
+.group:after { clear: both }
 
+/* ===[ Typography ]=== */
 
-/* Typography */
-
-
-/*Custom fonts*/
+/* ===[ Custom fonts ]=== */
 
 @font-face {
     font-family: CalibreWeb-Light;
-    src: url(../../../assets/fonts/CalibreWeb-Light.eot?) format("eot"), url(../../../assets/fonts/CalibreWeb-Light.woff) format("woff")
+    src: url(../../../assets/fonts/CalibreWeb-Light.eot?) format("eot"), url(../../../assets/fonts/CalibreWeb-Light.woff) format("woff");
 }
 
 .group {
@@ -47,69 +42,49 @@
     /* For IE 6/7 */
 }
 
+/* GRID OF NINE
+   ================================================== */
 
-/*  GRID OF NINE  */
+.span_9_of_9 { width: 100% }
 
-.span_9_of_9 {
-    width: 100%;
-}
+.span_8_of_9 { width: 88.71% }
 
-.span_8_of_9 {
-    width: 88.71%;
-}
+.span_7_of_9 { width: 77.42% }
 
-.span_7_of_9 {
-    width: 77.42%;
-}
+.span_6_of_9 { width: 66.13% }
 
-.span_6_of_9 {
-    width: 66.13%;
-}
+.span_5_of_9 { width: 54.84% }
 
-.span_5_of_9 {
-    width: 54.84%;
-}
+.span_4_of_9 { width: 43.55% }
 
-.span_4_of_9 {
-    width: 43.55%;
-}
+.span_3_of_9 { width: 32.26% }
 
-.span_3_of_9 {
-    width: 32.26%;
-}
+.span_2_of_9 { width: 20.97% }
 
-.span_2_of_9 {
-    width: 20.97%;
-}
+.span_1_of_9 { width: 9.688% }
 
-.span_1_of_9 {
-    width: 9.688%;
-}
+/* ===[ Typography ]=== */
 
-
-/* Typography */
-
-
-/*Custom fonts*/
+/* ===[ Custom fonts ]=== */
 
 @font-face {
     font-family: CalibreWeb-Light;
-    src: url(../../../assets/fonts/CalibreWeb-Light.eot?) format("eot"), url(../../../assets/fonts/CalibreWeb-Light.woff) format("woff")
+    src: url(../../../assets/fonts/CalibreWeb-Light.eot?) format("eot"), url(../../../assets/fonts/CalibreWeb-Light.woff) format("woff");
 }
 
 @font-face {
     font-family: CalibreWeb-Regular;
-    src: url(../../../assets/fonts/CalibreWeb-Regular.eot?) format("eot"), url(../../../assets/fonts/CalibreWeb-Regular.woff) format("woff")
+    src: url(../../../assets/fonts/CalibreWeb-Regular.eot?) format("eot"), url(../../../assets/fonts/CalibreWeb-Regular.woff) format("woff");
 }
 
 @font-face {
     font-family: CalibreWeb-Medium;
-    src: url(../../../assets/fonts/CalibreWeb-Medium.eot?) format("eot"), url(../../../assets/fonts/CalibreWeb-Medium.woff) format("woff")
+    src: url(../../../assets/fonts/CalibreWeb-Medium.eot?) format("eot"), url(../../../assets/fonts/CalibreWeb-Medium.woff) format("woff");
 }
 
 @font-face {
     font-family: CalibreWeb-Semibold;
-    src: url(../../../assets/fonts/CalibreWeb-Semibold.eot?) format("eot"), url(../../../assets/fonts/CalibreWeb-Semibold.woff) format("woff")
+    src: url(../../../assets/fonts/CalibreWeb-Semibold.eot?) format("eot"), url(../../../assets/fonts/CalibreWeb-Semibold.woff) format("woff");
 }
 
 *,
@@ -137,9 +112,7 @@ h2 {
     font-weight: 600;
 }
 
-h3 {
-    font-size: 17pt;
-}
+h3 { font-size: 17pt }
 
 h4 {
     font-size: 17pt;
@@ -154,8 +127,8 @@ a {
     text-decoration: none;
 }
 
-
-/* INTRO SCREEN */
+/* INTRO SCREEN
+   ================================================== */
 
 body {
     background-color: #151618;
@@ -171,15 +144,11 @@ body {
     max-width: 400px;
 }
 
-.group {
-    margin: 0 auto;
-}
+.group { margin: 0 auto }
 
+/* make our pages be full width and full height  */
 
-/* make our pages be full width and full height */
-
-
-/* positioned absolutely so that the pages can overlap each other as they enter and leave */
+/* positioned absolutely so that the pages can overlap each other as they enter and leave  */
 
 .page {
     bottom: 0;
@@ -191,28 +160,21 @@ body {
     /*    overflow: hidden;*/
 }
 
-.page a {
-    margin-top: 50px;
-}
+.page a { margin-top: 50px }
 
 .page-finish p,
-.page-finish h3 {
-    text-align: left;
-}
+.page-finish h3 { text-align: left }
 
-.page-finish .btn h3 {
-    text-align: center;
-}
-
+.page-finish .btn h3 { text-align: center }
 
 /* PAGES (specific colors for each page)
-============================================================================= */
+=============================================================================
+   ================================================== */
 
 .btn {
-    /*
-position: relative;
-left: 70%;
-*/
+    /*: ;
+    position: relative;
+    left: 70%;*/
     margin: 2%;
     padding: 0 15px;
     /*            line-height: 1.8;*/
@@ -228,9 +190,7 @@ left: 70%;
     transition: all 0.2s ease 0s;
 }
 
-.btn h3 {
-    color: #fff;
-}
+.btn h3 { color: #fff }
 
 .btn:focus,
 .btn:hover {
@@ -243,9 +203,7 @@ left: 70%;
     cursor: hand;
 }
 
-.btn_no {
-    background-color: red;
-}
+.btn_no { background-color: red }
 
 .page-q1,
 .page-q2 {
@@ -256,9 +214,7 @@ left: 70%;
     /*    overflow: hidden;*/
 }
 
-.page-home p {
-    color: #fff;
-}
+.page-home p { color: #fff }
 
 .page-construction {
     background: url(../../../media/PenisBuildScreen/Background.jpg) no-repeat center fixed;
@@ -278,8 +234,8 @@ left: 70%;
     line-height: 0;
 }
 
-
-/*QUESTION IMAGE OVERLAYS*/
+/* QUESTION IMAGE OVERLAYS
+   ================================================== */
 
 .overlay {
     /*    border: 1px solid #000;*/
@@ -356,8 +312,7 @@ left: 70%;
     border-radius: 40px;
 }
 
-
-/*Sweet alert custom styles*/
+/* ===[ Sweet alert custom styles ]=== */
 
 .sweet-alert {
     background-color: white;
@@ -427,12 +382,9 @@ left: 70%;
     cursor: pointer;
 }
 
+/* ===[ Penis construction stage ]=== */
 
-/*Penis construction stage*/
-
-.mobile-ui {
-    display: none;
-}
+.mobile-ui { display: none }
 
 #build-logo img {
     position: fixed;
@@ -482,9 +434,7 @@ left: 70%;
 #med-swatch,
 #dark-swatch,
 #circum-icon,
-#uncircum-icon {
-    width: 50px;
-}
+#uncircum-icon { width: 50px }
 
 .ui-state-default,
 .ui-widget-content,
@@ -590,9 +540,7 @@ h5 {
     margin: 0 15px;
 }
 
-.video_thumbnail {
-    display: block;
-}
+.video_thumbnail { display: block }
 
 .video_thumbnail img {
     border-radius: 10px;
@@ -607,32 +555,33 @@ h5 {
     max-width: 300px;
 }
 
+/* ===[ Pop up background color ]=== */
 
-/*Pop up background color*/
-
-.sweet-alert {
-    background-color: rgba(255, 255, 255, 0.97);
-}
+.sweet-alert { background-color: rgba(255, 255, 255, 0.97) }
 
 @media (max-width: 1374px) {
     .overlay {
         position: relative;
         margin: 5% 0 4.5%;
     }
+
     .overlay2 {
         position: relative;
         margin: .6% 0;
     }
+
     .img1 {
         position: relative;
         z-index: 2;
         width: 48%;
         left: 24.2%;
     }
+
     .irritation img {
         width: 45%;
         margin: 0 auto;
     }
+
     .target {
         position: relative;
         z-index: 1;
@@ -643,27 +592,31 @@ h5 {
 }
 
 @media (max-width: 1180px) and (orientation: portrait) {
-    /*  INTRO SCREEN  */
+    /* INTRO SCREEN
+       ================================================== */
+
     body {
         background-size: 207px 180px;
         margin: auto;
         overflow-x: hidden;
     }
+
     .intro-controls {
         width: 100%;
         max-width: 420px;
     }
+
     .intro-controls .btn {
         position: relative;
         left: 0%;
     }
+
     h1,
     h2,
     h3,
     p,
-    a {
-        text-align: center;
-    }
+    a { text-align: center }
+
     h1 {
         font-size: 55pt;
         font-weight: 600;
@@ -672,13 +625,14 @@ h5 {
         max-width: 420px;
         line-height: 100%;
     }
+
     h2 {
         font-size: 40pt;
         font-weight: 600;
     }
-    h3 {
-        font-size: 17pt;
-    }
+
+    h3 { font-size: 17pt }
+
     p,
     a {
         font-size: 16pt;
@@ -686,28 +640,33 @@ h5 {
         font-weight: 500;
         text-decoration: none;
     }
-    .btn {
-        margin: 0;
-    }
-    /*  Question image overlays  */
+
+    .btn { margin: 0 }
+
+    /* ===[ Question image overlays ]=== */
+
     .overlay {
         position: relative;
         margin: 5% 0 4.5%;
     }
+
     .overlay2 {
         position: relative;
         margin: .6% 0;
     }
+
     .img1 {
         position: relative;
         z-index: 2;
         width: 48%;
         left: 24.25%;
     }
+
     .irritation img {
         width: 45%;
         margin: 0 auto;
     }
+
     .target {
         position: relative;
         z-index: 1;
@@ -715,6 +674,7 @@ h5 {
         left: -24.25%;
         width: 48%;
     }
+
     #setSize .btn {
         position: absolute;
         top: 0;
@@ -723,6 +683,7 @@ h5 {
         line-height: 0.3;
         margin: 2%;
     }
+
     #q1_yes .btn,
     #q1_no .btn,
     #q2_yes .btn,
@@ -734,24 +695,23 @@ h5 {
         line-height: 0.3;
         margin: 7% 1%;
     }
-    .btn h3 {
-        text-align: center;
-    }
+
+    .btn h3 { text-align: center }
+
     .page-q1,
     .page-q2 {
         /*            background: rgb(229, 229, 229);*/
         height: 100%;
     }
-    /*  Penis building screen mobile view  */
-    #build-logo img {
-        width: 120px;
-    }
-    .desktop-ui {
-        display: none;
-    }
-    .mobile-ui {
-        display: block;
-    }
+
+    /* ===[ Penis building screen mobile view ]=== */
+
+    #build-logo img { width: 120px }
+
+    .desktop-ui { display: none }
+
+    .mobile-ui { display: block }
+
     #build-ui {
         position: fixed;
         float: right;
@@ -760,24 +720,25 @@ h5 {
         background: url(../../../media/PenisBuildScreen/Mobile-UI-Box.png) no-repeat;
         background-size: contain;
     }
+
     #build-ui-bg {
         height: 550px;
         width: 100px;
         opacity: 0;
     }
+
     #build-ui-icons {
         position: absolute;
         padding-left: 12px;
         width: 10%;
         top: 6%;
     }
+
     #light-swatch,
     #med-swatch,
     #dark-swatch,
     #circum-icon,
-    #uncircum-icon {
-        width: 50px;
-    }
+    #uncircum-icon { width: 50px }
 }
 
 @media (max-width: 1500px) {
@@ -798,15 +759,16 @@ h5 {
         left: 29%;
         z-index: 2;
     }
+
     #build-penis {
         position: relative;
         bottom: 0px;
         /*        left: 30%;*/
         height: 90%;
     }
-    #build-penis img {
-        height: 100%;
-    }
+
+    #build-penis img { height: 100% }
+
     h5 {
         margin: 10px 0 -5px 0;
         text-align: left !important;
@@ -822,25 +784,28 @@ h5 {
         left: 29%;
         z-index: 2;
     }
+
     #build-penis {
         position: relative;
         bottom: 0px;
         /*        left: 30%;*/
         height: 90%;
     }
-    #build-penis img {
-        height: 100%;
-    }
+
+    #build-penis img { height: 100% }
+
     h5 {
         margin: 30px 0 0 0;
         text-align: left !important;
         font-size: 2.1vw;
     }
+
     .video_thumbnail {
         display: block;
         width: 100%;
         margin: 0 auto;
     }
+
     .video_thumbnail img {
         border-radius: 10px;
         width: 80%;
@@ -848,6 +813,7 @@ h5 {
         cursor: hand;
         margin: 20px 0;
     }
+
     .video_thumbnail p {
         font-size: 15pt;
         margin: 0 auto 20px;
@@ -863,15 +829,16 @@ h5 {
         left: 120px;
         z-index: 2;
     }
+
     #build-penis {
         position: relative;
         bottom: 0px;
         /*        left: 30%;*/
         height: 90%;
     }
-    #build-penis img {
-        height: 100%;
-    }
+
+    #build-penis img { height: 100% }
+
     #measurements_div {
         position: fixed;
         top: 98%;
@@ -879,11 +846,13 @@ h5 {
         z-index: 100;
         width: 200px;
     }
+
     h5 {
         margin: 0px 0 -5px 0px;
         text-align: left !important;
         font-size: 23px;
     }
+
     #pants-back {
         position: absolute;
         width: 100%;
@@ -892,6 +861,7 @@ h5 {
         left: -230px;
         z-index: 1;
     }
+
     #pants-front {
         position: absolute;
         width: 100%;
@@ -903,29 +873,34 @@ h5 {
 }
 
 @media (max-width: 735px) {
-    /* INTRO SCREEN */
+    /* INTRO SCREEN
+       ================================================== */
+
     body {
         background-size: 241.5px 210px;
         margin: auto;
         overflow-x: hidden;
     }
+
     .intro-controls {
         width: 100%;
         max-width: 420px;
     }
+
     h1 {
         font-size: 55pt;
         font-weight: 600;
         color: rgb(44, 194, 216);
         margin: 0 auto;
     }
+
     h2 {
         font-size: 40pt;
         font-weight: 600;
     }
-    h3 {
-        font-size: 17pt;
-    }
+
+    h3 { font-size: 17pt }
+
     p,
     a {
         font-size: 16pt;
@@ -933,16 +908,18 @@ h5 {
         font-weight: 500;
         text-decoration: none;
     }
-    .intro-title {
-        margin: 0 5%;
-    }
+
+    .intro-title { margin: 0 5% }
+
     .page-q1,
     .page-q2 {
         /*                background: #e5e5e5;*/
         height: 50%;
         overflow: hidden;
     }
-    /*Sweet alert custom styles*/
+
+    /* ===[ Sweet alert custom styles ]=== */
+
     .sweet-alert {
         width: 340px;
         padding: 30px;
@@ -952,6 +929,7 @@ h5 {
         margin-left: -200px;
         margin-top: -200px;
     }
+
     .sweet-alert h2 {
         font-size: 30px;
         text-align: center;
@@ -959,6 +937,7 @@ h5 {
         padding: 0;
         line-height: 40px;
     }
+
     .sweet-alert p {
         font-size: 19px;
         text-align: center;
@@ -966,6 +945,7 @@ h5 {
         padding: 0;
         line-height: normal;
     }
+
     .sweet-alert button {
         font-size: 21px;
         line-height: 1.7;
@@ -978,28 +958,32 @@ h5 {
 }
 
 @media (max-width: 607px) {
-    /* INTRO SCREEN */
+    /* INTRO SCREEN
+       ================================================== */
+
     body {
         background-size: 207px 180px;
         margin: auto;
         overflow-x: hidden;
     }
+
     .intro-controls {
         width: 100%;
         max-width: 300px;
         margin: 0 5%;
     }
+
     .intro-controls .btn {
         position: relative;
         left: -34.5%;
     }
+
     h1,
     h2,
     h3,
     p,
-    a {
-        text-align: left;
-    }
+    a { text-align: left }
+
     h1 {
         font-size: 55pt;
         font-weight: 600;
@@ -1009,17 +993,19 @@ h5 {
         max-width: 420px;
         line-height: 100%;
     }
+
     .intro-title {
         position: relative;
         left: -0px;
     }
+
     h2 {
         font-size: 40pt;
         font-weight: 600;
     }
-    h3 {
-        font-size: 17pt;
-    }
+
+    h3 { font-size: 17pt }
+
     p,
     a {
         font-size: 16pt;
@@ -1027,29 +1013,36 @@ h5 {
         font-weight: 500;
         text-decoration: none;
     }
+
     #initial_dick_size .btn {
         position: relative;
         left: -29%;
     }
-    /*    Question image overlays*/
+
+    /* ===[ Question image overlays ]=== */
+
     .overlay {
         position: relative;
         margin: 5% 0 4.5%;
     }
+
     .overlay2 {
         position: relative;
         margin: .6% 0;
     }
+
     .img1 {
         position: relative;
         z-index: 2;
         width: 48%;
         left: 24.5%;
     }
+
     .irritation img {
         width: 45%;
         margin: 0 auto;
     }
+
     .target {
         position: relative;
         z-index: 1;
@@ -1058,6 +1051,7 @@ h5 {
         width: 48%;
         overflow: hidden;
     }
+
     .page-q1 .q_text,
     .page-q2 .q_text,
     .page-finish .q_text {
@@ -1066,6 +1060,7 @@ h5 {
         font-size: 23pt;
         text-align: center;
     }
+
     .page-q1 .border_white {
         background-color: #fff;
         margin: 2% auto;
@@ -1073,6 +1068,7 @@ h5 {
         padding: 3% 2%;
         border-radius: 40px;
     }
+
     .border_white2 {
         background-color: #fff;
         margin: 2% auto 7%;
@@ -1080,6 +1076,7 @@ h5 {
         padding: 3% 2% 2%;
         border-radius: 40px;
     }
+
     #setSize .btn {
         position: absolute;
         top: 0;
@@ -1088,6 +1085,7 @@ h5 {
         line-height: 0.3;
         margin: 2%;
     }
+
     #q1_yes .btn,
     #q1_no .btn,
     #q2_yes .btn,
@@ -1099,19 +1097,20 @@ h5 {
         line-height: 0.3;
         margin: 7% 1%;
     }
-    .btn h3 {
-        text-align: center;
-    }
-    #initial_dick_size .btn {
-        margin: 0 0 50px 0;
-    }
+
+    .btn h3 { text-align: center }
+
+    #initial_dick_size .btn { margin: 0 0 50px 0 }
+
     .page-q1,
     .page-q2 {
         position: relative;
         /*                background: #e5e5e5;*/
         height: 100%;
     }
-    /*Sweet alert custom styles*/
+
+    /* ===[ Sweet alert custom styles ]=== */
+
     .sweet-alert {
         width: 80%;
         min-width: 0px;
@@ -1122,6 +1121,7 @@ h5 {
         margin: 0;
         margin-top: -200px;
     }
+
     .sweet-alert h2 {
         font-size: 30px;
         text-align: center;
@@ -1129,6 +1129,7 @@ h5 {
         padding: 0;
         line-height: 40px;
     }
+
     .sweet-alert p {
         font-size: 19px;
         text-align: center;
@@ -1136,6 +1137,7 @@ h5 {
         padding: 0;
         line-height: normal;
     }
+
     .sweet-alert button {
         font-size: 21px;
         line-height: 1.7;
@@ -1145,6 +1147,7 @@ h5 {
         margin: 2px 5px 0 5px;
         cursor: pointer;
     }
+
     #build-ui {
         position: fixed;
         float: right;
@@ -1153,28 +1156,28 @@ h5 {
         background: url(../../../media/PenisBuildScreen/Mobile-UI-Box.png) no-repeat;
         background-size: contain;
     }
+
     #build-ui-bg {
         height: 500px;
         width: 110px;
         opacity: 0;
     }
+
     #build-ui-icons {
         position: absolute;
         padding-left: 6.4px;
         width: 10%;
         top: 3%;
     }
+
     #confirm_build .btn {
         width: 70px;
         margin: 8px;
         padding: 0;
         line-height: .8;
     }
-    #confirm_build .btn h3 {
-        text-align: center;
-    }
+
+    #confirm_build .btn h3 { text-align: center }
 }
 
-#results {
-    margin: 7px 12px;
-}
+#results { margin: 7px 12px }
