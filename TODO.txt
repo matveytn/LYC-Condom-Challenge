@@ -20,3 +20,5 @@ Text for circumcision boxes: “Cut/Uncut? Select here!”
 
 
 7)      Add in a share to Facebook button on the final recommendation screen. This will export the image, with placeholder text for the post as “I just built my dick at EndingHIV.org.nz!”
+
+downsize build screen background image, apply CSS blur
