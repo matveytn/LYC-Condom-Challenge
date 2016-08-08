@@ -4759,7 +4759,7 @@ a {
 
 body {
     background-color: #151618;
-    background-image: url(../../../media/condomStartOpacity.png);
+    background-image: url(../../../media/condomStart.png);
     background-size: 300px 260px;
     background-repeat: repeat;
     margin: auto;
@@ -4858,12 +4858,6 @@ left: 70%;
 
 .page-home p {
     color: #fff;
-}
-
-.page-construction {
-    background: url(../../../media/PenisBuildScreen/Background.jpg) no-repeat center fixed;
-    background-size: cover;
-    overflow: visible;
 }
 
 .condom_list,
