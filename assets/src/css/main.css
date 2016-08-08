@@ -81,6 +81,13 @@
     src: url(../../../assets/fonts/CalibreWeb-Light.eot?) format("eot"), url(../../../assets/fonts/CalibreWeb-Light.woff) format("woff")
 }
 
+@font-face {
+    font-family: 'THURSTON';
+    src: url(../../../assets/fonts/THURSTON.eot?#iefix) format('embedded-opentype'), url(../../../assets/fonts/THURSTON.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .group {
     zoom: 1;
     /* For IE 6/7 */
@@ -619,7 +626,7 @@ p.condom_list,
     z-index: 0;
 }
 
-.overlay {
+.overlay_instructions {
     position: fixed;
     width: 100%;
     height: 100%;
@@ -628,4 +635,127 @@ p.condom_list,
     background: rgba(21, 21, 21, 0.63);
     z-index: 100;
     margin: 0;
+}
+
+.overlay_instructions h2 {
+    font-family: "THURSTON", sans-serif;
+    color: #fff;
+    font-size: 80px;
+    line-height: 65px;
+    text-align: center;
+    margin: 0 0 15px 0;
+}
+
+.arrow_top {
+    position: absolute;
+    top: 20px;
+    right: 22%;
+}
+
+.arrow_bottom {
+    position: absolute;
+    bottom: 25%;
+    left: 28%;
+}
+
+
+/*    text alignment*/
+
+.arrow_top h2 {
+    position: relative;
+    right: 80px;
+    top: -20px;
+}
+
+.arrow_bottom h2 {
+    position: relative;
+    width: 400px;
+}
+
+
+/*instruction overlay*/
+
+@media (max-width: 1210px) {
+    .arrow_top {
+        top: 20px;
+        right: 340px;
+    }
+    .arrow_bottom {
+        bottom: 7%;
+        left: 25%;
+    }
+    .arrow_top h2 {
+        right: 80px;
+        top: 0;
+    }
+}
+
+@media (max-width: 920px) {
+    .arrow_top {
+        top: 100px;
+        right: 150px;
+    }
+    .arrow_bottom {
+        bottom: 3%;
+        left: 25%;
+    }
+}
+
+@media (max-width: 828px) {
+    .arrow_top {
+        top: 100px;
+        right: 150px;
+    }
+    .arrow_bottom {
+        bottom: 21%;
+        left: 80px;
+    }
+}
+
+@media (max-width: 607px) {
+    .arrow_top {
+        top: 100px;
+        right: 100px;
+    }
+    .arrow_bottom {
+        bottom: 260px;
+        left: 80px;
+    }
+}
+
+.question_mark {
+    bottom: 4%;
+    right: 4%;
+    margin: 0;
+    position: fixed;
+    width: 70px;
+    height: 79px;
+    /*    max-width: 70px;*/
+    z-index: 1000
+}
+
+.question_mark.active {
+    background-image: url(../../../media/question-mark.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.question_mark.disabled {
+    background-image: url(../../../media/cross.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.question_mark:hover,
+.question_mark:focus {
+    cursor: hand;
+}
+
+@media (max-width: 607px) {
+    .question_mark {
+        top: 4%;
+        left: 4%;
+        width: 50px;
+        height: 55px;
+    }
 }

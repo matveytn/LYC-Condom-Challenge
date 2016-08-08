@@ -232,6 +232,7 @@ $(function () {
 //Change size based on media query
 $(window).resize(function () {
         var width = $(window).width();
+        // Takes care of the final page DOM flow
         if (width <= 920) {
             $('#results_pointer').removeClass('span_4_of_9').addClass('span_9_of_9');
             $('#videoThumb').removeClass('span_3_of_9').addClass('span_9_of_9');
@@ -239,5 +240,32 @@ $(window).resize(function () {
             $('#results_pointer').removeClass('span_9_of_9').addClass('span_4_of_9');
             $('#videoThumb').removeClass('span_9_of_9').addClass('span_3_of_9');
         }
+
+        //    Hides build-logo 'BUILD YOUR PENIS'
+
+        if (width <= 607) {
+            $('#build-logo').fadeOut();
+        } else {
+            $('#build-logo').fadeIn();
+        }
     })
     .resize(); //trigger the resize event on page load.
+
+
+//Instruction screen overlay
+$(document).ready(function () {
+    if (localStorage.getItem('instructions') != 'seen') {
+        $(".overlay_instructions").delay(500).fadeIn();
+        localStorage.setItem('instructions', 'seen');
+    }
+
+    $(".overlay_instructions").click(function (e) {
+        $(this).fadeOut();
+        $(".question_mark").fadeOut().removeClass('disabled').addClass('active').fadeIn();
+    })
+
+    $(".question_mark").click(function (e) {
+        $(".overlay_instructions").fadeToggle();
+        $(this).animate({opacity:0.2}, 500).toggleClass("active disabled").animate({opacity:1}, 500);
+    })
+})
