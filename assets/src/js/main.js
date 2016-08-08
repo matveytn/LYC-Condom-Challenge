@@ -25,6 +25,7 @@ $('#circum1').one('click', function () {
 //Confirm build screen
 
 $("#confirm_build").on('click', function () {
+    localStorage.setItem('instructions', 'seen');
     swal({
         title: "Choose wisely",
         text: "Using the right rubber makes a massive difference, and in New Zealand we’re lucky enough to have a range of sizes funded by Pharmac. This means that once you’ve found the size for you, you can get them at a heavily discounted price from your nurse or doctor.",
@@ -253,19 +254,43 @@ $(window).resize(function () {
 
 
 //Instruction screen overlay
-$(document).ready(function () {
+//$(document).ready(function () {
+//    if (localStorage.getItem('instructions') != 'seen') {
+//        $(".overlay_instructions").fadeIn();
+//        $(".question_mark").removeClass('active').addClass('disabled');
+//        localStorage.setItem('instructions', 'seen');
+//    } else {
+//        $(".overlay_instructions").hide();
+//        $(".question_mark").removeClass('disabled').addClass('active');
+//    }
+//
+//    $(".overlay_instructions").click(function (e) {
+//        $(this).fadeOut();
+//        $(".question_mark").fadeOut().removeClass('disabled').addClass('active').fadeIn();
+//    })
+//
+//    $(".question_mark").click(function (e) {
+//        $(".overlay_instructions").fadeToggle();
+//        $(this).animate({
+//            opacity: 0.2
+//        }, 500).toggleClass("active disabled").animate({
+//            opacity: 1
+//        }, 500);
+//    })
+//})
+
+$(document).ready(function() {
     if (localStorage.getItem('instructions') != 'seen') {
-        $(".overlay_instructions").delay(500).fadeIn();
-        localStorage.setItem('instructions', 'seen');
+        $('.overlay_instructions').removeClass('hidden').addClass('active')
+        $('.question_mark').removeClass('active').addClass('disabled')
+
+    } else {
+        $('.overlay_instructions').removeClass('active').addClass('hidden')
+        $('.question_mark').removeClass('disabled').addClass('active')
     }
 
-    $(".overlay_instructions").click(function (e) {
-        $(this).fadeOut();
-        $(".question_mark").fadeOut().removeClass('disabled').addClass('active').fadeIn();
-    })
-
-    $(".question_mark").click(function (e) {
-        $(".overlay_instructions").fadeToggle();
-        $(this).animate({opacity:0.2}, 500).toggleClass("active disabled").animate({opacity:1}, 500);
+    $('.overlay_instructions, .question_mark').click(function(e) {
+        $('.overlay_instructions').toggleClass('hidden active');
+        $('.question_mark').toggleClass('active disabled');
     })
 })

@@ -88,6 +88,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'THURSTON_ETC';
+    font-style: normal;
+    font-weight: normal;
+    src: local('THURSTON'), url(../../../assets/fonts/THURSTON_erc_002.woff) format('woff');
+}
+
 .group {
     zoom: 1;
     /* For IE 6/7 */
@@ -637,11 +644,18 @@ p.condom_list,
     margin: 0;
 }
 
+.overlay_instructions.active {
+    visibility: visible;
+}
+
+.overlay_instructions.hidden {
+    visibility: hidden;
+}
+
 .overlay_instructions h2 {
-    font-family: "THURSTON", sans-serif;
     color: #fff;
-    font-size: 80px;
-    line-height: 65px;
+    font-size: 50px;
+    line-height: 60px;
     text-align: center;
     margin: 0 0 15px 0;
 }
