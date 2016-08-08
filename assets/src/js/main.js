@@ -233,9 +233,11 @@ $(function () {
 $(window).resize(function () {
         var width = $(window).width();
         if (width <= 920) {
-            $('#results_pointer').removeClass('span_6_of_9').addClass('span_9_of_9');
+            $('#results_pointer').removeClass('span_4_of_9').addClass('span_9_of_9');
+            $('#videoThumb').removeClass('span_3_of_9').addClass('span_9_of_9');
         } else {
-            $('#results_pointer').removeClass('span_9_of_9').addClass('span_6_of_9');
+            $('#results_pointer').removeClass('span_9_of_9').addClass('span_4_of_9');
+            $('#videoThumb').removeClass('span_9_of_9').addClass('span_3_of_9');
         }
     })
     .resize(); //trigger the resize event on page load.

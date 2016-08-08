@@ -1,3 +1,95 @@
+/*  GRID OF NINE  */
+
+.span_9_of_9 {
+    width: 100%;
+}
+
+.span_8_of_9 {
+    width: 88.71%;
+}
+
+.span_7_of_9 {
+    width: 77.42%;
+}
+
+.span_6_of_9 {
+    width: 66.13%;
+}
+
+.span_5_of_9 {
+    width: 54.84%;
+}
+
+.span_4_of_9 {
+    width: 43.55%;
+}
+
+.span_3_of_9 {
+    width: 32.26%;
+}
+
+.span_2_of_9 {
+    width: 20.97%;
+}
+
+.span_1_of_9 {
+    width: 9.688%;
+}
+
+
+/*  SECTIONS  */
+
+.section {
+    clear: both;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+/*  COLUMN SETUP  */
+
+.col {
+    display: block;
+    float: left;
+}
+
+.col:first-child {
+    margin-left: 0;
+}
+
+
+/*  GROUPING  */
+
+.group:before,
+.group:after {
+    content: "";
+    display: table;
+}
+
+.group:after {
+    clear: both;
+}
+
+
+/* Typography */
+
+
+/*Custom fonts*/
+
+@font-face {
+    font-family: CalibreWeb-Light;
+    src: url(../../../assets/fonts/CalibreWeb-Light.eot?) format("eot"), url(../../../assets/fonts/CalibreWeb-Light.woff) format("woff")
+}
+
+.group {
+    zoom: 1;
+    /* For IE 6/7 */
+}
+
+#results_pointer {
+    margin: 0 0 70px 10%;
+}
+
 @media (max-width: 540px) {
     .group {
         margin-left: 5%;
@@ -17,14 +109,6 @@
     }
     body {
         background-size: 207px 180px;
-    }
-    button {
-        left: -29%;
-        margin-bottom: 50px;
-        margin-left: 0px;
-        margin-right: 0px;
-        margin-top: 0px;
-        position: relative;
     }
     h1 {
         font-size: 55pt;
@@ -64,12 +148,12 @@
         background-size: 207px 180px;
     }
     button {
-        left: -29%;
+        /*        left: -29%;*/
         margin-bottom: 50px;
         margin-left: 0px;
         margin-right: 0px;
         margin-top: 0px;
-        position: relative;
+        /*        position: relative;*/
     }
     h1 {
         font-size: 55pt;
@@ -85,6 +169,13 @@
     p {
         font-size: 16pt;
         text-align: left;
+    }
+    .border_white2,
+    .border_white {
+        margin: 2% auto 5%;
+        width: 100%;
+        padding: 3% 0 0;
+        border-radius: 0px;
     }
 }
 
@@ -191,12 +282,38 @@
     h1 {
         font-size: 60pt;
         margin-bottom: 1%;
-        margin-left: 5%;
-        margin-right: 5%;
+        /*        margin-left: 5%;*/
+        /*        margin-right: 5%;*/
         margin-top: 1%;
     }
     p {
         font-size: 17pt;
+    }
+}
+
+@media (max-width: 920px) {
+    .video_thumbnail {
+        display: block;
+        margin: 0 auto;
+        /*        background-color: black;*/
+    }
+    .video_thumbnail img {
+        border-radius: 10px;
+        width: 90%;
+        max-width: 300px;
+        cursor: hand;
+        margin: 20px 0;
+    }
+    .video_thumbnail p {
+        font-size: 15pt;
+        margin: 0 auto 20px;
+        max-width: 300px;
+    }
+    #results_pointer {
+        margin: 0 0 70px 5%;
+    }
+    #results {
+        padding: 0 7% 0 0;
     }
 }
 
@@ -221,12 +338,20 @@
     h1 {
         font-size: 60pt;
         margin-bottom: 1%;
-        margin-left: 5%;
-        margin-right: 5%;
+        /*        margin-left: 5%;*/
+        /*        margin-right: 5%;*/
         margin-top: 1%;
     }
     p {
         font-size: 17pt;
+    }
+}
+
+@media (max-width: 1180px) and (orientation: portrait) {
+    .intro-controls .btn {
+        position: relative;
+        text-align: center;
+        left: 0;
     }
 }
 
@@ -290,6 +415,13 @@
     }
 }
 
+@media (max-width: 1374px) {
+    .irritation img {
+        width: 35%;
+        min-width: 180px;
+    }
+}
+
 @media (min-width: 1375px) and (max-width: 1500px) {
     .group {
         margin-left: auto;
@@ -348,21 +480,6 @@
     p {
         font-size: 17pt;
     }
-}
-
-.col {
-    display: block;
-    float: left;
-    margin-left: 0px;
-    width: 100%;
-}
-
-.group {
-    clear: both;
-    margin-bottom: 0px;
-    margin-top: 0px;
-    padding: 0px;
-    zoom: 1;
 }
 
 .page {
@@ -441,6 +558,44 @@ p {
     text-decoration: none;
 }
 
-#results p, .video_thumbnail p {
-    color: #000;
+.video_thumbnail {
+    display: inline;
+    margin: 0 0 5%;
+}
+
+p.condom_list,
+#results p {
+    color: black;
+}
+
+.video_thumbnail img {
+    border-radius: 10px;
+    width: 90%;
+    max-width: 300px;
+    cursor: hand;
+    margin: 20px 0;
+}
+
+.video_thumbnail p {
+    font-size: 15pt;
+    margin: 0 auto 20px;
+    max-width: 300px;
+    color: black;
+}
+
+#setSize .btn {
+    position: absolute;
+    top: 0;
+    width: 5%;
+    min-width: 80px;
+    line-height: .3;
+    margin: 2%;
+}
+
+.border_white2,
+.border_white {
+    margin: 2% auto 5% !important;
+    width: 100% !important;
+    padding: 3% 0 0 !important;
+    border-radius: 0px !important;
 }
