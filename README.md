@@ -1,6 +1,6 @@
 # LYC-Condom-Challenge
 
-![alt text](media/readmeScreenshot.png "Main screen screenshot")
+![alt text](media/readmeScreenshot.png)
 
 This web app prototype was written & developed using jQuery UI and AngularJS for the 2016 Love Your Condom Web App Challenge.
 
