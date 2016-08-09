@@ -17,7 +17,8 @@ $('#circum1').one('click', function () {
         text: "Most uncircumcised guys should be able to roll the foreskin back to expose the head of the penis before putting on a condom. However, if the foreskin is quite long or is too tight to roll back, a condom can be put on without retracting the foreskin.",
         confirmButtonColor: "#2cc2d8",
         confirmButtonText: "Got it!",
-        closeOnConfirm: false
+        closeOnConfirm: false,
+        allowOutsideClick: true
     });
 });
 
@@ -31,7 +32,8 @@ $("#confirm_build").on('click', function () {
         text: "Using the right rubber makes a massive difference, and in New Zealand we’re lucky enough to have a range of sizes funded by Pharmac. This means that once you’ve found the size for you, you can get them at a heavily discounted price from your nurse or doctor.",
         confirmButtonColor: "#2cc2d8",
         confirmButtonText: "Got it!",
-        closeOnConfirm: true
+        closeOnConfirm: true,
+        allowOutsideClick: true
     }, function () {
         document.location.href = "#q1";
     });
@@ -45,7 +47,8 @@ $("#q1_yes, #q1_no").on('click', function (data) {
         text: "Some people have an allergy to latex which can make condom use uncomfortable. If this sounds like you, have a look for condom packs with the words “non-latex” or “polyisoprene”. These offer the same protection as latex condoms, even for anal sex.",
         confirmButtonColor: "#2cc2d8",
         confirmButtonText: "Got it!",
-        closeOnConfirm: true
+        closeOnConfirm: true,
+        allowOutsideClick: true
     }, function () {
         document.location.href = "#q2";
     });
@@ -59,7 +62,8 @@ $("#q2_yes, #q2_no").on('click', function (data) {
         text: "There are plenty of thinner condoms on the market that will give you more feeling during sex. These are just as effective at preventing transmission of HIV and other STIs as regular condoms, and are no more likely to break.",
         confirmButtonColor: "#2cc2d8",
         confirmButtonText: "Got it!",
-        closeOnConfirm: true
+        closeOnConfirm: true,
+        allowOutsideClick: true
     }, function () {
         document.location.href = "#finish";
     });
