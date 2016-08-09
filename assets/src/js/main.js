@@ -98,13 +98,13 @@ $(document).ready(function () {
         handle: '#ngrip',
         scroll: false,
         containment: "build-container",
-        drag: function (event, ui) {
-
-            ui.position.top = Math.min(ui.position.top, ui.helper.next().offset().top + ui.helper.next().height() - dragDistance);
-            ui.position.top = Math.max(ui.position.top, ui.helper.prev().offset().top + dragDistance);
-
-            resize();
-        }
+//        drag: function (event, ui) {
+//
+//            ui.position.top = Math.min(ui.position.top, ui.helper.next().offset().top + ui.helper.next().height() - dragDistance);
+//            ui.position.top = Math.max(ui.position.top, ui.helper.prev().offset().top + dragDistance);
+//
+//            resize();
+//        }
 
     }).resizable({
         aspectRatio: true,
