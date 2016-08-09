@@ -252,33 +252,6 @@ $(window).resize(function () {
     })
     .resize(); //trigger the resize event on page load.
 
-
-//Instruction screen overlay
-//$(document).ready(function () {
-//    if (localStorage.getItem('instructions') != 'seen') {
-//        $(".overlay_instructions").fadeIn();
-//        $(".question_mark").removeClass('active').addClass('disabled');
-//        localStorage.setItem('instructions', 'seen');
-//    } else {
-//        $(".overlay_instructions").hide();
-//        $(".question_mark").removeClass('disabled').addClass('active');
-//    }
-//
-//    $(".overlay_instructions").click(function (e) {
-//        $(this).fadeOut();
-//        $(".question_mark").fadeOut().removeClass('disabled').addClass('active').fadeIn();
-//    })
-//
-//    $(".question_mark").click(function (e) {
-//        $(".overlay_instructions").fadeToggle();
-//        $(this).animate({
-//            opacity: 0.2
-//        }, 500).toggleClass("active disabled").animate({
-//            opacity: 1
-//        }, 500);
-//    })
-//})
-
 $(document).ready(function() {
     if (localStorage.getItem('instructions') != 'seen') {
         $('.overlay_instructions').removeClass('hidden').addClass('active')
