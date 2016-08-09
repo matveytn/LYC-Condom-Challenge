@@ -5173,6 +5173,14 @@ h5 {
     background-color: rgba(255, 255, 255, 0.97);
 }
 
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+
+    /* IPHONE 2G-4S STYLES HERE */
+
+}
+
 @media (max-width: 1374px) {
     .overlay {
         position: relative;
