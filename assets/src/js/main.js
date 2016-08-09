@@ -261,7 +261,6 @@ $(document).ready(function() {
         $('.overlay_instructions').removeClass('active').addClass('hidden')
         $('.question_mark').removeClass('disabled').addClass('active')
     }
-
     $('.overlay_instructions, .question_mark').click(function(e) {
         $('.overlay_instructions').toggleClass('hidden active');
         $('.question_mark').toggleClass('active disabled');
