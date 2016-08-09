@@ -644,7 +644,6 @@ p.condom_list,
     margin: 0;
 }
 
-
 .overlay_instructions.active {
     visibility: visible;
 }
@@ -730,12 +729,25 @@ p.condom_list,
 
 @media (max-width: 607px) {
     .arrow_top {
-        top: 100px;
-        right: 100px;
+        top: 150px;
+        right: 80px;
+    }
+    .arrow_top img {
+        width: 50%;
     }
     .arrow_bottom {
-        bottom: 260px;
+        bottom: 20%;
         left: 80px;
+    }
+    .arrow_bottom img {
+        width: 17%;
+    }
+    .overlay_instructions h2 {
+        font-size: 30px;
+        line-height: 45px;
+    }
+    .arrow_bottom h2 {
+        width: 300px;
     }
 }
 
@@ -774,4 +786,13 @@ p.condom_list,
         width: 50px;
         height: 55px;
     }
+}
+
+#build-stage {
+    left: 10px;
+}
+
+#pants-back, #pants-front {
+    width: 100%;
+    min-width: 1000px;
 }
