@@ -5723,6 +5723,23 @@ h5 {
 
         /* IPHONE 2G-4S STYLES HERE */
 
+        /*vicious button*/
+        #confirm_build {
+            position: relative;
+            left: -7px;
+        }
+
+        #confirm_build .btn {
+            width: 60px;
+            margin: 8px;
+            padding: 0;
+            line-height: .7;
+        }
+
+        #confirm_build .btn h3 {
+           font-size: 16px;
+        }
+
         #build-container {
             position: fixed;
             height: 70%;

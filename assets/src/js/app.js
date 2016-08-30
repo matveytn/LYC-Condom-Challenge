@@ -1,15 +1,15 @@
 //Define an application and pull ngRoute and ngAnimate
 var animateApp = angular.module('animateApp', ['ngRoute', 'ngAnimate']);
 
-$(function () {
-    var x = 0;
-    var y = 0;
-    var test = setInterval(function () {
-        x += 1.16;
-        y -= 1;
-        $('body').css('background-position', x + 'px ' + y + 'px');
-    }, 40);
-});
+//$(function () {
+//    var x = 0;
+//    var y = 0;
+//    var test = setInterval(function () {
+//        x += 1.16;
+//        y -= 1;
+//        $('body').css('background-position', x + 'px ' + y + 'px');
+//    }, 40);
+//});
 
 
 //Routing==================================
