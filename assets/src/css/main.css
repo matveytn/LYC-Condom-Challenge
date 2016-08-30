@@ -751,104 +751,6 @@ p.condom_list,
     }
 }
 
-@media only screen
-    and (min-device-width : 320px)
-    and (max-device-width : 480px) {
-
-        /* IPHONE 2G-4S STYLES HERE */
-
-        #build-container {
-            position: fixed;
-            height: 70%;
-            bottom: -20%;
-            left: 90px;
-            z-index: 2;
-        }
-        #build-penis {
-            position: relative;
-            bottom: 0%;
-            /*        left: 30%;*/
-            height: 80%;
-        }
-        #build-penis img {
-            height: 100%;
-        }
-        #measurements_div {
-            position: fixed;
-            top: 98%;
-            left: 28px;
-            z-index: 100;
-            width: 200px;
-        }
-        h5 {
-            margin: 0px 0 -3px 0px;
-            text-align: left !important;
-            font-size: 16px;
-        }
-        #pants-back {
-            position: absolute;
-            width: 100%;
-            min-width: 720px;
-            bottom: 0px;
-            left: -130px;
-            z-index: 1;
-        }
-        #pants-front {
-            position: absolute;
-            width: 100%;
-            min-width: 720px;
-            bottom: -2px;
-            left: -130px;
-            z-index: 3;
-        }
-        .desktop-ui {
-            display: none;
-        }
-        .mobile-ui {
-            display: block;
-        }
-        #build-ui {
-            position: fixed;
-            float: right;
-            top: 18px;
-            right: -270px;
-            background: url(../../../media/PenisBuildScreen/Mobile-UI-Box.png) no-repeat;
-            background-size: contain;
-        }
-        #build-ui-bg {
-            height: 380px;
-            width: 100px;
-            opacity: 0;
-        }
-        #build-ui-icons {
-            position: absolute;
-            padding-left: 6px;
-            width: 10%;
-            top: 4%;
-        }
-        #light-swatch,
-        #med-swatch,
-        #dark-swatch,
-        #circum-icon,
-        #uncircum-icon {
-            width: 28px;
-        }
-        #ngrip {
-            position: relative;
-            top: -115%;
-            left: 30%;
-            cursor: ns-resize;
-            background-image: url(../../../media/UI/lengthhandle.png);
-        }
-        #egrip {
-            right: -40px;
-            top: 15%;
-            cursor: ew-resize;
-            background-image: url(../../../media/UI/girthhandle.png);
-        }
-
-}
-
 .question_mark {
     bottom: 4%;
     right: 4%;
@@ -892,5 +794,5 @@ p.condom_list,
 
 #pants-back, #pants-front {
     width: 100%;
-    min-width: 1000px;
+/*    min-width: 1000px;*/
 }
