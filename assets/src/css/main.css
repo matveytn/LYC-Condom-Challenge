@@ -744,11 +744,43 @@ p.condom_list,
     }
     .overlay_instructions h2 {
         font-size: 30px;
-        line-height: 45px;
+        line-height: 30px;
     }
     .arrow_bottom h2 {
         width: 300px;
     }
+}
+
+@media only screen
+    and (min-device-width : 320px)
+    and (max-device-width : 480px) {
+        .arrow_top {
+            top: 140px;
+            right: 60px;
+        }
+        .arrow_top img {
+            width: 40%;
+        }
+        .arrow_bottom {
+            bottom: 15%;
+            left: 60px;
+        }
+        .arrow_bottom img {
+            width: 10%;
+        }
+        .overlay_instructions h2 {
+            font-size: 18px;
+            line-height: 25px;
+        }
+        .arrow_bottom h2 {
+            width: 250px;
+        }
+
+        .arrow_top h2 {
+            position: relative;
+            right: 70px;
+            top: 10px;
+        }
 }
 
 .question_mark {
