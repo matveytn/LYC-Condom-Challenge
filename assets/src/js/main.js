@@ -95,13 +95,17 @@ $(document).ready(function () {
     $("#measurements").html(sessionStorage.measurementsDrag + "<br>" + sessionStorage.measurementsResize);
 
     var dragDistance = 100;
+    //these need to not be absolute values
+    var maxY = 300;
+    var minY = 520;
+    var xPosition = 0;
 
     $('#build-penis').draggable({
         axis: "y",
         scroll: false,
         handle: '#ngrip',
         scroll: false,
-        containment: "build-container",
+        containment: [xPosition,maxY,xPosition,minY],
 //        drag: function (event, ui) {
 //
 //            ui.position.top = Math.min(ui.position.top, ui.helper.next().offset().top + ui.helper.next().height() - dragDistance);
